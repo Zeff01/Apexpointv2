@@ -9,7 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        lubie: {},
+        lubie: {
+          'dark-blue':"#0A1950",
+          'white-color': "#FFFFFF",
+          'light-blue': "#B6CBE0",
+          'navy-blue': "#1C3079",
+          'gray-white': '#F0F5F3',
+          'green-light': "#7FF0C3",
+
+        },
         apexpoint: {},
         chlorelief: {},
       },
