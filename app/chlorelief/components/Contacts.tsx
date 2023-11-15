@@ -1,9 +1,6 @@
 import React from 'react'
 
 
-
-
-
 interface Contacts {
     name: string;
     email: string;
@@ -13,49 +10,67 @@ interface Contacts {
 export default function Contacts() {
     return (
         <div className="w-full max-w-lg mx-auto">
+          <div className="text-center pt-5 mx-5">
+        <span className="text-black font-bold text-2xl ">
+        Thank you for your interest in Chlorelief. Send us a message for questions or report a technical problem. 
+        </span>
+      </div>
           <form >
-            <div className="mb-4">
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Name
-              </label>
+            <div className="m-4">
+             
               <input
                 type="text"
+                placeholder="Full Name"
                 name="name"
                 id="name"
-                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                // {('name', { required: true })}
+                required
+                className="mt-2 pl-3  block min-w-full h-10 sm:text-sm  rounded-md"
+                
               />
             </div>
-            <div className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email
-              </label>
+            <div className="m-4">
+              
               <input
                 type="email"
+                placeholder="Email"
                 name="email"
+                required
                 id="email"
-                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                // {('email', { required: true, pattern: /^\S+@\S+$/i })}
+                className="mt-2 pl-3  block min-w-full h-10 sm:text-sm  rounded-md"
+           
               />
             </div>
-            <div className="mb-4">
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Message
-              </label>
+            <div className="m-4">
+              
+              <input
+                type="text"
+                placeholder="Contact Number"
+                name="contact"
+                required
+                id="contact"
+                className="mt-2 pl-3  block min-w-full h-10 sm:text-sm  rounded-md"
+        
+              />
+            </div>
+            <div className="m-4">
+              
               <textarea
+             required
                 name="message"
+                placeholder="Message"
                 id="message"
-                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                rows={4}
-                // {('message', { required: true })}
+                className="mt-3 pl-3  resize-none min-w-full md:w-56e rounded-md"
+                style={{paddingTop:5}}
+                rows={6}
+                           
               />
             </div>
-            <div className="flex justify-end">
+            <div className="m-4 flex justify-center">
               <button
                 type="submit"
-                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-lime-700 hover:bg-lime-500 "
               >
-                Submit
+                SEND
               </button>
             </div>
           </form>
