@@ -1,10 +1,10 @@
 import React from 'react'
+import Navbar from './section/Navbar'
 
 export default function page() {
   return (
-    <div className="border-2 border-black flex-col bg-white w-full h-screen">
-        <div className=""></div>
-
+    <div>
+      <Navbar/>
     </div>
   )
 }
