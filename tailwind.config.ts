@@ -8,13 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        lubie: {},
+      fontFamily: {
+        'lubie' : ['Ubuntu', 'Open Sans'],
+       },
+        colors: {
+          lubie: {
+               'dark-blue': '#0A1950',
+           'white' : '#FFFFFF',
+            'sky-blue': '#B6CBE0',
+             'gray-white' : '#F0F5F3',  
+             'green-light': '#7FF0C3',
+          },
         apexpoint: {},
         chlorelief: {},
       },
     },
   },
+
+  
   plugins: [],
 };
 export default config;
