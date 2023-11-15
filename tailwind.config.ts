@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'lubie' : ['Ubuntu', 'Open Sans'],
+        'lubie-header' : 'Ubuntu', 
+        'lubie-text':'Open Sans',
        },
         colors: {
           lubie: {
