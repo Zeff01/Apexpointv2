@@ -5,6 +5,8 @@ export default function page() {
     <div className="border-2 border-black flex-col text-black bg-white w-full h-screen">
         <div className=""><Herosec/></div>
 
-    </div>
+        </div>
+
+      
   )
 }
