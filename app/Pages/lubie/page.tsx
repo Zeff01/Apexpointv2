@@ -1,7 +1,7 @@
 import React from 'react'
 import Herosec from './section/Herosec'
 import Navbar from './section/Navbar'
-import Contact from './section/Contact'
+
 import Products from './section/products'
 
 export default function Page() {
