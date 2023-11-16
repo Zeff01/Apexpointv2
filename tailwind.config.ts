@@ -11,7 +11,10 @@ const config: Config = {
       colors: {
         lubie: {},
         apexpoint: {},
-        chlorelief: {},
+        chlorelief: {
+          chateaugreen: '#3db750',
+          springwood: '#f2f3f2'
+        },
       },
     },
   },
