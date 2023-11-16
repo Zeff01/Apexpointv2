@@ -1,6 +1,6 @@
 'use client'
 // Navbar.js
-import React, { useState} from "react";
+import React, {useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -10,10 +10,9 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
 
-
   // JSX structure for the Navbar
   return (
-    <main className="topbar fixed w-full h-16 bg-lubie-gray-white text-lubie-dark-blue top-0 z-30 overflow-hidden pt-1 font-semibold ">
+    <main className="Navbar fixed w-full h-16 bg-lubie-gray-white text-lubie-dark-blue overflow-hidden font-semibold pt-0 z-50 top-0">
       <div className="wrapper flex items-center justify-between md:justify-around">
         {/* Left Section - Logo */}
         <div className="left grow-2 items-center justify-start">
@@ -22,7 +21,7 @@ export default function Navbar() {
        
           <Image
                 src="/assets/lubie-logo.png"
-                width="130"
+                width="110"
                 height="100"
                 alt=""
                 className="flex md:hidden hover:shadow-sm "
@@ -54,7 +53,7 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="itemContainer flex items-center justify-center mr-12">
-          <Link href="" className="text-sm hidden md:block hover:font-bold shadow-sm transition-color duration-300">
+         <Link href="" className="text-sm hidden md:block hover:font-bold shadow-sm transition-color duration-300">
               About Us
             </Link>
           </div>
@@ -74,7 +73,7 @@ export default function Navbar() {
             className="hamburger cursor-pointer mb-12 md:cursor-none "
             onClick={() => {setMenuOpen(!menuOpen);}}>
             {/* Mobile menu content */}
-            <div className={`fixed top-0 left-0  w-[65%] h-screen bg-lubie-gray-white text-lubie-dark-blue flex items-center justify-center ease-in duration-500  ${menuOpen ?  "left-0" : "left-[-100%]"}`}>
+            <div className={`fixed top-0 w-[50%] h-screen bg-lubie-gray-white text-lubie-dark-blue flex items-center justify-center ease-in duration-500 z-50  ${menuOpen ?  "left-0" : "left-[-100%]"}`}>
               <div className="flex flex-col items-center">
                 {/* Mobile menu links */}
                 <Link

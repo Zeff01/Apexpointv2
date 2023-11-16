@@ -5,29 +5,29 @@ import Icons from '../components/icons';
 import {Lubiehero,LubieHero2,icon1,icon2, icon3, icon4, icon5, icon6} from '@/public/assets/lubie'
 function Herosec() {
   return (
-    <div className='h-[110vh] w-full flex flex-col text-lubie-dark-blue bg-lubie-light-blue md:space-y-12 space-y-0'>
+    <div className='h-[110vh] w-full top-0 flex flex-col text-lubie-dark-blue bg-lubie-light-blue pt-28 md:space-y-12 space-y-0'>
         <div className="w-full h-1/2 flex flex-row justify-center ">
             <div className="flex flex-col w-1/2  items-center justify-center  ">
                 <div className="flex flex-col items-center space-y-6 text-center">
                     <p>Nature & Health</p>
-                    <p className='md:text-4xl text-2xl  font-extrabold'>
+                    <p className='md:text-4xl text-2xl font-extrabold'>
                         The first multi-purpose <br/> FDA registered Lube in <br/> the Philippines</p>
                     <Button/>
                 </div>
             </div>
             <div className="hidden md:flex items-center justify-start w-1/2  ">
-                    <div className="h-3/4 w-3/4  relative mb-[10%]">
+                    <div className="h-3/4 w-3/4  sticky mb-[10%]">
                     <Image
                         src={Lubiehero}
                         alt='herlubie'
-                        className=' object-contain '
+                        className=' object-contain z-0'
                         layout='fill'
                     />
                     </div>
             </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center w-full ">
-            <div className="flex w-full md:w-auto justify-center ">
+        <div className="flex flex-col md:flex-row justify-center items-center w-full inherit">
+            <div className="flex w-full md:w-auto justify-center bg-inherit   ">
                 <Icons
                     iconsw={icon1}
                     />
