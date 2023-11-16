@@ -18,7 +18,7 @@ export default function Navbar() {
         {/* Left Section - Logo */}
         <div className="left grow-2 items-center justify-start">
           {/* Wrap the anchor tag with Link */}
-          <Link href="/" className="logo text-2xl font-bold w-auto text-yellow-500">
+          <Link href="/" className="logo text-2xl font-bold w-auto text-yellow-400">
        
           <Image
                 src="/assets/lubie-logo.png"
