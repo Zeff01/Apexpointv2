@@ -1,12 +1,17 @@
 import React from 'react'
 import Herosec from './section/Herosec'
-export default function page() {
+import Navbar from './section/Navbar'
+import Contact from './section/Contact'
+import Products from './section/products'
+
+export default function Page() {
   return (
     <div className="border-2 border-black flex-col text-black bg-white w-full h-screen">
-        <div className=""><Herosec/></div>
-
+        <div className="">
+          <Navbar/>
+          <Herosec/>
+          </div>
         </div>
 
-      
   )
 }
