@@ -8,7 +8,7 @@ const Products = () => {
             Hello products
           </h1>
           <p className="font-lubie-text text-lubie-dark-blue text-center py-3 ">
-          
+            {" "}
             Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor
             sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
             dolor sitametamet
