@@ -16,7 +16,6 @@ const config: Config = {
       // },
       colors: {
         lubie: {
-          'dark-blue':"#0A1950",
           'white-color': "#FFFFFF",
           'light-blue': "#B6CBE0",
           'navy-blue': "#1C3079",
