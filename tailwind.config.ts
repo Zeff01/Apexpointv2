@@ -2,6 +2,9 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c88b736 (initialized tailwind config and default font for apexpoint)
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -35,6 +38,7 @@ const config: Config = {
 	},
 
 	plugins: [],
+<<<<<<< HEAD
 =======
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -65,5 +69,7 @@ const config: Config = {
 
   plugins: [],
 >>>>>>> cd9dcbf (AP-19)
+=======
+>>>>>>> c88b736 (initialized tailwind config and default font for apexpoint)
 };
 export default config;
