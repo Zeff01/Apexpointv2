@@ -1,6 +1,7 @@
-
+'use client'
 import Cards from '../components/cards';
 import Storelogo from '../components/storelogo/storelogo';
+import Cardslide from '../components/cardslide';
 
 function Testimonials() {
   
@@ -11,8 +12,8 @@ function Testimonials() {
           <div className="left flex flex-col">
             <p className="text-sm text pt-2 font-medium">CUSTOMERS REVIEW</p>
             <div>
-              <h1 className="text-3xl font-extrabold gap-4 flex ">
-                What Our Customers Say About <br />Our Products
+              <h1 className="text-2xl font-extrabold gap-4 flex md:text-3xl md:w-[70%]">
+                What Our Customers Say About Our Products
               </h1>
             </div>
           </div>
@@ -28,20 +29,28 @@ function Testimonials() {
       </div>
 
       {/* Common container for h1 and Carousel */}
-      <div className="container h-[60vh] mx-auto flex justify-center items-center md:h-[70vh]">
+      <div className="container h-[60vh] mx-auto my-auto flex justify-center items-center md:h-[70vh]">
         <div className="card overflow-hidden">
-          <div className="wrapper flex justify-around items-center">
+          <div className="wrapper flex justify-around pt-5 items-center">
           
-                <div className="left px-5 flex-none md:flex">
-                <Cards />
+               <div className="flex md:hidden px-5 flex-none w-full z-50">
+                  <Cardslide />
                 </div>
-                <div className="right p-10 flex-none md:flex hidden">
-                <Cards />
+
+                {/* Single Card is shown on smaller screens */}
+                <div className="hidden md:flex px-5 hidden-none w-full z-50 mb-10">
+                  <div className='px-10'>
+                  <Cards/>
+                  </div>
+                  <div className='px-10'>
+                  <Cards/>
+                  </div>
+                  <div className='px-10'>
+                  <Cards/>
+                  </div>
+                 
                 </div>
-                <div className="middle p-10 flex-none hidden md:flex ">
-                <Cards />
-                </div>
-  
+                
           </div>
           <div className="border-gray-200 w-[100%] border-b h-full"></div>
 
