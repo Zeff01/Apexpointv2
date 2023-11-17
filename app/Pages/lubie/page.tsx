@@ -1,8 +1,8 @@
 import React from 'react'
 import Herosec from './section/Herosec'
 import Navbar from './section/Navbar'
-
 import Products from './section/products'
+import Testimonials from './section/Testimonials'
 
 export default function Page() {
   return (
@@ -10,6 +10,8 @@ export default function Page() {
         <div className="">
           <Navbar/>
           <Herosec/>
+          <Products/>
+          <Testimonials/>
           </div>
         </div>
 
