@@ -6,8 +6,8 @@ import Cardslide from '../components/cardslide';
 function Testimonials() {
   
   return (
-    <div className="testimonials h-[50vh] w-full bg-lubie-light-blue md:h-[60vh]">
-      <div className="container mx-auto">
+    <div className="testimonials h-[50vh] w-full bg-lubie-sky-blue md:h-[60vh]">
+      <div className="container mx-auto text-lubie-dark-blue">
         <div className="wrapper flex items-center text-lubie-navy-blue pt-10 justify-center text-center flex-col mx-auto md:justify-around md:flex-row md:item-start md:text-left md:pt-28">
           <div className="left flex flex-col">
             <p className="text-sm text pt-2 font-medium">CUSTOMERS REVIEW</p>
@@ -33,26 +33,26 @@ function Testimonials() {
         <div className="card overflow-hidden">
           <div className="wrapper flex justify-around pt-5 items-center">
           
-               <div className="flex md:hidden px-5 flex-none w-full z-50">
+               <div className="flex md:hidden pl-7 flex-none w-full z-50">
                   <Cardslide />
                 </div>
 
                 {/* Single Card is shown on smaller screens */}
-                <div className="hidden md:flex px-5 hidden-none w-full z-50 mb-10">
-                  <div className='px-10'>
+                <div className="hidden md:flex px-5 mt-28 hidden-none w-full z-50 mb-10">
+                  <div className='pr-10'>
                   <Cards/>
                   </div>
                   <div className='px-10'>
                   <Cards/>
                   </div>
-                  <div className='px-10'>
+                  <div className='pl-10'>
                   <Cards/>
                   </div>
                  
                 </div>
                 
           </div>
-          <div className="border-gray-200 w-[100%] border-b h-full"></div>
+          <div className="border-gray-300 w-[100%] border-b h-full"></div>
 
           <div className="storelogo h-[10vh] mb-20 hidden md:flex justify-center">
             <div className="wrapper">

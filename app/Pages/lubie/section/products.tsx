@@ -1,7 +1,7 @@
 // import "../styles/products.css";
 const Products = () => {
   return (
-    <div className="bg-lubie-gray-white h-[100vh] w-full" >Hey</div>
+    <div className="bg-lubie-gray-white h-[100vh] w-full" ></div>
 //     <section className=" bg-lubie-gray-white h-100vh">
 //       <div className="container px-6 py-10 mx-auto  ">
 //         <div className="text-center">
