@@ -5,7 +5,7 @@ export default function FooterSection() {
   return (
     <div className='bg-lubie-navy-blue mx-auto pb-5 pt-20 '>
             {/* Text Columns*/}
-            <div className=' h-full w-full max-w-screen-xl text-white grid  gap-y-10 grid-cols-2 p-5 md:p-0 md:grid-cols-4 items-center  md:mx-auto md:px-36   '>
+            <div className=' h-full w-full max-w-screen-xl text-white md:grid hidden  gap-y-10 grid-cols-2 p-5 md:p-0 md:grid-cols-4  md:mx-auto md:px-36   '>
                 {/* 1st Column */}
                     <div className='h-full flex flex-col gap-y-3 justify-start  '>
                         <p className='text-base'>Contact Us</p>
@@ -14,7 +14,7 @@ export default function FooterSection() {
                             src={phone}
                             alt='herlubie'
                             className=' object-contain '
-                            
+
                         />
                             <p className='text-sm text-lubie-light-blue flex items-center'>+639-xxxxxxxxx</p>
                         </div>
@@ -23,16 +23,16 @@ export default function FooterSection() {
                             src={email}
                             alt='herlubie'
                             className=' object-contain '
-                            
+
                         />
                             <p className='text-sm text-lubie-light-blue flex items-center'>+639-xxxxxxxxx</p>
                         </div>
-                        
+
                     </div>
                 {/* 2nd Column */}
                     <div className=" flex flex-col gap-y-3 justify-start">
                         <p className='text-base'>Information</p>
-                        
+
                         <div className='flex flex-col  gap-y-3 '>
                         <a href='#' className='text-sm text-lubie-light-blue'>
                         About Us
@@ -47,43 +47,43 @@ export default function FooterSection() {
                         Brands
                         </a>
                         </div>
-                        
+
                     </div>
                 {/* 3rd Column */}
                   <div className='h-full flex flex-col gap-y-3 justify-start  '>
                     <p className='text-base'>Our Shops</p>
                     <div className='flex gap-x-2'>
-                        
+
                     <Image
                         src={shoppingbag}
                         alt='herlubie'
                         className=' object-contain '
-                        
+
                     />
                     <a href='#' className='text-sm text-lubie-light-blue'>
                     <p className='text-sm text-lubie-light-blue flex items-center'>Shopee</p>
                     </a>
-                      
+
                     </div>
                     <div className='flex gap-x-2'>
-                        
+
                     <Image
                         src={lazada}
                         alt='herlubie'
                         className=' object-contain '
-                        
+
                     />
                     <a href='#' className='text-sm text-lubie-light-blue'>
                     <p className='text-sm text-lubie-light-blue flex items-center'>Lazada</p>
                     </a>
-                      
+
                     </div>
-                    
+
                 </div>
                 {/* 4th Column */}
                 <div className=" flex flex-col gap-y-3 justify-start">
                         <p className='text-base'>Others</p>
-                        
+
                         <div className='flex flex-col  gap-y-3 '>
                         <a href='#' className='text-sm text-lubie-light-blue'>
                         Supports
@@ -98,10 +98,10 @@ export default function FooterSection() {
                         Privacy Policy
                         </a>
                         </div>
-                        
+
                     </div>
 
-            
+
             </div>
             {/* Socials */}
             <div className='mt-12 flex justify-center items-center gap-x-7'>
@@ -110,7 +110,7 @@ export default function FooterSection() {
                                 src={tiktok}
                                 alt='herlubie'
                                 className=' object-contain '
-                                
+
                     />
                 </a>
                 <a href='#'>
@@ -118,7 +118,7 @@ export default function FooterSection() {
                                 src={instagram}
                                 alt='herlubie'
                                 className=' object-contain '
-                                
+
                     />
                 </a>
                 <a href='#'>
@@ -126,7 +126,7 @@ export default function FooterSection() {
                                 src={facebook}
                                 alt='herlubie'
                                 className=' object-contain '
-                                
+
                     />
                 </a>
                 <a href='#'>
@@ -134,7 +134,7 @@ export default function FooterSection() {
                                 src={linkedin}
                                 alt='herlubie'
                                 className=' object-contain '
-                                
+
                     />
                 </a>
                 <a href='#'>
@@ -142,10 +142,10 @@ export default function FooterSection() {
                                 src={twitter}
                                 alt='herlubie'
                                 className=' object-contain '
-                                
+
                     />
                 </a>
-              
+
 
             </div>
             {/* Apex */}
@@ -155,17 +155,17 @@ export default function FooterSection() {
                                 src={apexsmall}
                                 alt='herlubie'
                                 className=' object-contain '
-                                
+
                     />
                 </a>
                 <p className='text-lubie-light-blue text-10'>2021 © COPYRIGHT. All rights reserved.</p>
-                        
+
 
             </div>
-        
-    </div>
-        
 
-    
+    </div>
+
+
+
   )
 }

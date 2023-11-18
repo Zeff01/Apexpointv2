@@ -8,13 +8,13 @@ import FooterSection from './section/Footersec'
 // layout
 export default function Page() {
   return (
-    <div className="border-2 border-black flex-col text-black bg-white w-full h-screen">
-        <div className="">
+    <div className="flex-col bg-white w-full h-screen">
+
           <Navbar/>
           <Herosec/>
           <StoreSection/>
           <FooterSection/>
-          </div>
+
         </div>
 
   )
