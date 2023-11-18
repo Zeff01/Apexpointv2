@@ -3,6 +3,7 @@
 import "../styles/products.css";
 import { useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import Quantity from "../components/quantity";
 
 const Products = () => {
   const [rateOne, setRateOne] = useState(0);
@@ -12,13 +13,13 @@ const Products = () => {
   const [rateThree, setRateThree] = useState(0);
 
   return (
-    <section className=" bg-lubie-white-color h-[120vh] mt-[50vh]">
+    <section className="  max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify between md:h-[120vh] h-[200vh] md:mt-[50vh] mt-[100vh] ">
       <div className="container px-6 py-10 mx-auto  ">
         <div className="text-center">
-          <h1 className=" text-3xl font-lubie-header text-lubie-dark-blue font-semibold lg:text-4xl ">
-            Hello products
+          <h1 className=" md:text-5xl text-4xl font-lubie-header text-lubie-dark-blue font-semibold lg:text-4xl drop-shadow-md ">
+            Our Products
           </h1>
-          <p className="font-lubie-text text-lubie-dark-blue text-center py-3  ">
+          <p className="text-sm font-lubie-text text-lubie-dark-blue text-center py-8 ">
             Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor
             sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
             dolor sitametamet
@@ -26,19 +27,19 @@ const Products = () => {
         </div>
 
         {/* Items Sections */}
-        <div className="flex text-lubie-dark-blue justify-center mt-16">
-          <div className="mr-32">
-            <div className=" container p-10 flex flex-row mr-5 bg-lubie-gray-white basis-1/4 justify-center border-r-5 drop-shadow-lg">
+        <div className="md:flex-row flex-col flex justify-center md:space-x-10 ">
+          <div className=" mx-auto ">
+            <div className=" container flex flex-row md:p-10 px-21  md:mr-5 bg-lubie-gray-white md:basis-1/4 justify-center border-r-5 drop-shadow-lg">
               <img
-                className="drop-shadow-2xl"
+                className="drop-shadow-2xl  md:h-[345px] md:w-[150px] w-[110px] h-[200px]"
                 src="assets/lubie-10ml.png"
                 alt="lubie-10ml sachet"
               />
             </div>
-            <div className=" flex flex-row  mt-5 container p-5 bg-lubie-gray-white">
+            <div className=" flex flex-row mt-5 container  bg-lubie-gray-white mb-10 text-center p-5">
               <div>
-                <p className="text-md font-bold">10ml Lubie</p>
-                <p className="text-sm">Qty: 10ml</p>
+                <p className="text-lg font-bold">10ml</p>
+                <Quantity />
 
                 <div className="flex flex-row">
                   {Array(5)
@@ -58,80 +59,79 @@ const Products = () => {
                     )}
                 </div>
               </div>
-             
-                <p className="text-2xl font-bold ml-20">₱ 32</p>
-              
+
+              <p className="text-2xl font-bold ml-16  ">₱32</p>
             </div>
           </div>
 
-          <div className="mr-32">
-            <div className=" container p-10 flex mr-5 bg-lubie-gray-white basis-1/4 justify-center  drop-shadow-lg">
+          <div className="md:mr-32 mx-auto">
+            <div className=" container flex flex-row md:p-10  md:mr-5 bg-lubie-gray-white md:basis-1/4 justify-center border-r-5 drop-shadow-lg">
               <img
-                className="drop-shadow-2xl "
+                className="drop-shadow-2xl md:h-[345px] md:w-[150px] w-[100px] h-[250px] "
                 src="assets/lubie-100ml.png"
                 alt="lubie-10ml sachet"
               />
             </div>
 
-            <div className=" flex flex-row mt-5 container p-5 bg-lubie-gray-white">
+            <div className=" flex flex-row mt-5 container  bg-lubie-gray-white mb-10 text-center p-5">
               <div>
-              <p className="text-md font-bold">100ml Lubie</p>
-              <p className="text-sm">Qty: 100ml </p>
-              <div className="flex flex-row">
-                {Array(5)
-                  .fill()
-                  .map((_, index) =>
-                    rateTwo >= index + 1 ? (
-                      <AiFillStar
-                        style={{ color: "#7FF0C3" }}
-                        onClick={() => setRateTwo(index + 1)}
-                      /> // When click to a star it color fills
-                    ) : (
-                      <AiOutlineStar
-                        style={{ color: '"#1C3079' }}
-                        onClick={() => setRateTwo(index + 1)}
-                      />
-                    )
-                  )}
+                <p className="text-md font-bold">100ml </p>
+                <Quantity />
+                <div className="flex flex-row">
+                  {Array(5)
+                    .fill()
+                    .map((_, index) =>
+                      rateTwo >= index + 1 ? (
+                        <AiFillStar
+                          style={{ color: "#7FF0C3" }}
+                          onClick={() => setRateTwo(index + 1)}
+                        /> // When click to a star it color fills
+                      ) : (
+                        <AiOutlineStar
+                          style={{ color: '"#1C3079' }}
+                          onClick={() => setRateTwo(index + 1)}
+                        />
+                      )
+                    )}
+                </div>
               </div>
-              </div>
-              <p className="text-2xl font-bold ml-20">₱ 420</p>
+              <p className="text-2xl font-bold ml-20">₱420</p>
             </div>
           </div>
 
-          <div className="">
-            <div className=" container p-10 flex mr-5 bg-lubie-gray-white basis-1/4 justify-center drop-shadow-lg">
+          <div className=" mx-auto ">
+            <div className=" container p-10 flex mr-5 bg-lubie-gray-white basis-1/4 justify-center  drop-shadow-lg">
               <img
-                className="drop-shadow-2xl"
+                className="drop-shadow-2xl md:h-[345px] md:w-[150px] w-[100px] h-[250px]"
                 src="assets/lubie-35ml.png"
                 alt="lubie-10ml sachet"
               />
             </div>
-            <div className=" flex flex-row mt-5 container p-5 bg-lubie-gray-white">
-              <div>
-              <p className="text-md font-bold">35ml Lubie</p>
-              <p className="text-sm">Qty: 35ml</p>
+            <div className=" flex flex-row mt-5 container  bg-lubie-gray-white mb-10 text-center p-5">
+              <div className="    ">
+                <p className="text-[18px] font-bold ">35ml </p>
+                <Quantity />
 
-              <div className="flex flex-row">
-                {Array(5)
-                  .fill()
-                  .map((_, index) =>
-                    rateThree >= index + 1 ? (
-                      <AiFillStar
-                        style={{ color: "#7FF0C3" }}
-                        onClick={() => setRateThree(index + 1)}
-                      /> // When click to a star it color fills
-                    ) : (
-                      <AiOutlineStar
-                        style={{ color: '"#1C3079' }}
-                        onClick={() => setRateThree(index + 1)}
-                      />
-                    )
-                  )}
-              </div>
+                <div className="flex flex-row">
+                  {Array(5)
+                    .fill()
+                    .map((_, index) =>
+                      rateThree >= index + 1 ? (
+                        <AiFillStar
+                          style={{ color: "#7FF0C3" }}
+                          onClick={() => setRateThree(index + 1)}
+                        /> // When click to a star it color fills
+                      ) : (
+                        <AiOutlineStar
+                          style={{ color: '"#1C3079' }}
+                          onClick={() => setRateThree(index + 1)}
+                        />
+                      )
+                    )}
+                </div>
               </div>
 
-              <p className="text-2xl font-bold ml-20">₱ 132</p>
+              <p className="text-2xl font-bold ml-20   ">₱132</p>
             </div>
           </div>
         </div>
