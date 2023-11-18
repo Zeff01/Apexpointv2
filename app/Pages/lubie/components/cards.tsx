@@ -1,10 +1,10 @@
 import React from 'react'
 import Stars from './stars'
-
-
+import Image from 'next/image'
+import { icon1 } from '@/public/assets/lubie'
 function Cards() {
   return (
-    <div className='flex flex-col justify-center w-[360px] h-[390px] border-[1px] p-4  shadow-xl bg-white'>
+    <div className='flex flex-col justify-center w-[360px] h-[390px] border-[1px] p-4 rounded-md shadow-lg'>
 
         <div className="w-full flex justify-between">
             <div className="">

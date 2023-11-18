@@ -1,10 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c88b736 (initialized tailwind config and default font for apexpoint)
+
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -71,5 +68,38 @@ const config: Config = {
 >>>>>>> cd9dcbf (AP-19)
 =======
 >>>>>>> c88b736 (initialized tailwind config and default font for apexpoint)
+=======
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      // screens: {
+      //   'sm': {'max': '640px'},    // Mobile screens
+      //   'md': {'max': '767px'},    // Tablet screens
+      //   'lg': {'max': '1023px'},   // Small desktop screens
+      //   'xl': {'max': '1279px'},   // Large desktop screens
+      // },
+      colors: {
+        lubie: {
+          'white-color': "#FFFFFF",
+          'light-blue': "#B6CBE0",
+          'navy-blue': "#1C3079",
+          'gray-white': '#F0F5F3',
+          'green-light': "#7FF0C3",
+        },
+        apexpoint: {},
+        chlorelief: {},
+      },
+    },
+  },
+
+  
+
+  
+  plugins: [],
+>>>>>>> 84de1f1 (rebase)
 };
 export default config;
