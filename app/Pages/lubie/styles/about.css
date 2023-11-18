@@ -1,0 +1,15 @@
+.text-balance {
+  text-wrap: balance;
+}
+.img-md{
+  width:  510px;
+  height: 510px;
+  box-shadow: inset;
+}
+
+.img-sm{
+  width:  175px;
+  height: 175px;
+  box-shadow: inset;
+}
+
