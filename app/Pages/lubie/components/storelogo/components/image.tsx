@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-function image() {
+function Imagelogo() {
     const grayscaleStyle = {
         filter: 'grayscale(100%)',
       };
@@ -61,4 +61,4 @@ function image() {
   )
 }
 
-export default image
+export default Imagelogo
