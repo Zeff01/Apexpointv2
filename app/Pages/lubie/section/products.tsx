@@ -74,7 +74,7 @@ const Products = () => {
 
             <div className=" flex flex-row mt-5 container rounded-lg  bg-lubie-gray-white mb-10 text-center p-5">
               <div>
-                <p className="text-md font-bold">100ml </p>
+                <p className="text-lg font-bold">100ml </p>
                 <Quantity />
                 <div className="flex flex-row">
                   {Array(5)
@@ -106,9 +106,9 @@ const Products = () => {
                 alt="lubie-10ml sachet"
               />
             </div>
-            <div className=" flex flex-row mt-5 container rounded-lg  bg-lubie-gray-white mb-10 text-center p-5">
+            <div className=" flex flex-row mt-5 container  bg-lubie-gray-white mb-10 text-center p-5">
               <div className="    ">
-                <p className="text-[18px] font-bold ">35ml </p>
+                <p className="text-lg font-bold ">35ml </p>
                 <Quantity />
 
                 <div className="flex flex-row">
