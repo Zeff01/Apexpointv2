@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <div className=" bg-opacity-40 bg-lubie-light-blue">
+    <div className=" mt-36 bg-opacity-40 bg-lubie-light-blue">
     {/* Shipping Block */}
       <div className="pt-20 pb-28 mx-auto grid grid-cols-2 md:flex md:flex-row md:justify-center gap-x-5 px-1 md:px-0 gap-y-10 ">
         {/* ShoppingBag */}
