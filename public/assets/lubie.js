@@ -23,6 +23,13 @@ import lazada_store from "../assets/lazada logo.svg";
 import shopee_store from "../assets/shopee and rose logo.svg";
 import snr from "../assets/snr_logo 1.svg";
 import watsons from "../assets/watson_logo.svg";
+import return1 from "../assets/return.svg";
+import truck from "../assets/truck.svg";
+import card from "../assets/card.svg";
+import shippingbag from "../assets/shippingbag.svg";
+import AboutHero1 from "../assets/About-Hero1.png";
+import AboutHero2 from "../assets/About-Hero2.png";
+import AboutHero3 from "../assets/About-Hero3.png";
 
 export {
   Lubiehero,
@@ -50,4 +57,11 @@ export {
   shopee_store,
   snr,
   watsons,
+  return1,
+  truck,
+  card,
+  shippingbag,
+  AboutHero1,
+  AboutHero2,
+  AboutHero3,
 };
