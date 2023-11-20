@@ -16,8 +16,8 @@ export default function Page() {
           <Herosec/>
           <Products />
           <AboutSection/>
-          <StoreSection/>
           <Testimonials/>
+          <StoreSection/>
           <FooterSection/>
 
         </div>
