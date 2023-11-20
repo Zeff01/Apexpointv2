@@ -65,7 +65,7 @@ function Herosec() {
             <div className="w-1/2 h-full flex justify-center ">
                 <div className="flex flex-col md:w-1/2 w-full items-center space-y-6 text-center ">
                     <p>Nature & Health</p>
-                    <p className='md:text-2xl text-xl font-extrabold'>The first multi-purpose <br/> FDA registered Lube in <br/> the Philippines</p>
+                    <p className='md:text-2xl text-xl font-extrabold w-1/2'>Water-based moisturizer</p>
                     <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sitametamet</p>
                     <Button/>
                 </div>
