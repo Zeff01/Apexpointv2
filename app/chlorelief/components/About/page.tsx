@@ -6,7 +6,7 @@ const About = () => {
     <div className="px-10 py-10" id="about">
       <div className="py-5 md:py-10  flex flex-col md:flex-row justify-around  sm:flex-col ">
         <div className="mb-5 md:mb-0 md:w-1/3 w-full text-chlorelief-secondary-gray md:text-start text-start">
-          <h2 className=" text-chlorelief-secondary-green  text-5xl md:mt-5 font-bold">
+          <h2 className=" text-chlorelief-secondary-green text-green-700 text-5xl md:mt-5 font-bold">
             ABOUT THE BRAND
           </h2>
           <div className="">
@@ -30,7 +30,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="py-5 md:py-10  bg-chlorelief-primary-gray rounded">
+      <div className="py-5 md:py-10  bg-chlorelief-primary-gray bg-gray-300 rounded">
         <div className="flex flex-col md:flex-row justify-around  sm:flex-col   items-center">
           <div>
             <h2 className="text-2xl text-chlorelief-primary-green font-bold mb-5">
