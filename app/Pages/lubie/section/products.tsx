@@ -1,74 +1,141 @@
-// import "../styles/products.css";
+"use client"; // This is a client component 👈🏽
+
+import { useState } from "react";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import Quantity from "../components/quantity";
+
 const Products = () => {
+  const [rateOne, setRateOne] = useState(0);
+
+  const [rateTwo, setRateTwo] = useState(0);
+
+  const [rateThree, setRateThree] = useState(0);
+
   return (
-    <div className="bg-lubie-gray-white h-[100vh] w-full" ></div>
-//     <section className=" bg-lubie-gray-white h-100vh">
-//       <div className="container px-6 py-10 mx-auto  ">
-//         <div className="text-center">
-//           <h1 className=" text-3xl font-lubie-header text-lubie-dark-blue font-semibold lg:text-4xl ">
-//             Hello products
-//           </h1>
-//           <p className="font-lubie-text text-lubie-dark-blue text-center py-3 ">
-//             {" "}
-//             Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor
-//             sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
-//             dolor sitametamet
-//           </p>
-//         </div>
-//         <div className="flex flex-row  text-lubie-dark-blue justify-center ">
-//           <div>
-//             <div className="flex mr-5 bg-lubie-gray-white basis-1/4 justify-center border-r-5 drop-shadow-lg">
-//               <img
-//                 className="drop-shadow-2xl"
-//                 src="assets/lubie-10ml.png"
-//                 alt="lubie-10ml sachet"
-//               />
-//             </div>
-//             <div className="mt-5">
-//               <p>
-//               10ml Lubie
-//               </p>
-//               <p>
-//               QUANTITY : 10 ML
-//               </p>
-//               <div className="flex items-center mt-2">
-//     <svg className="w-4 h-4 text-lubie-green-light drop-shadow-md ms-1 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-//         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-//     </svg>
-//     <svg className="w-4 h-4 text-lubie-green-light drop-shadow-mdms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-//         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-//     </svg>
-//     <svg className="w-4 h-4 text-lubie-green-light drop-shadow-md ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-//         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-//     </svg>
-//     <svg className="w-4 h-4 text-lubie-green-light drop-shadow-md ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-//         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-//     </svg>
-//     <svg className="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-//         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-//     </svg>
-// </div>
-//             </div>
-//           </div>
+    <section className="  max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify between md:h-[120vh] h-[200vh] md:mt-[30vh] mt-[-30vh] ">
+      <div className="container px-6 py-10 mx-auto  ">
+        <div className="text-center">
+          <h1 className=" md:text-5xl text-4xl font-lubie-header text-lubie-dark-blue font-semibold lg:text-4xl drop-shadow-md ">
+            Our Products
+          </h1>
+          <p className="text-sm font-lubie-text text-lubie-dark-blue text-center py-8 ">
+            Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor
+            sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
+            dolor sitametamet
+          </p>
+        </div>
 
-//           <div className="flex mr-5 bg-lubie-gray-white basis-1/4 justify-center  drop-shadow-lg">
-//             <img
-//               className="drop-shadow-2xl "
-//               src="assets/lubie-100ml.png"
-//               alt="lubie-10ml sachet"
-//             />
-//           </div>
-//           <div className="flex mr-5 bg-lubie-gray-white basis-1/4 justify-center drop-shadow-lg">
-//             <img
-//               className="drop-shadow-2xl"
-//               src="assets/lubie-35ml.png"
-//               alt="lubie-10ml sachet"
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-  )
-}
+        {/* Items Sections */}
+        <div className="md:flex-row flex-col flex justify-center md:space-x-10 ">
+          <div className=" mx-auto ">
+            <div className=" container rounded-lg flex flex-row md:p-10 px-21  md:mr-5 bg-lubie-gray-white md:basis-1/4 justify-center border-r-5 drop-shadow-lg">
+              <img
+                className="drop-shadow-2xl  md:h-[345px] md:w-[150px] w-[110px] h-[200px]"
+                src="assets/lubie-10ml.png"
+                alt="lubie-10ml sachet"
+              />
+            </div>
+            <div className=" flex flex-row mt-5 container rounded-lg   bg-lubie-gray-white mb-10 text-center p-5">
+              <div>
+                <p className="text-lg font-bold">10ml</p>
+                <Quantity />
 
+                <div className="flex flex-row">
+                  {Array(5)
+                    .fill()
+                    .map((_, index) =>
+                      rateOne >= index + 1 ? (
+                        <AiFillStar
+                          style={{ color: "#7FF0C3" }}
+                          onClick={() => setRateOne(index + 1)}
+                        /> // When click to a star it color fills
+                      ) : (
+                        <AiOutlineStar
+                          style={{ color: '"#1C3079' }}
+                          onClick={() => setRateOne(index + 1)}
+                        />
+                      )
+                    )}
+                </div>
+              </div>
+
+              <p className="text-2xl font-bold ml-16  ">₱32</p>
+            </div>
+          </div>
+
+          <div className="md:mr-32 mx-auto">
+            <div className=" container rounded-lg flex flex-row md:p-10  md:mr-5 bg-lubie-gray-white md:basis-1/4 justify-center border-r-5 drop-shadow-lg">
+              <img
+                className="drop-shadow-2xl md:h-[345px] md:w-[150px] w-[100px] h-[250px] "
+                src="assets/lubie-100ml.png"
+                alt="lubie-10ml sachet"
+              />
+            </div>
+
+            <div className=" flex flex-row mt-5 container rounded-lg  bg-lubie-gray-white mb-10 text-center p-5">
+              <div>
+                <p className="text-lg font-bold">100ml </p>
+                <Quantity />
+                <div className="flex flex-row">
+                  {Array(5)
+                    .fill()
+                    .map((_, index) =>
+                      rateTwo >= index + 1 ? (
+                        <AiFillStar
+                          style={{ color: "#7FF0C3" }}
+                          onClick={() => setRateTwo(index + 1)}
+                        /> // When click to a star it color fills
+                      ) : (
+                        <AiOutlineStar
+                          style={{ color: '"#1C3079' }}
+                          onClick={() => setRateTwo(index + 1)}
+                        />
+                      )
+                    )}
+                </div>
+              </div>
+              <p className="text-2xl font-bold ml-20">₱420</p>
+            </div>
+          </div>
+
+          <div className=" mx-auto ">
+            <div className=" container rounded-lg  p-10 flex mr-5 bg-lubie-gray-white basis-1/4 justify-center  drop-shadow-lg">
+              <img
+                className="drop-shadow-2xl md:h-[345px] md:w-[150px] w-[100px] h-[250px]"
+                src="assets/lubie-35ml.png"
+                alt="lubie-10ml sachet"
+              />
+            </div>
+            <div className=" flex flex-row mt-5 container  bg-lubie-gray-white mb-10 text-center p-5">
+              <div className="    ">
+                <p className="text-lg font-bold ">35ml </p>
+                <Quantity />
+
+                <div className="flex flex-row">
+                  {Array(5)
+                    .fill()
+                    .map((_, index) =>
+                      rateThree >= index + 1 ? (
+                        <AiFillStar
+                          style={{ color: "#7FF0C3" }}
+                          onClick={() => setRateThree(index + 1)}
+                        /> // When click to a star it color fills
+                      ) : (
+                        <AiOutlineStar
+                          style={{ color: '"#1C3079' }}
+                          onClick={() => setRateThree(index + 1)}
+                        />
+                      )
+                    )}
+                </div>
+              </div>
+
+              <p className="text-2xl font-bold ml-20   ">₱132</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 export default Products;
