@@ -1,5 +1,16 @@
-// import "../styles/products.css";
+"use client"; // This is a client component 👈🏽
+
+import { useState } from "react";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import Quantity from "../components/quantity";
+
 const Products = () => {
+  const [rateOne, setRateOne] = useState(0);
+
+  const [rateTwo, setRateTwo] = useState(0);
+
+  const [rateThree, setRateThree] = useState(0);
+
   return (
     <section className="  max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify between md:h-[120vh] h-[200vh] md:mt-[30vh] mt-[-30vh] ">
       <div className="container px-6 py-10 mx-auto  ">
@@ -63,7 +74,7 @@ const Products = () => {
 
             <div className=" flex flex-row mt-5 container rounded-lg  bg-lubie-gray-white mb-10 text-center p-5">
               <div>
-                <p className="text-md font-bold">100ml </p>
+                <p className="text-lg font-bold">100ml </p>
                 <Quantity />
                 <div className="flex flex-row">
                   {Array(5)
@@ -95,9 +106,9 @@ const Products = () => {
                 alt="lubie-10ml sachet"
               />
             </div>
-            <div className=" flex flex-row mt-5 container rounded-lg  bg-lubie-gray-white mb-10 text-center p-5">
+            <div className=" flex flex-row mt-5 container  bg-lubie-gray-white mb-10 text-center p-5">
               <div className="    ">
-                <p className="text-[18px] font-bold ">35ml </p>
+                <p className="text-lg font-bold ">35ml </p>
                 <Quantity />
 
                 <div className="flex flex-row">

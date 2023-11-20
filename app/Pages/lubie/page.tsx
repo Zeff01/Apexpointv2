@@ -14,8 +14,7 @@ export default function Page() {
 
           <Navbar/>
           <Herosec/>
-          <Products/>
-          <AboutSection/>
+          <Products />
           <StoreSection/>
           <Testimonials/>
           <FooterSection/>
