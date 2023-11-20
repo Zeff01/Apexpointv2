@@ -21,7 +21,7 @@ export default function Cardslide() {
       disableOnInteraction: false // Continue autoplay after interaction
     }}
   >
-    <SwiperSlide><Cards /></SwiperSlide>
+    <SwiperSlide className='flex justify-center items-center'><Cards /></SwiperSlide>
     <SwiperSlide><Cards /></SwiperSlide>
     <SwiperSlide><Cards /></SwiperSlide>
     {/* Add more SwiperSlides if needed */}
