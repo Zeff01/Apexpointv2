@@ -11,7 +11,7 @@ const Testimonials = () => {
         Customer Reviews
       </h2>
       <div className="">
-        <div className="flex flex-col md:flex-row justify-around items-center py-10">
+        <div className="flex flex-wrap flex-col md:flex-row justify-around items-center px-10 py-10">
           <div
             className={`w-80 md:w-96   bg-green-500 p-4 rounded mb-4 mx-4 text-xs md:text-base`}
           >
