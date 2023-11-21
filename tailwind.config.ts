@@ -26,7 +26,11 @@ const config: Config = {
         apexpoint: {},
         chlorelief: {
           chateaugreen: '#3db750',
-          springwood: '#f2f3f2'
+          springwood: '#f2f3f2',
+		  'soft-gray': '#a8b8d0',
+          'soft-green': '#4EE35A',
+          'dark-green': '#315634',
+          'soft-slate': '#708090',
         },
       },
     },
