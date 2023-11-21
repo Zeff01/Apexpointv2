@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { Poppins } from 'next/font/google';
+import Contact from './section/contact/Contact';
 
 const poppins = Poppins({
 	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -18,7 +19,7 @@ const page: FunctionComponent<pageProps> = ({}) => {
 			{/* Home */}
 			{/* Products */}
 			{/* Sellers Banner */}
-			{/* Contact */}
+			<Contact />
 			{/* Footer */}
 		</main>
 	);
