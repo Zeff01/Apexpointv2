@@ -37,7 +37,7 @@ export default function Navbar() {
       ease: [0.13, 0, 0.4, 0],
     },
     exit: {
-      scaleX: 0,
+      scaleX: 1,
 
       transition: {
         duration: [0.24, 1, 0.4, 1],
