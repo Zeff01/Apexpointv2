@@ -4,6 +4,7 @@ import chlorelief from "@/public/assets/chlorelief-logo.png";
 import chlorelief_img from "@/public/assets/chlorelief_img.svg";
 import lubie from "@/public/assets/lubie-name.png";
 import lubie_img from "@/public/assets/lubie_img.svg";
+import Link from "next/link";
 
 export const Products = () => {
   return (
@@ -31,17 +32,25 @@ export const Products = () => {
           </div>
         </div>
         <div className="order-1 lg:order-2">
-          <Image
-            src={chlorelief_img}
-            alt="chlorelief_img"
-            className="w-[320px] h-auto"
-          />
+          <Link href={`/chlorelief`}>
+            <Image
+              src={chlorelief_img}
+              alt="chlorelief_img"
+              className="w-[320px] h-auto"
+            />
+          </Link>
         </div>
       </div>
 
       <div className="grid gap-8 place-items-center text-left lg:grid-cols-2 lg:gap-20">
         <div className="">
-          <Image src={lubie_img} alt="lubie_img" className="w-[330px] h-auto" />
+          <Link href={`/lubie`}>
+            <Image
+              src={lubie_img}
+              alt="lubie_img"
+              className="w-[330px] h-auto"
+            />
+          </Link>
         </div>
         <div className="flex flex-col w-[320px] items-left leading-relaxed">
           <Image src={lubie} alt="lubie" className="w-24 mb-2 object-cover" />
