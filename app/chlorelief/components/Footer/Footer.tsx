@@ -1,6 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
+import watson from "@/public/assets/watsons.png";
+import watsons from "@/public/assets/w.png";
+import rose from "@/public/assets/rose.png";
+import rose1 from "@/public/assets/r.webp";
+import mercury from "@/public/assets/mercury.png";
+import mercury1 from "@/public/assets/m.png";
+import laz from "@/public/assets/lazada.png";
+import laz1 from "@/public/assets/l.png";
+import shop from "@/public/assets/shopee.png";
+import shop1 from "@/public/assets/s.png";
+import logo1 from "@/public/assets/chloLogo.png";
+import f from "@/public/assets/facebook.png";
+import t from "@/public/assets/twitter.png";
+import i from "@/public/assets/insta.png";
+
 const Footer = () => {
   return (
     <div
@@ -8,20 +23,20 @@ const Footer = () => {
      px-10 sm:px-5 "
     >
       <div className="text-center pt-5">
-        <span className="text-chlorelief-secondary-green font-bold text-2xl md:text-5xl">
+        <span className="text-chlorelief-secondary-green font-bold text-2xl md:text-5xl text-green-500">
           Available Stores
         </span>
       </div>
-      <div className="stores flex flex-wrap justify-around py-5 my-5 bg-white rounded ">
+      <div className="stores flex flex-wrap justify-around py-5 my-5 bg-white rounded px-10 ">
         <Image
-          src="/assets/watsons.png"
+          src={watson}
           alt="Watsons"
           width={200}
           height={80}
           className={`hidden md:block ${styles["custom-store"]}`}
         />
         <Image
-          src="/assets/w.png"
+          src={watsons}
           alt="Watsons"
           width={60}
           height={30}
@@ -29,28 +44,28 @@ const Footer = () => {
         />
 
         <Image
-          src="/assets/rose.png"
+          src={rose}
           alt="Rose"
           width={150}
           height={150}
           className={`hidden md:block ${styles["custom-store"]}`}
         />
         <Image
-          src="/assets/r.webp"
+          src={rose1}
           alt="Watsons"
           width={60}
           height={30}
           className={`block md:hidden ${styles["custom-store"]}`}
         />
         <Image
-          src="/assets/mercury.png"
+          src={mercury}
           alt="Mercury"
           width={280}
           height={80}
           className={`hidden md:block ${styles["custom-store"]}`}
         />
         <Image
-          src="/assets/m.png"
+          src={mercury1}
           alt="Watsons"
           width={60}
           height={30}
@@ -58,28 +73,28 @@ const Footer = () => {
         />
 
         <Image
-          src="/assets/lazada.png"
+          src={laz}
           alt="Lazada"
           width={200}
           height={80}
           className={`hidden md:block ${styles["custom-store"]}`}
         />
         <Image
-          src="/assets/l.png"
+          src={laz1}
           alt="Watsons"
           width={60}
           height={30}
           className={`block md:hidden ${styles["custom-store"]}`}
         />
         <Image
-          src="/assets/shopee.png"
+          src={shop}
           alt="Shopee"
           width={150}
           height={150}
           className={`hidden md:block ${styles["custom-store"]}`}
         />
         <Image
-          src="/assets/s.png"
+          src={shop1}
           alt="Watsons"
           width={60}
           height={30}
@@ -91,7 +106,7 @@ const Footer = () => {
         <div className="mb-5 md:mb-0">
           <a href="#">
             <Image
-              src="/assets/chloLogo.png"
+              src={logo1}
               alt="Logo"
               width={150}
               height={150}
@@ -99,7 +114,7 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div className="text-chlorelief-secondary-green ">
+        <div className="text-chlorelief-secondary-green text-green-500 ">
           <ul className="list-none leading-loose">
             <li className="mb-2 md:mb-0">
               <a href="#" className={`${styles["custom-links"]}`}>
@@ -121,26 +136,26 @@ const Footer = () => {
       </div>
       <hr className="my-5" />
       <div className="icons text-center py-5 md:py-10">
-        <span className="text-chlorelief-secondary-green   font-bold">
+        <span className="text-chlorelief-secondary-green text-green-500  font-bold">
           Subscribe to our Social media Accounts
         </span>
         <div className="flex justify-center mt-3 md:mt-5 gap-5">
           <Image
-            src="/assets/facebook.png"
+            src={f}
             alt="Facebook"
             width={35}
             height={35}
             className={`${styles["custom-icon"]}`}
           />
           <Image
-            src="/assets/twitter.png"
+            src={t}
             alt="Twitter"
             width={35}
             height={35}
             className={`${styles["custom-icon"]}`}
           />
           <Image
-            src="/assets/insta.png"
+            src={i}
             alt="Instagram"
             width={35}
             height={35}
