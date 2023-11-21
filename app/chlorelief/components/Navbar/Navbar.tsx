@@ -25,24 +25,27 @@ export default function Navbar() {
   }
   const menuVariant = {
     initial: {
-      scaleY: 0,
+      scaleX: 2,
+      originX: -2,
     },
     animate: {
-      scaleY: 1,
+      scaleX: 1,
+      originX: 0,
       transition: {
         duration: 0.5,
       },
       ease: [0.13, 0, 0.4, 0],
     },
     exit: {
-      scaleY: 0,
+      scaleX: 0,
+
       transition: {
         duration: [0.24, 1, 0.4, 1],
       },
     },
   };
   return (
-    <header className='bg-green-900 font-mono '>
+    <header className='bg-chlorelief-dark-green font-mono'>
       {/* Desktop view */}
       <div className='md:block py-3 hidden'>
         <div className='flex justify-around items-center'>
@@ -54,7 +57,7 @@ export default function Navbar() {
             className='hover:shadow-sm'
             priority
           />
-          <ul className='flex gap-4 font-bold text-2xl '>
+          <ul className='flex gap-4 font-bold text-2xl  '>
             {linkNav.map((nav, navKey) => (
               <li
                 className='text-chlorelief-soft-slate hover:text-chlorelief-soft-green ease-in-out duration-700'
@@ -67,8 +70,8 @@ export default function Navbar() {
         </div>
       </div>
       {/* Mobile view */}
-      <div className='flex flex-col md:hidden lg:hidden w-full h-[50px] pt-[5px]'>
-        <div className='flex flex-row justify-between'>
+      <div className='flex md:hidden lg:hidden'>
+        <div className='flex flex-row gap-[160px] justify-evenly fixed bg-chlorelief-dark-green w-full h-[50px]'>
           <Image
             src={`/assets/chlorelief-logom.png`}
             alt='chlorelief logo'
@@ -77,31 +80,33 @@ export default function Navbar() {
             className='hover:shadow-sm pl-10'
           />
           {/* Mobile menu burger design */}
-          <span onClick={openNav} className='text-white pt-[7px] pr-10'>
-            <GiHamburgerMenu size={25}/>
-          </span>
-          {/* Menu Container  */}
-          {navMenu && (
-            <motion.div
-              variants={menuVariant}
-              initial='initial'
-              animate='animate'
-              exit='exit'
-              className='w-1 h-1  bg-green-900 font-medium text-[25px] '
-            >
-              <ul className='gap-[70px] pt-[190px] font-bold text-2xl'>
-                {linkNav.map((mView, mKey) => (
-                  <li
-                    key={mKey}
-                    onClick={closeNav}
-                    className='flex flex-col items-center mb-4 text-chlorelief-soft-slate hover:text-chlorelief-soft-green ease-in-out duration-700'
-                  >
-                    {mView.link}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          )}
+          <div className='flex flex-col justify-center items-center'>
+            <span onClick={openNav} className='text-white '>
+              <GiHamburgerMenu size={25} />
+            </span>
+            {/* Menu Container  */}
+            {navMenu && (
+              <motion.div
+                variants={menuVariant}
+                initial='initial'
+                animate='animate'
+                exit='exit'
+                className='shadow-md fixed top-10 right-2 w-[100px] h-[150px] rounded-sm bg-chlorelief-soft-green font-medium text-[25px] z-[1000]'
+              >
+                <ul className='gap-[50px] font-bold text-sm pt-3'>
+                  {linkNav.map((mView, mKey) => (
+                    <li
+                      key={mKey}
+                      onClick={closeNav}
+                      className='flex flex-col items-center justify-center mb-4 text-chlorelief-soft-slate hover:text-chlorelief-soft-green ease-in-out duration-700'
+                    >
+                      {mView.link}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            )}
+          </div>
         </div>
       </div>
     </header>
