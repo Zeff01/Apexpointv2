@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
+
+//Nag coconflict iba kong file sa file ng ibang team pag nag de-structure kaya ganito manually nalang ginawa ko
 import watson from "@/public/assets/watsons.png";
 import watsons from "@/public/assets/w.png";
 import rose from "@/public/assets/rose.png";
