@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
-
+import abtImg from "@/public/assets/chloAbout.jpg";
+import serv from "@/public/assets/services-icon.png";
+import ship from "@/public/assets/shipping-icon.png";
+import ret from "@/public/assets/return-icon.png";
+import payment from "@/public/assets/payment-icon.png";
 const About = () => {
   return (
     <div className="px-10 py-10" id="about">
@@ -22,7 +26,7 @@ const About = () => {
         </div>
         <div>
           <Image
-            src="/assets/chloAbout.jpg"
+            src={abtImg}
             alt="About Image"
             width={750}
             height={350}
@@ -37,8 +41,8 @@ const About = () => {
               Services
             </h2>
             <Image
-              src="/assets/services-icon.png"
-              alt="Watsons"
+              src={serv}
+              alt="services"
               width={80}
               height={50}
               className="rounded"
@@ -49,8 +53,8 @@ const About = () => {
               Services
             </h2>
             <Image
-              src="/assets/shipping-icon.png"
-              alt="Watsons"
+              src={ship}
+              alt="shipping"
               width={80}
               height={50}
               className="rounded"
@@ -61,8 +65,8 @@ const About = () => {
               Return
             </h2>
             <Image
-              src="/assets/return-icon.png"
-              alt="Watsons"
+              src={ret}
+              alt="return"
               width={80}
               height={50}
               className="rounded"
@@ -73,8 +77,8 @@ const About = () => {
               Services
             </h2>
             <Image
-              src="/assets/payment-icon.png"
-              alt="Watsons"
+              src={payment}
+              alt="payment"
               width={80}
               height={50}
               className="rounded"
