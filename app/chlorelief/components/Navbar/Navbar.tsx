@@ -81,9 +81,9 @@ export default function Navbar() {
           />
           {/* Mobile menu burger design */}
           <div className='flex flex-col justify-center items-center'>
-            <span onClick={openNav} className='text-white '>
+            <button onClick={openNav} className='text-white '>
               <GiHamburgerMenu size={25} />
-            </span>
+            </button>
             {/* Menu Container  */}
             {navMenu && (
               <motion.div
@@ -91,14 +91,14 @@ export default function Navbar() {
                 initial='initial'
                 animate='animate'
                 exit='exit'
-                className='shadow-md fixed top-10 right-2 w-[100px] h-[150px] rounded-sm bg-chlorelief-soft-green font-medium text-[25px] z-[1000]'
+                className='shadow-md fixed top-10 right-2 w-[100px] h-[150px] rounded-lg bg-chlorelief-soft-gray font-medium text-[25px] z-[1000]'
               >
                 <ul className='gap-[50px] font-bold text-sm pt-3'>
                   {linkNav.map((mView, mKey) => (
                     <li
                       key={mKey}
                       onClick={closeNav}
-                      className='flex flex-col items-center justify-center mb-4 text-chlorelief-soft-slate hover:text-chlorelief-soft-green ease-in-out duration-700'
+                      className='flex flex-col items-center justify-center mb-4 text-chlorelief-dark-green hover:text-chlorelief-soft-green ease-in-out duration-700'
                     >
                       {mView.link}
                     </li>
