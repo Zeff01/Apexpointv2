@@ -1,31 +1,32 @@
 import Image from "next/image";
 import React from "react";
-
 import { FaStar } from "react-icons/fa";
-
+import man from "@/public/assets/man.png";
+import man1 from "@/public/assets/man-1.png";
+import woman from "@/public/assets/woman.png";
 const Testimonials = () => {
   const user = [
     {
       name: "Lorem Ipsum",
+      img: man,
+      review:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
+    },
+    {
+      name: "Lorem Ipsum",
+      img: man1,
+      review:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
+    },
+    {
+      name: "Lorem Ipsum",
       img: "/assets/man.png",
       review:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
     },
     {
       name: "Lorem Ipsum",
-      img: "/assets/man-1.png",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
-    },
-    {
-      name: "Lorem Ipsum",
-      img: "/assets/man.png",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
-    },
-    {
-      name: "Lorem Ipsum",
-      img: "/assets/woman.png",
+      img: woman,
       review:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
     },
