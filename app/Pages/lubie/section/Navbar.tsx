@@ -43,12 +43,12 @@ export default function Navbar() {
           {/* Individual navigation links */}
           {/* Hidden on small screens (md:block) */}
           <div className="itemContainer flex items-center justify-center mr-12">
-          <Link href="" className="text-sm hidden md:block hover:font-bold shadow-sm transition-color duration-300">
+          <Link href="/" className="text-sm hidden md:block hover:font-bold shadow-sm transition-color duration-300">
               Home
             </Link>
           </div>
           <div className="itemContainer flex items-center justify-center mr-12">
-          <Link href="" className="text-sm hidden md:block hover:font-bold shadow-sm transition-color duration-300">
+          <Link href="#products" className="text-sm hidden md:block hover:font-bold shadow-sm transition-color duration-300">
               Products
             </Link>
           </div>
