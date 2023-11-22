@@ -1,4 +1,4 @@
-"use client"; // This is a client component 👈🏽
+
 
 import { useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
@@ -12,13 +12,13 @@ const Products = () => {
   const [rateThree, setRateThree] = useState(0);
 
   return (
-    <section className="  max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify between md:h-[120vh] h-[200vh] md:mt-[30vh] mt-[-30vh] ">
-      <div className="container px-6 py-10 mx-auto  ">
-        <div className="text-center">
-          <h1 className=" md:text-5xl text-4xl font-lubie-header text-lubie-dark-blue font-semibold lg:text-4xl drop-shadow-md ">
+    <section className="w-full flex flex-col justify-center items-center md:h-[60vh] h-[190vh] md:mt-[35vh] mt-[0vh] font-ubuntu ">
+      <div className="  ">
+        <div className="  w-full flex flex-col items-center">
+          <h1 className=" md:text-5xl text-4xl  font-extrabold lg:text-4xl drop-shadow-md ">
             Our Products
           </h1>
-          <p className="text-sm font-lubie-text text-lubie-dark-blue text-center py-8 ">
+          <p className="text-sm  text-lubie-dark-blue text-center py-8 w-[60%]">
             Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor
             sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
             dolor sitametamet
@@ -26,9 +26,9 @@ const Products = () => {
         </div>
 
         {/* Items Sections */}
-        <div className="md:flex-row flex-col flex justify-center md:space-x-10 ">
+        <div className="md:flex-row flex-col flex justify-center">
           <div className=" mx-auto ">
-            <div className=" container rounded-lg flex flex-row md:p-10 px-21  md:mr-5 bg-lubie-gray-white md:basis-1/4 justify-center border-r-5 drop-shadow-lg">
+            <div className=" container rounded-lg flex flex-row md:p-10  bg-lubie-gray-white md:basis-1/4 justify-center border-r-5 drop-shadow-lg">
               <img
                 className="drop-shadow-2xl  md:h-[345px] md:w-[150px] w-[110px] h-[200px]"
                 src="assets/lubie-10ml.png"
@@ -62,8 +62,8 @@ const Products = () => {
               <p className="text-2xl font-bold ml-16  ">₱32</p>
             </div>
           </div>
-
-          <div className="md:mr-32 mx-auto">
+{/* card2 */}
+          <div className=" mx-auto">
             <div className=" container rounded-lg flex flex-row md:p-10  md:mr-5 bg-lubie-gray-white md:basis-1/4 justify-center border-r-5 drop-shadow-lg">
               <img
                 className="drop-shadow-2xl md:h-[345px] md:w-[150px] w-[100px] h-[250px] "
@@ -99,7 +99,7 @@ const Products = () => {
           </div>
 
           <div className=" mx-auto ">
-            <div className=" container rounded-lg  p-10 flex mr-5 bg-lubie-gray-white basis-1/4 justify-center  drop-shadow-lg">
+            <div className=" container rounded-lg  p-10 flex bg-lubie-gray-white basis-1/4 justify-center  drop-shadow-lg">
               <img
                 className="drop-shadow-2xl md:h-[345px] md:w-[150px] w-[100px] h-[250px]"
                 src="assets/lubie-35ml.png"

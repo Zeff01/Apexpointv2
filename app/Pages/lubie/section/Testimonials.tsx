@@ -50,7 +50,7 @@ function Testimonials() {
       </div>
 
       {/* Additional white space section */}
-      <div className="bg-white h-[50vh] w-full">
+      <div className="bg-red-500 md:h-[25vh] h-[35vh] w-full">
       </div>
     </div>
   );
