@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function StoreSection() {
 return (
-    <div className='mt-72 md:flex hidden flex-col  justify-center items-center'>
+    <div className=' md:flex hidden flex-col  justify-center items-center'>
         <hr className="w-11/12 h-0.5 mx-2 my-6 bg-gray-300"></hr>
         <div className='text-4xl text-lubie-light-blue'>Available Stores</div>
         <div className='px-5 md:px-0 md:flex md:flex-row grid grid-cols-2 justify-center items-center gap-x-5 gap-y-5  py-10'>

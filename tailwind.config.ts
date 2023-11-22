@@ -15,11 +15,14 @@ const config: Config = {
 			//   'lg': {'max': '1023px'},   // Small desktop screens
 			//   'xl': {'max': '1279px'},   // Large desktop screens
 			// },
+			fontFamily: {
+				ubuntu: ['Ubuntu', 'sans-serif'],
+			  },
 			colors: {
 				lubie: {
 					'white-color': '#FFFFFF',
 					'light-blue': '#B6CBE0',
-					'navy-blue': '#1C3079',
+					'navy-blue': '#091A5A',
 					'gray-white': '#F0F5F3',
 					'green-light': '#7FF0C3',
 				},
