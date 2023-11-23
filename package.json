@@ -9,13 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "framer-motion": "^10.16.5",
+=======
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.18",
+    "@mui/material": "^5.14.18",
+>>>>>>> 54814912eb2d6d154ec7671f91faa49f1b268825
     "next": "14.0.2",
     "react": "^18",
     "react-carousel": "^4.3.0",
     "react-dom": "^18",
     "react-feather": "^2.0.10",
+<<<<<<< HEAD
     "react-icons": "^4.12.0",
+=======
+    "react-material-ui-carousel": "^3.4.2",
+    "react-mui-carousel": "^1.0.1",
+>>>>>>> 54814912eb2d6d154ec7671f91faa49f1b268825
     "react-slick": "^0.29.0",
     "react-slideshow-image": "^4.3.0",
     "slick-carousel": "^1.8.1",
@@ -26,6 +38,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.12",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
