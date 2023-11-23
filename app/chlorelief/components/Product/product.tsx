@@ -42,12 +42,13 @@ export default function Product() {
             </div>
 
           </div>
-          <div className="flex p-4 pt-0 justify-between">
+          <div className="flex p-5 pt-0 justify-between">
           <button
-              className=" flex flex-grow block w-1/3 select-none rounded-lg bg-green-600 py-3 px-3 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-              type="button"
+              className=" flex-grow block w-1/3 select-none rounded-lg py-3 px-3 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button" style={{ backgroundColor:"#FF514E"}}
             >
               Quick Buy
+
               </button>
               <div className=" flex select-none rounded-lg py-3 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" >
               <button className="px-3" onClick={decrementQuantity}>-</button>
@@ -78,8 +79,8 @@ export default function Product() {
           </div>
           <div className="flex p-5 pt-0 justify-between">
             <button
-              className="flex-grow block w-1/3 select-none rounded-lg bg-green-600 py-3 px-3 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-              type="button"
+              className="flex-grow block w-1/3 select-none rounded-lg py-3 px-3 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"style={{ backgroundColor:"#FF514E"}}
             >
               Quick Buy
             </button>
@@ -113,8 +114,8 @@ export default function Product() {
           </div>
           <div className="flex p-5 pt-0 justify-between">
             <button
-              className="flex-grow block w-1/3 select-none rounded-lg bg-green-600 py-3 px-3 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-              type="button"
+              className="flex-grow block w-1/3 select-none rounded-lg py-3 px-3 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"style={{ backgroundColor:"#FF514E"}}
             >
               Quick Buy
             </button>
@@ -147,8 +148,8 @@ export default function Product() {
           </div>
           <div className="flex p-5 pt-0 justify-between">
             <button
-              className=" flex flex-grow block w-1/3 select-none rounded-lg bg-green-600 py-3 px-3 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-              type="button"
+              className=" flex-grow block w-1/3 select-none rounded-lg py-3 px-3 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"style={{ backgroundColor:"#FF514E"}}
             >
               Quick Buy
               </button>
