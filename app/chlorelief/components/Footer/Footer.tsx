@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
-
-//Nag coconflict iba kong file sa file ng ibang team pag nag de-structure kaya ganito manually nalang ginawa ko
 import watson from "@/public/assets/watsons.png";
 import watsons from "@/public/assets/w.png";
 import rose from "@/public/assets/rose.png";
@@ -17,6 +15,39 @@ import logo1 from "@/public/assets/chloLogo.png";
 import f from "@/public/assets/facebook.png";
 import t from "@/public/assets/twitter.png";
 import i from "@/public/assets/insta.png";
+
+const companies = [
+  {
+    img: watson,
+  },
+  {
+    img: watsons,
+  },
+  {
+    img: rose,
+  },
+  {
+    img: rose1,
+  },
+  {
+    img: mercury,
+  },
+  {
+    img: mercury1,
+  },
+  {
+    img: laz,
+  },
+  {
+    img: laz1,
+  },
+  {
+    img: shop,
+  },
+  {
+    img: shop1,
+  },
+];
 
 const Footer = () => {
   return (
