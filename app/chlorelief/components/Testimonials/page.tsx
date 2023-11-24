@@ -1,11 +1,16 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import man from "@/public/assets/man.png";
 import man1 from "@/public/assets/man-1.png";
 import woman from "@/public/assets/woman.png";
 const Testimonials = () => {
-  const user = [
+  interface User {
+    name: string;
+    img: StaticImageData;
+    review: string;
+  }
+  const user: User[] = [
     {
       name: "Lorem Ipsum",
       img: man,
@@ -20,7 +25,7 @@ const Testimonials = () => {
     },
     {
       name: "Lorem Ipsum",
-      img: "/assets/man.png",
+      img: man,
       review:
         " sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
     },
