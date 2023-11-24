@@ -10,25 +10,25 @@ const Testimonials = () => {
       name: "Lorem Ipsum",
       img: man,
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
+        " sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
     },
     {
       name: "Lorem Ipsum",
       img: man1,
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
+        " sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
     },
     {
       name: "Lorem Ipsum",
       img: "/assets/man.png",
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
+        " sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
     },
     {
       name: "Lorem Ipsum",
       img: woman,
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde delectus, et hic animi, nam quibusdam incidunt laborum est praesentium aut numquam sequi itaque quos consequuntur corporis, cupiditate dolorem esse! Sit, nostrum praesentium. Libero numquam voluptates sit culpa cum saepe unde error, corporis eos esse distinctio ducimus voluptas commodi dignissimos!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.  sequi itaque quos  voluptas commodi dignissimos!",
     },
   ];
 
@@ -39,7 +39,7 @@ const Testimonials = () => {
       </h2>
       <div className="flex flex-wrap md:flex-row justify-around items-center px-10 py-10">
         {user.map((d, index) => (
-          <div className="w-80 md:w-96 bg-green-500 p-4 rounded mb-4 mx-4 text-xs md:text-base ">
+          <div className="w-80 md:h-96 md:w-96 bg-green-500 p-4 rounded mb-4 mx-4 text-xs md:text-base ">
             <div className="flex justify-center">
               <div className="flex justify-center flex-col items-center">
                 <Image
@@ -50,7 +50,6 @@ const Testimonials = () => {
                   className="py-2"
                 />
                 <h2 className="text-white font-bold">{d.name}</h2>
-                {/* Replace this section with your star rating component */}
                 <div className="flex justify-center">
                   <FaStar color="gold" />
                   <FaStar color="gold" />
@@ -58,25 +57,11 @@ const Testimonials = () => {
                   <FaStar color="gold" />
                   <FaStar color="gold" />
                 </div>
-                {/* End of star rating component */}
               </div>
             </div>
-            <Image
-              src="/assets/user-quote.png"
-              alt="Watsons"
-              width={40}
-              height={20}
-              className="py-2"
-            />
-            <p className="font-bold text-white">{d.review}</p>
-            <div className="flex justify-end">
-              <Image
-                src="/assets/user-quote.png"
-                alt="Watsons"
-                width={40}
-                height={20}
-                className="py-2"
-              />
+
+            <div className="md:mt-10">
+              <p className="font-bold text-white">{d.review}</p>
             </div>
           </div>
         ))}
