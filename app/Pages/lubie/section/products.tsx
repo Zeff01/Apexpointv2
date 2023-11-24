@@ -4,10 +4,6 @@ import Quantity from "../components/quantity";
 import LubieCard from "../components/lubieCard";
 
 const Products = () => {
-  const [rateTwo, setRateTwo] = useState(0);
-
-  const [rateThree, setRateThree] = useState(0);
-
   return (
     <section className="w-full flex flex-col justify-center items-center md:h-[80vh] h-[190vh] md:mt-[35vh] mt-[0vh] font-ubuntu ">
       <div className=" ">
