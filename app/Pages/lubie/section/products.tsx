@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import Quantity from "../components/quantity";
 import LubieCard from "../components/lubieCard";
 
 const Products = () => {
