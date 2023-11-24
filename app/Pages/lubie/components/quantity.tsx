@@ -1,16 +1,23 @@
-import React from 'react';
+import React from "react";
 
 const QuantityDropdown = () => {
   const handleQuantityChange = (event) => {
     const selectedQuantity = event.target.value;
-    console.log('Selected Quantity:', selectedQuantity);
+    console.log("Selected Quantity:", selectedQuantity);
     // You can perform additional actions based on the selected quantity if needed
   };
 
   return (
-    <div>
-      <label htmlFor="quantity" className='text-sm'>Qty: </label>
-      <select id="quantity" name="quantity" className='text-sm' onChange={handleQuantityChange}>
+    <div className="flex gap-2">
+      <label htmlFor="quantity" className="text-sm">
+        Qty:{" "}
+      </label>
+      <select
+        id="quantity"
+        name="quantity"
+        className="text-sm"
+        onChange={handleQuantityChange}
+      >
         {/* You can adjust the quantity range based on your requirements */}
         <option value="1">1</option>
         <option value="2">2</option>
