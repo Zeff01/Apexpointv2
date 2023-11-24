@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import serv from "@/public/assets/services.png";
 import ship from "@/public/assets/shipping.png";
@@ -8,7 +8,12 @@ import payment from "@/public/assets/payment.png";
 import mainImg from "@/public/assets/chloAbout.jpg";
 
 const About = () => {
-  const about = [
+  interface About {
+    title: string;
+    img: StaticImageData;
+  }
+
+  const about: About[] = [
     {
       title: "payment",
       img: payment,
