@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./page.module.css";
 import watson from "@/public/assets/watsons.png";
 import watsons from "@/public/assets/w.png";
@@ -16,34 +16,40 @@ import f from "@/public/assets/facebook.png";
 import t from "@/public/assets/twitter.png";
 import i from "@/public/assets/insta.png";
 
-const companies = [
+interface Company {
+  name: string;
+  img: StaticImageData;
+}
+
+interface SocialIcon {
+  name: string;
+  img: StaticImageData;
+}
+
+const companies: Company[] = [
   {
     name: "watsons",
     img: watson,
   },
-
   {
     name: "rose",
     img: rose,
   },
-
   {
     name: "mercury",
     img: mercury,
   },
-
   {
     name: "lazada",
     img: laz,
   },
-
   {
     name: "shopee",
     img: shop,
   },
 ];
 
-const companyMobile = [
+const companyMobile: Company[] = [
   {
     name: "watsons",
     img: watsons,
@@ -66,7 +72,7 @@ const companyMobile = [
   },
 ];
 
-const social = [
+const social: SocialIcon[] = [
   {
     name: "facebook",
     img: f,
@@ -117,7 +123,7 @@ const Footer = () => {
       <hr className="my-5" />
       <div className="img-container py-5 md:py-10  flex flex-col md:flex-row justify-around font-bold sm:flex-col items-center ">
         <div className="mb-5 md:mb-0">
-          <a href="#">
+          <a href="javascript:void(0)">
             <Image
               src={logo1}
               alt="Logo"
@@ -130,7 +136,10 @@ const Footer = () => {
         <div className="text-chlorelief-secondary-green text-green-500 ">
           <ul className="list-none leading-loose">
             <li className="mb-2 md:mb-0">
-              <a href="#" className={`${styles["custom-links"]}`}>
+              <a
+                href="javascript:void(0)"
+                className={`${styles["custom-links"]}`}
+              >
                 About
               </a>
             </li>
@@ -140,7 +149,10 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className={`${styles["custom-links"]}`}>
+              <a
+                href="javascript:void(0)"
+                className={`${styles["custom-links"]}`}
+              >
                 Our Company
               </a>
             </li>
