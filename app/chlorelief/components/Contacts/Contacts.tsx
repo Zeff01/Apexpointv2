@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-interface Contacts {
-    name: string;
-    email: string;
-    message: string;
-  }
+// interface Contacts {
+//     name: string;
+//     email: string;
+//     message: string;
+//   }
   
 export default function Contacts() {
     return (
