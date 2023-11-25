@@ -11,7 +11,7 @@ export default function AboutSection() {
         <div className="flex flex-col text-center gap-y-2 justify-center items-center ">
           <Image
             src={shippingbag}
-            alt="herlubie"
+            alt="Her Lubie"
             className=" object-contain "
           />
           <p className="text-xl font-bold text-lubie-navy-blue">
