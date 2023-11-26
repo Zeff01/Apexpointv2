@@ -1,9 +1,11 @@
-import React from 'react'
-
-import Contacts from './components/Contacts'
+import React from 'react';
+import LandingPage from './section/LandingPage';
 
 export default function page() {
   return (
-    <Contacts />
+    <LandingPage />
+
+   
+    
   )
 }
