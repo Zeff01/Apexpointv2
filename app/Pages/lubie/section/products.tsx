@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LubieCard from "../components/lubieCard";
+import LubieCard from "../components/LubieCard";
 
 const Products = () => {
   return (
