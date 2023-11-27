@@ -1,6 +1,5 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-
 import serv from "@/public/assets/services.png";
 import ship from "@/public/assets/shipping.png";
 import ret from "@/public/assets/return-icon.png";
@@ -61,7 +60,7 @@ const About = () => {
       </div>
       <div className="py-5 md:py-10  bg-chlorelief-primary-gray bg-gray-300 rounded">
         <div>
-          <div className="flex flex-col md:flex-row justify-around  sm:flex-col   items-center">
+          <div className="flex flex-col md:flex-row justify-around  items-center">
             {about.map((d, index) => (
               <div>
                 <h2 className="text-white font-bold">{d.title}</h2>
