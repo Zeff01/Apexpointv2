@@ -6,7 +6,7 @@ import watsons from "@/public/assets/watsonsMobile.png";
 import rose from "@/public/assets/rose.png";
 import rose1 from "@/public/assets/roseMobile.webp";
 import mercury from "@/public/assets/mercury.png";
-import mercury1 from "@/public/assets/mercuryMobile.png";
+import mercuryMobile from "@/public/assets/mercuryMobile.png";
 import lazada from "@/public/assets/lazada.png";
 import lazadaMobile from "@/public/assets/lazadaMobile.png";
 import shopee from "@/public/assets/shopee.png";
@@ -60,7 +60,7 @@ const companyMobile: Company[] = [
   },
   {
     name: "mercury",
-    img: mercury1,
+    img: mercuryMobile,
   },
   {
     name: "lazada",
