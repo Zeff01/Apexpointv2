@@ -4,13 +4,12 @@ import Stars from './stars'
 
 function Cards() {
   return (
-    <div className='flex flex-col justify-center w-[360px] h-[390px] border-[1px] p-4  shadow-xl bg-white'>
-
+    <div className='flex flex-col justify-center w-auto h-[390px] border-[1px] p-4  shadow-xl bg-white md:w-[360px] sm:w-auto sm:pl-[10%]'>
         <div className="w-full flex justify-between">
             <div className="">
               <Stars totalStars={3}/>
             </div>
-            <div className="self-end text-[50px] font-abhaya-libre font-extrabold text-lubie-sky-blue">
+            <div className="self-ce text-[50px] font-abhaya-libre font-extrabold text-lubie-sky-blue">
               <p className='h-[46px] text-gray-200'>“</p>
             </div>
         </div>

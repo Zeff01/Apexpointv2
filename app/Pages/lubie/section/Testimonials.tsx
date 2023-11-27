@@ -1,6 +1,6 @@
-'use client'
-import Cards from '../components/cards';
-import Cardslide from '../components/cardslide';
+"use client";
+import Cards from "../components/cards";
+import Cardslide from "../components/cardslide";
 
 function Testimonials() {
   return (
@@ -27,21 +27,21 @@ function Testimonials() {
           </div>
         </div>
 
-        <div className="container h-[60vh] mx-auto my-auto flex justify-center items-center md:h-[70vh]">
+        <div className="container h-[60vh] my-auto flex justify-center items-center z-50 md:h-[70vh] mx-auto">
           <div className="card overflow-hidden">
             <div className="wrapper flex justify-around pt-5 items-center">
-              <div className="flex md:hidden pl-7 flex-none w-full z-50">
-                <Cardslide />
+              <div className="flex pl[7%] md:hidden w-full z-0 sm:pl[7%]">
+                {/* <Cardslide /> */}
               </div>
-              <div className="hidden md:flex px-5 mt-2 hidden-none w-full z-50 mb-10">
-                <div className='pr-10'>
-                  <Cards/>
+              <div className="hidden md:flex px-5 mt-2 hidden-none w-full  z-0 mb-10">
+                <div className="pr-10">
+                  <Cards />
                 </div>
-                <div className='px-10'>
-                  <Cards/>
+                <div className="px-10">
+                  <Cards />
                 </div>
-                <div className='pl-10'>
-                  <Cards/>
+                <div className="pl-10">
+                  <Cards />
                 </div>
               </div>
             </div>
@@ -50,9 +50,7 @@ function Testimonials() {
       </div>
 
       {/* Additional white space section */}
-      <div className="bg-white h-[50vh] w-full">
-        {/* This div is empty and creates a white space */}
-      </div>
+      <div className="bg-red-500 md:h-[25vh] h-[35vh] w-full"></div>
     </div>
   );
 }
