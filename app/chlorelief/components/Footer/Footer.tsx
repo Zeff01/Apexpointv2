@@ -1,10 +1,10 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import styles from "./page.module.css";
-import watson from "@/public/assets/watsons.png";
-import watsons from "@/public/assets/watsonsMobile.png";
+import watsons from "@/public/assets/watsons.png";
+import watsonsMobile from "@/public/assets/watsonsMobile.png";
 import rose from "@/public/assets/rose.png";
-import rose1 from "@/public/assets/roseMobile.webp";
+import roseMobile from "@/public/assets/roseMobile.webp";
 import mercury from "@/public/assets/mercury.png";
 import mercuryMobile from "@/public/assets/mercuryMobile.png";
 import lazada from "@/public/assets/lazada.png";
@@ -29,7 +29,7 @@ interface SocialIcon {
 const companies: Company[] = [
   {
     name: "watsons",
-    img: watson,
+    img: watsons,
   },
   {
     name: "rose",
@@ -52,11 +52,11 @@ const companies: Company[] = [
 const companyMobile: Company[] = [
   {
     name: "watsons",
-    img: watsons,
+    img: watsonsMobile,
   },
   {
     name: "rose",
-    img: rose1,
+    img: roseMobile,
   },
   {
     name: "mercury",
