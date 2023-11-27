@@ -2,19 +2,19 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import styles from "./page.module.css";
 import watson from "@/public/assets/watsons.png";
-import watsons from "@/public/assets/w.png";
+import watsons from "@/public/assets/watsonsMobile.png";
 import rose from "@/public/assets/rose.png";
-import rose1 from "@/public/assets/r.webp";
+import rose1 from "@/public/assets/roseMobile.webp";
 import mercury from "@/public/assets/mercury.png";
-import mercury1 from "@/public/assets/m.png";
-import laz from "@/public/assets/lazada.png";
-import laz1 from "@/public/assets/l.png";
-import shop from "@/public/assets/shopee.png";
-import shop1 from "@/public/assets/s.png";
-import logo1 from "@/public/assets/chloLogo.png";
-import f from "@/public/assets/facebook.png";
-import t from "@/public/assets/twitter.png";
-import i from "@/public/assets/insta.png";
+import mercury1 from "@/public/assets/mercuryMobile.png";
+import lazada from "@/public/assets/lazada.png";
+import lazadaMobile from "@/public/assets/lazadaMobile.png";
+import shopee from "@/public/assets/shopee.png";
+import shopeeMobile from "@/public/assets/shopeeMobile.png";
+import aboutLogo from "@/public/assets/chloLogo.png";
+import facebook from "@/public/assets/facebook.png";
+import twitter from "@/public/assets/twitter.png";
+import instagram from "@/public/assets/insta.png";
 
 interface Company {
   name: string;
@@ -41,11 +41,11 @@ const companies: Company[] = [
   },
   {
     name: "lazada",
-    img: laz,
+    img: lazada,
   },
   {
     name: "shopee",
-    img: shop,
+    img: shopee,
   },
 ];
 
@@ -64,26 +64,26 @@ const companyMobile: Company[] = [
   },
   {
     name: "lazada",
-    img: laz1,
+    img: lazadaMobile,
   },
   {
     name: "shopee",
-    img: shop1,
+    img: shopeeMobile,
   },
 ];
 
 const social: SocialIcon[] = [
   {
     name: "facebook",
-    img: f,
+    img: facebook,
   },
   {
     name: "twitter",
-    img: t,
+    img: twitter,
   },
   {
     name: "instagram",
-    img: i,
+    img: instagram,
   },
 ];
 
@@ -98,7 +98,7 @@ const Footer = () => {
           Available Stores
         </span>
       </div>
-      <div className="stores flex flex-wrap justify-around py-5 my-5 bg-white rounded px-10 ">
+      <div className="stores flex flex-wrap justify-around py-5 my-5 bg-white rounded px-10 items-center">
         {companies.map((d, index) => (
           <div>
             <Image
@@ -125,7 +125,7 @@ const Footer = () => {
         <div className="mb-5 md:mb-0">
           <a href="javascript:void(0)">
             <Image
-              src={logo1}
+              src={aboutLogo}
               alt="Logo"
               width={150}
               height={150}
