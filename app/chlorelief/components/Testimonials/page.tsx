@@ -44,7 +44,7 @@ const Testimonials = () => {
       </h2>
       <div className="flex flex-wrap md:flex-row justify-around items-center px-10 py-10">
         {user.map((d, index) => (
-          <div className="w-80 md:h-96 md:w-96 bg-green-500 p-4 rounded mb-4 mx-4 text-xs md:text-base ">
+          <div className="w-80 h-80 md:h-96 md:w-96 bg-green-500 p-4 rounded mb-4 mx-4 text-xs md:text-base ">
             <div className="flex justify-center">
               <div className="flex justify-center flex-col items-center">
                 <Image
