@@ -1,9 +1,8 @@
-import Page from "../app/Pages/lubie/page"
-
+import Page from "../app/Pages/apexpoint/page"
 export default function Home() {
   return (
     <main className="">
-      <Page/>
+      <Page />
     </main>
-  )
+  );
 }
