@@ -3,7 +3,7 @@ import LubieCard from "../components/LubieCard";
 
 const Products = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center md:h-[80vh] h-[190vh] md:mt-[35vh] mt-[0vh] font-ubuntu ">
+    <section id="products" className="w-full flex flex-col justify-center items-center md:h-[80vh] h-[190vh] md:mt-[35vh] mt-[0vh] font-ubuntu ">
       <div className=" ">
         <div className="  w-full flex flex-col items-center">
           <h1 className=" md:text-5xl text-4xl  font-extrabold lg:text-4xl drop-shadow-md ">

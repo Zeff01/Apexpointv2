@@ -4,7 +4,7 @@ import Stars from './stars'
 
 function Cards() {
   return (
-    <div className='flex flex-col justify-center w-auto h-[390px] border-[1px] p-4  shadow-xl bg-white md:w-[360px] sm:w-auto sm:pl-[10%]'>
+    <div className='flex flex-col justify-center w-auto  h-[390px] border-[1px] p-4  shadow-xl bg-white md:w-[360px] sm:w-auto sm:z-50 sm:pl-[10%]'>
         <div className="w-full flex justify-between">
             <div className="">
               <Stars totalStars={3}/>

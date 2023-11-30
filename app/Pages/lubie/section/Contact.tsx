@@ -4,7 +4,7 @@ export default function ContactSection() {
     return (
 
         <>
-      <div className="flex flex-col md:flex-row w-full h-[100vh] justify-center items-center">
+      <div id='contact' className="flex flex-col md:flex-row w-full h-[100vh] justify-center items-center">
         <div className="md:w-1/2 w-full flex flex-col items-center space-y-6 mt-12 ">
             <div className="w-3/4">
                 <h2 className=" text-3xl font-bold ">For Bulk Orders</h2>

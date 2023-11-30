@@ -58,7 +58,7 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="itemContainer flex items-center justify-center mr-12">
-          <Link href="" className="text-sm hidden md:block hover:font-bold shadow-sm transition-color duration-300">
+          <Link href="#contact" className="text-sm hidden md:block hover:font-bold shadow-sm transition-color duration-300">
               Contact Us
             </Link>
           </div>
