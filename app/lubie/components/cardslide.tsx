@@ -1,6 +1,5 @@
 // Cardslide.jsx
 import React from 'react';
-import { Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Cards from './cards'; // Import your Cards component
 import 'swiper/css'; // Import Swiper styles
@@ -11,7 +10,6 @@ import 'swiper/css/scrollbar';
 export default function Cardslide() {
   return (
     <Swiper
-    modules={[Pagination, Scrollbar, A11y, Autoplay]}
     spaceBetween={50} // Adjust space between slides
     slidesPerView={1} // Show one card at a time
     pagination={{ clickable: true }} // Enable clickable pagination

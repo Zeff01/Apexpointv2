@@ -69,7 +69,8 @@ function Herosec() {
                 dolor sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem
                 ipsum dolor sitametamet
               </p>
-              <Button />
+              <Button
+              title="Read More" />
             </div>
           </div>
         </div>

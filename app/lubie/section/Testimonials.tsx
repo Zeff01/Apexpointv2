@@ -31,7 +31,7 @@ function Testimonials() {
           <div className="card overflow-hidden">
             <div className="wrapper flex justify-around pt-5 items-center">
               <div className="flex pl[7%] md:hidden w-full z-0 sm:pl[7%]">
-                {/* <Cardslide /> */}
+                <Cardslide />
               </div>
               <div className="hidden md:flex px-5 mt-2 hidden-none w-full  z-0 mb-10">
                 <div className="pr-10">
@@ -50,7 +50,7 @@ function Testimonials() {
       </div>
 
       {/* Additional white space section */}
-      <div className="bg-red-500 md:h-[25vh] h-[35vh] w-full"></div>
+      <div className="bg-white md:h-[25vh] h-[35vh] w-full"></div>
     </div>
   );
 }
