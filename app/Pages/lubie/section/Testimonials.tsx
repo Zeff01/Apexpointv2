@@ -17,7 +17,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="right w-auto md:w-1/3">
-              <p className="mt-5 text-sm md:mt-10">
+              <p className="mt-5 text-xl sm:text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
                 rerum aperiam laboriosam inventore dignissimos illum ullam
                 repellendus dolor nam iusto quae non nihil. Culpa blanditiis
@@ -33,15 +33,31 @@ function Testimonials() {
               <div className="flex pl[7%] md:hidden w-full z-0 sm:pl[7%]">
                 <Cardslide />
               </div>
-              <div className="hidden md:flex px-5 mt-2 hidden-none w-full  z-0 mb-10">
+              <div className="hidden md:flex px-5 mt-2 hidden-none w-full  z-0 mb-12">
                 <div className="pr-10">
-                  <Cards />
+                  <Cards
+                  stars={5}
+                  description="The product was well-packaged. I bought this because forums said this was the best lube because it has no irritants at all."
+                  name="A***."
+                  
+                   />
                 </div>
                 <div className="px-10">
-                  <Cards />
+                  <Cards 
+                  stars={5}
+                  description="Safe and effective. Im allergic to glycerin and this product helps a lot"
+                  name="R***."
+                 
+                  />
                 </div>
                 <div className="pl-10">
-                  <Cards />
+                  <Cards
+                  stars={5}
+                  description="I have dry skin in my private area and when I tried this product, it's really effective. It's not itchy anymore. 
+                  Watsons really put effort in their packaging. It was packed securely and no damages on the product."
+                  name="K***"
+                  
+                  />
                 </div>
               </div>
             </div>
