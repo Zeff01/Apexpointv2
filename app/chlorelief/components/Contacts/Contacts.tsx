@@ -24,7 +24,7 @@ export default function Contacts() {
                 name="name"
                 id="name"
                 required
-                className="mt-2 pl-3  block min-w-full h-10 sm:text-sm  rounded-md"
+                className="border-2 border-gray-300 mt-2 pl-3 block min-w-full h-10 sm:text-sm rounded-md"
                 
               />
             </div>
@@ -36,7 +36,7 @@ export default function Contacts() {
                 name="email"
                 required
                 id="email"
-                className="mt-2 pl-3  block min-w-full h-10 sm:text-sm  rounded-md"
+                className="border-2 border-gray-300 mt-2 pl-3 block min-w-full h-10 sm:text-sm rounded-md"
            
               />
             </div>
@@ -48,7 +48,7 @@ export default function Contacts() {
                 name="contact"
                 required
                 id="contact"
-                className="mt-2 pl-3  block min-w-full h-10 sm:text-sm  rounded-md"
+                className="border-2 border-gray-300 mt-2 pl-3 block min-w-full h-10 sm:text-sm rounded-md"
         
               />
             </div>
@@ -59,7 +59,7 @@ export default function Contacts() {
                 name="message"
                 placeholder="Message"
                 id="message"
-                className="mt-3 pl-3  resize-none min-w-full md:w-56e rounded-md"
+                className="mt-3 pl-3  resize-none min-w-full md:w-56e rounded-md border-2 border-gray-300"
                 style={{paddingTop:5}}
                 rows={6}
                            
