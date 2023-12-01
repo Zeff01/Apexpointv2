@@ -15,42 +15,45 @@ import {
 function Herosec() {
   return (
     <>
-      <div className="h-screen w-full  flex flex-col items-center  bg-lubie-light-blue md:space-y-12 space-y-6 font-ubuntu text-lubie-navy-blue">
-        <div className="w-full md:h-1/2 h-1/4 flex  flex-row justify-center  mt-16">
-          <div className="flex flex-col w-1/2 text-center items-center justify-center  space-y-8">
-            <p>Nature & Health</p>
-            <p className="md:text-4xl text-2xl font-extrabold">
-              The first multi-purpose <br /> FDA registered Lube in <br /> the
-              Philippines
-            </p>
-            <Button title="Read More" />
-          </div>
-          <div className="hidden md:flex items-center justify-start w-1/2  ">
-            <div className="h-3/4 w-3/4  sticky mb-[10%]">
-              <Image
-                src={Lubiehero}
-                alt="herlubie"
-                className=" object-contain z-0"
-                layout="fill"
-              />
+
+      <div className="md:h-screen h-[1200px] w-full  flex flex-col items-center  bg-lubie-light-blue   font-ubuntu text-lubie-navy-blue">
+        <div className="w-full h-[60%] flex  flex-row justify-center   mt-16">
+            <div className="flex flex-col w-1/2 text-center items-center justify-center  space-y-8">
+              <p>Nature & Health</p>
+              <p className="md:text-4xl text-2xl font-extrabold">
+                The first multi-purpose <br /> FDA registered Lube in <br /> the
+                Philippines
+              </p>
+              <Button title="Read More" />
             </div>
-          </div>
+            <div className="hidden md:flex items-center justify-start w-1/2  ">
+              <div className="h-[85%] w-[85%]  sticky mb-[10%]  mt-24">
+                <Image
+                  src={Lubiehero}
+                  alt="herlubie"
+                  className=" object-contain z-0"
+                  layout="fill"
+                />
+              </div>
+            </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center w-full ">
-          <div className="flex w-full md:w-auto justify-center">
-            <Icons imageUrl={icon1} />
-            <Icons imageUrl={icon2} />
-          </div>
-          <div className="flex w-full md:w-auto justify-center ">
-            <Icons imageUrl={icon3} />
-            <Icons imageUrl={icon4} />
-          </div>
-          <div className="flex w-full md:w-auto justify-center ">
-            <Icons imageUrl={icon5} />
-            <Icons imageUrl={icon6} />
-          </div>
+        <div className=" flex items-start h-[100%] w-full ">
+          <div className="flex flex-col md:flex-row justify-center items-center mt-12 w-full">
+              <div className="flex w-full md:w-auto justify-center">
+                <Icons imageUrl={icon1} />
+                <Icons imageUrl={icon2} />
+              </div>
+              <div className="flex w-full md:w-auto justify-center ">
+                <Icons imageUrl={icon3} />
+                <Icons imageUrl={icon4} />
+              </div>
+              <div className="flex w-full md:w-auto justify-center ">
+                <Icons imageUrl={icon5} />
+                <Icons imageUrl={icon6} />
+              </div>
+            </div>
         </div>
-        <div className="  w-full flex md:flex-row flex-col md:space-y-0 space-y-4 items-center  absolute md:top-[93vh] top-[105vh]">
+        <div className=" w-full flex md:flex-row flex-col md:space-y-0 space-y-4 items-center  absolute md:top-[650px] top-[1000px] z-10">
           <div className="flex justify-center md:w-1/2 w-full h-full  ">
             <Image
               src={LubieHero2}
@@ -75,7 +78,7 @@ function Herosec() {
           </div>
         </div>
       </div>
-      <div className="md:h-[0vh] h-[50vh] w-full "></div>
+      <div className=" w-full md:h-[0vh] h-[50vh]"></div>
     </>
   );
 }
