@@ -12,8 +12,8 @@ export default function ContactSection() {
             </div>
             <div className="w-3/4 ">
                 <form className="space-y-4 ">
-                        <div className="grid grid-cols-2 gap-x-12">
-                            <div>
+                        <div className="w-full  grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-4">
+                            <div >
                                 <label htmlFor="firstName" className="block text-sm font-medium text-gray-600">First Name</label>
                                 <input type="text" id="firstName" name="firstName" className="mt-1 p-2 w-full border rounded-md" />
                             </div>
@@ -22,13 +22,13 @@ export default function ContactSection() {
                                 <input type="text" id="lastName" name="lastName" className="mt-1 p-2 w-full border rounded-md" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-2 gap-x-10 ">
+                        <div className="grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-4">
                             <div>
-                                <label htmlFor="firstName" className="block text-sm font-medium text-black-600">Email Address</label>
+                                <label htmlFor="firstName" className="block text-sm font-medium text-black-600">Email</label>
                                 <input type="text" id="firstName" name="firstName" className="mt-1 p-2 w-full border rounded-md" />
                             </div>
                             <div>
-                                <label htmlFor="lastName" className="block text-sm font-medium text-black-600">Contact Number</label>
+                                <label htmlFor="lastName" className="block text-sm font-medium text-black-600">Contact</label>
                                 <input type="text" id="lastName" name="lastName" className="mt-1 p-2 w-full border rounded-md" />
                             </div>
                         </div>
