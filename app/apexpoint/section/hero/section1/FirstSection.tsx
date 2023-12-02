@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const FirstSection = () => {
   return (
-    <div className="gap-5 w-[600px] h-full flex flex-col justify-center md:h-fit sm:m-0 md:mt-14 z-20">
+    <div className="gap-5 ml-10 p-6 h-[320px] w-[600px] flex flex-col justify-end md:h-[340px] lg:p-0 lg:ml-0">
       <Heading />
       <div className="w-full lg:w-[90%] flex flex-col gap-5">
         <Info />
-        <Link href="#contact-us" scroll={true   }>
+        <Link href="#contact-us" scroll={true}>
           <ContactBtn />
         </Link>
       </div>
