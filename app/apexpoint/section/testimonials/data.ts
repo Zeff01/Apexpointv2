@@ -16,8 +16,7 @@ export const data: TestimonialType[] = [
   {
     id: 1,
     customer_name: "nicomiguelcatacutan",
-    review:
-      "Ang ganda sa akin ni baby nawala yung pangangangati, dami kona nagamit sa skin nya, buti nlang nkita ko tomg brand nato, nwala n yung mga katikati ni baby",
+    review: `" Ang ganda sa akin ni baby nawala yung pangangangati, dami kona nagamit sa skin nya, buti nlang nkita ko tomg brand nato, nwala n yung mga katikati ni baby "`,
     img: ap_testimonial_1_img,
     rate: 5,
     review_link:
@@ -26,7 +25,7 @@ export const data: TestimonialType[] = [
   {
     id: 2,
     customer_name: "mhayerabusa",
-    review: `This is my second time to order from this shop, super bilis ng shipping and i can say that its very effective sa mga insect bites. Thank you seller, rider at more power shopee. ❤️`,
+    review: `" This is my second time to order from this shop, super bilis ng shipping and i can say that its very effective sa mga insect bites. Thank you seller, rider at more power shopee. ❤️ "`,
     img: ap_testimonial_2_img,
     rate: 5,
     review_link:
@@ -35,7 +34,7 @@ export const data: TestimonialType[] = [
   {
     id: 3,
     customer_name: "gesaretardo",
-    review: `Order received in just 4 days, complete and correct items. Secured and well packed! Thank you!`,
+    review: `" Order received in just 4 days, complete and correct items. Secured and well packed! Thank you! "`,
     img: ap_testimonial_3_img,
     rate: 5,
     review_link:

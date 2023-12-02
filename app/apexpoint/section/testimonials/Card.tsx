@@ -20,7 +20,7 @@ const Card: React.FC<TestimonialType> = ({
       </div>
       <div className="flex flex-col gap-2">
         <h3 className="font-semibold">{customer_name}</h3>
-        <p className="text-ellipsis text-justify ">{review}</p>
+        <p className="italic">{review}</p>
       </div>
     </div>
   );
