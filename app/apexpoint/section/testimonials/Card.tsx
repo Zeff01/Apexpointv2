@@ -9,7 +9,7 @@ const Card: React.FC<TestimonialType> = ({
   rate,
 }) => {
   return (
-    <div className="shadow-lg border h-[270px] w-[300px] md:w-[225px] lg:w-[300px] rounded-xl p-4 flex flex-col gap-3">
+    <div className="shadow-lg border h-[270px] w-[300px] md:w-[225px] md:h-[320px] lg:w-[300px] lg:h-[270px] rounded-xl p-4 flex flex-col gap-3">
       <div className="flex justify-between">
         <Image
           src={img}
@@ -20,7 +20,7 @@ const Card: React.FC<TestimonialType> = ({
       </div>
       <div className="flex flex-col gap-2">
         <h3 className="font-semibold">{customer_name}</h3>
-        <p>{review}</p>
+        <p className="text-ellipsis text-justify ">{review}</p>
       </div>
     </div>
   );
