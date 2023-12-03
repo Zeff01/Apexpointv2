@@ -16,7 +16,7 @@ function Herosec() {
   return (
     <>
       <div className="h-screen w-full  flex flex-col items-center  bg-lubie-light-blue md:space-y-12 space-y-6 font-ubuntu text-lubie-navy-blue">
-        <div className="w-full md:h-1/2 h-1/4 flex  flex-row justify-center  mt-16">
+        <div className="w-full md:h-1/2 h-1/4 flex  flex-row justify-center  md:[mt-18px] mt-[15vh] md:[mb-0] mb-[5vh]">
           <div className="flex flex-col w-1/2 text-center items-center justify-center  space-y-8">
             <p>Nature & Health</p>
             <p className="md:text-4xl text-2xl font-extrabold">
