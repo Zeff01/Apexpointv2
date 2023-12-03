@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface props  {
-    totalStars:number;
+    totalStars:5;
 }
 
 function Stars({totalStars}:props) {
