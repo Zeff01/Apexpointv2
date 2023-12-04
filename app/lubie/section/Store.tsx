@@ -8,14 +8,7 @@ return (
         <div className='text-4xl text-lubie-light-blue'>Available Stores</div>
         <div className='px-5 md:px-0 md:flex md:flex-row grid grid-cols-2 justify-center items-center gap-x-5 gap-y-5  py-10'>
 
-                           <div className="">
-                                <Image
-                                    src={snr}
-                                    alt='herlubie'
-                                    className=' object-contain opacity-50'
-
-                                />
-                            </div>
+                
                             <div className="">
                                 <Image
                                     src={watsons}
