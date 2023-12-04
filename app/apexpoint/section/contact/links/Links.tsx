@@ -50,7 +50,7 @@ export type ContactLinksProps = {
 
 const ContactLinks: FunctionComponent<ContactLinksProps> = ({}) => {
 	return (
-		<div className="grid grid-cols-1 gap-4 md:grid-cols-2 content-center items-center justify-center mb-8">
+		<div className="grid grid-cols-1 gap-4 md:grid-cols-2 justify-center pb-16 ">
 			{linksData.map(({ Icon, title, subtitle, link, linkText }, index) => (
 				<LinksCard
 					Icon={Icon}
