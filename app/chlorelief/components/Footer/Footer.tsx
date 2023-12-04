@@ -89,22 +89,19 @@ const social: SocialIcon[] = [
 
 const Footer = () => {
   return (
-    <div
-      className=" bg-zinc-700
-     px-10 sm:px-5 "
-    >
-      <div className="text-center pt-5">
-        <span className="text-chlorelief-secondary-green font-bold text-2xl md:text-5xl text-green-500">
-          Available Stores
+<div>
+    <div className="text-center pt-5 mt-18">
+        <span className="text-chlorelief-secondary-green font-semibold text-2xl md:text-xl text-green-500">
+          Available in stores
         </span>
       </div>
-      <div className="stores flex flex-wrap justify-around py-5 my-5 bg-white rounded px-10 items-center">
+      <div className="stores flex flex-wrap justify-around py-5 my-5 px-10 items-center">
         {companies.map((d, index) => (
           <div key={index}>
             <Image
               src={d.img}
               alt={d.name}
-              width={200}
+              width={130}
               height={80}
               className={`hidden md:block ${styles["custom-store"]}`}
             />
@@ -121,9 +118,12 @@ const Footer = () => {
           />
         ))}
       </div>
-      <hr className="my-5" />
-      <div className="img-container py-5 md:py-10  flex flex-col md:flex-row justify-around font-bold sm:flex-col items-center ">
-        <div className="mb-5 md:mb-0">
+    <div
+      className=" bg-zinc-700
+     px-10 py-5  mt-5 " >
+ 
+      <div className="img-container   flex flex-col justify-center items-center ">
+      <div className="mb-5 md:mb-0 flex flex-wrap justify-center ">
           <a href="javascript:void(0)">
             <Image
               src={aboutLogo}
@@ -134,19 +134,19 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div className="text-chlorelief-secondary-green text-green-500 ">
-          <ul className="list-none leading-loose">
+        <div className="text-chlorelief-secondary-green text-green-500 py-3 text-sm ">
+          <ul className="list-none leading-loose space-around flex">
             <li className="mb-2 md:mb-0">
               <a
                 href="javascript:void(0)"
                 className={`${styles["custom-links"]}`}
               >
-                About
+               ABOUT US
               </a>
             </li>
             <li>
               <a href="#" className={`${styles["custom-links"]}`}>
-                Contact
+           CONTACT
               </a>
             </li>
             <li>
@@ -154,30 +154,31 @@ const Footer = () => {
                 href="javascript:void(0)"
                 className={`${styles["custom-links"]}`}
               >
-                Our Company
+             OUR COMPANY
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <hr className="my-5" />
-      <div className="icons text-center py-5 md:py-10">
+     
+      <div className="icons text-center  ">
         <span className="text-chlorelief-secondary-green text-green-500  font-bold">
-          Subscribe to our Social media Accounts
+          Subscribe to Us!
         </span>
         <div className="flex justify-center mt-3 md:mt-5 gap-5">
           {social.map((d, index) => (
             <Image
               src={d.img}
               alt={d.name}
-              width={35}
-              height={35}
+              width={25}
+              height={25}
               className={`${styles["custom-icon"]}`}
               key={index}
             />
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };
