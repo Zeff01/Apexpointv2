@@ -7,13 +7,13 @@
 export default function Hero(){
 
     return(
-    
-    <div className="flex items-center justify-center flex-wrap h-auto" style={{ backgroundColor: '#419F59'}}>
-            <div className=" flex flex-col items-center">
-                <h1 className="text-4xl font-extrabold font-saira condensed text-white leading-[124.346%]">
+
+    <div className=" mt-16 flex items-center justify-center flex-wrap" style={{ backgroundColor: '#419F59'}}>
+            <div className="flex flex-col items-center md:h-full">
+                <h1 className=" text-4xl font-extrabold font-saira condensed text-white ">
                     YOUR FIRST <br />LINE OF DEFENSE
                 </h1>
-                    <button className="mt-5 text-center font-extrabold text-white font-saira condensed text-lg leading-6 bg-red-500 p-3 px-4 w-50 leading-[124.346%]">
+                    <button className="mt-5 text-center font-extrabold text-white font-saira condensed text-lg bg-red-500 p-3 px-4 w-50 leading-[124.346%]">
                         Add to your cart
                     </button>
             </div>
@@ -26,7 +26,7 @@ export default function Hero(){
 
     </div>
 
-        
+
 
     )
 
