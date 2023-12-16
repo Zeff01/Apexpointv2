@@ -44,7 +44,7 @@ const AvailableAt = () => {
   ];
 
   const content = logos.map((logo, index) => (
-    <SwiperSlide className="self-center object-contain" key={index}>
+    <SwiperSlide className="self-center object-contain " key={index}>
       <Image
         className="px-2 w-full h-auto min-w-[170px] max-w-[250px]"
         src={logo.src}

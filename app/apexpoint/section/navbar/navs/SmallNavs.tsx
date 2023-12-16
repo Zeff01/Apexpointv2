@@ -28,7 +28,7 @@ const SmallNavs: React.FC<SmallNavsProps> = ({
       </div>
       <div className="h-full pt-10">
         <Link
-          href="/Pages/chlorelief"
+          href="/chlorelief"
           className="h-1/2 w-full flex items-center justify-center hover:bg-gray-200"
         >
           <Image
@@ -38,7 +38,7 @@ const SmallNavs: React.FC<SmallNavsProps> = ({
           />
         </Link>
         <Link
-          href="/Pages/lubie"
+          href="/lubie"
           className="h-1/2 w-full flex items-center justify-center hover:bg-gray-200"
         >
           <Image className="h-14 w-auto" src={lubieLogo} alt="lubie" />
