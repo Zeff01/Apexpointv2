@@ -26,16 +26,18 @@ const LubieCard = ({ title, imageUrl, price }: LubieCardProps) => {
 
           <div className="flex flex-row">
             {Array(5)
-              .fill()
+              .fill(0)
               .map((_, index) =>
-                rateOne ? (
+                rateOne > index ? (
                   <AiFillStar
+                    key={index}
                     style={{ color: "#7FF0C3" }}
                     onClick={() => setRateOne(index + 1)}
-                  /> // When click to a star it color fills
+                  />
                 ) : (
                   <AiOutlineStar
-                    style={{ color: '"#1C3079' }}
+                    key={index}
+                    style={{ color: "#1C3079" }}
                     onClick={() => setRateOne(index + 1)}
                   />
                 )

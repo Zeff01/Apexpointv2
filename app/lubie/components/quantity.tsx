@@ -1,10 +1,9 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 
 const QuantityDropdown = () => {
-  const handleQuantityChange = (event) => {
+  const handleQuantityChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const selectedQuantity = event.target.value;
     console.log("Selected Quantity:", selectedQuantity);
-    // You can perform additional actions based on the selected quantity if needed
   };
 
   return (
