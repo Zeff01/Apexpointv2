@@ -1,12 +1,25 @@
 import React, { useState } from "react";
 import QuantityDropdown from "./quantity";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 
 interface LubieCardProps {
   title: string;
   imageUrl: string;
   price: string;
 }
+
+const FilledStar = () => (
+  <AiFillStar style={{ color: "#7FF0C3" }} />
+);
+
+const StarRating = () => (
+  Array(5)
+    .fill(0)
+    .map((_, index) => (
+      <FilledStar key={index} />
+    ))
+);
+
 const LubieCard = ({ title, imageUrl, price }: LubieCardProps) => {
   const [rateOne, setRateOne] = useState(5);
 
@@ -25,23 +38,7 @@ const LubieCard = ({ title, imageUrl, price }: LubieCardProps) => {
           <QuantityDropdown />
 
           <div className="flex flex-row">
-            {Array(5)
-              .fill(0)
-              .map((_, index) =>
-                rateOne > index ? (
-                  <AiFillStar
-                    key={index}
-                    style={{ color: "#7FF0C3" }}
-                    onClick={() => setRateOne(index + 1)}
-                  />
-                ) : (
-                  <AiOutlineStar
-                    key={index}
-                    style={{ color: "#1C3079" }}
-                    onClick={() => setRateOne(index + 1)}
-                  />
-                )
-              )}
+            <StarRating />
           </div>
         </div>
 
