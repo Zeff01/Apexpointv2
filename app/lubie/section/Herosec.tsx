@@ -20,7 +20,7 @@ function Herosec() {
           <div className="flex flex-col w-1/2 text-center items-center justify-center  space-y-8">
             <p>Nature & Health</p>
             <p className="md:text-4xl text-2xl font-extrabold">
-              The first multi-purpose <br /> FDA registered Lube in <br /> the
+              The first <br ></br> multi-purpose  FDA registered Lube in  the
               Philippines
             </p>
             <Button title="Read More" />
@@ -63,7 +63,7 @@ function Herosec() {
           <div className="w-1/2 h-full flex justify-center ">
             <div className="flex flex-col md:w-1/2 w-full items-center space-y-6 text-center ">
               <p>Nature & Health</p>
-              <p className="md:text-3xl text-xl font-extrabold w-[60%]">
+              <p className="md:text-3xl text-xl font-extrabold w-[80%]">
                 Water-based moisturizer
               </p>
               <p>
