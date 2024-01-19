@@ -15,18 +15,18 @@ import {
 function Herosec() {
   return (
     <>
-      <div className="h-screen w-full  flex flex-col items-center  bg-lubie-navy-blue md:space-y-18 space-y-6 font-ubuntu text-lubie-white-color">
-        <div className="w-full md:h-1/2 h-1/4 flex  flex-row justify-center  md:[mt-18px] mt-[40vh] md:[mb-0] mb-[5vh]">
-          <div className="flex flex-col w-1/2 text-right justify-center  space-y-8">
-            <p>Nature & Health</p>
-            <p className="md:text-2xl text-2xl font-bold">
+      <div className="h-screen w-full  flex flex-col items-center  bg-lubie-navy-blue md:space-y-18 space-y-16 font-ubuntu text-lubie-white-color">
+        <div className="w-full md:h-1/2 h-1/4 flex  flex-row justify-center  md:[mt-18px] mt-[20vh] md:[mb-0] mb-[5vh]">
+          <div className="flex flex-col w-1/8 items-center ml-32 mt-5 space-y-8">
+            <p className="text-center md:text-right mb-2">Nature & Health</p>
+            <p className="md:text-2xl mb-5 text-2xl font-bold md:text-right text-center">
               The first <br></br> <span className="text-lubie-light-blue text-extra-bold">multi-purpose</span>  FDA registered <br></br>Lube in  the
               Philippines
             </p>
-            <Button title="Read More" />
+            <Button  title="Read More" />
           </div>
-          <div className="hidden md:flex items-center justify-start w-1/2  ">
-            <div className="h-3/4 w-3/4  sticky mb-[10%]">
+          <div className="hidden md:flex justify-start ml-10 w-1/2  ">
+            <div className="h-[125%] w-[125%]  sticky mb-[10%]">
               <Image
                 src={Lubiehero}
                 alt="herlubie"
