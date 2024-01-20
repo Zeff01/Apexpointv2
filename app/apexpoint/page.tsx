@@ -26,9 +26,9 @@ const page: FunctionComponent<pageProps> = ({}) => {
       <Hero />
       <About />
       <Products />
-      <AvailableAt />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
+      <AvailableAt />
       <Footer />
     </main>
   );

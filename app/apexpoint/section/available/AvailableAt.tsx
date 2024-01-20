@@ -73,8 +73,11 @@ const AvailableAt = () => {
   };
 
   return (
-    <main className="h-[175px] flex items-center justify-center bg-apexpoint-light-orange my-14">
-      <Swiper
+    <main className="h-auto flex flex-col items-center justify-center bg-apexpoint-light-orange gap-6 pt-14">
+      <div className="w-full text-center text-4xl font-semibold">
+        <h1>Available to Stores</h1>
+      </div>
+      <Swiper className="w-full"
         // install Swiper modules
         modules={[Autoplay, Pagination, A11y]}
         spaceBetween={100}

@@ -28,7 +28,7 @@ const socialMediaData = [
 
 const SocialMediaLinks = () => {
 	return (
-		<ul className="flex items-center gap-3">
+		<ul className="flex gap-5">
 			{socialMediaData.map((item, index) => (
 				<li key={index}>
 					<a href={item.link} target="_blank" rel="noopener noreferrer">

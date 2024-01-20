@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
+import Navigation from "./Navigation";
 
 interface SmallNavsProps {
   nav: boolean;
@@ -9,41 +10,42 @@ interface SmallNavsProps {
   lubieLogo: StaticImageData;
 }
 
+interface NavLink {
+  href: string;
+  label: string;
+}
+
+const navLinks: NavLink[] = [
+  { href: "#home", label: "Home" },
+  { href: "#products", label: "Products" },
+  { href: "#about", label: "About Us" },
+  { href: "#contact", label: "Contact" },
+];
+
 const SmallNavs: React.FC<SmallNavsProps> = ({
   nav,
   apexLogo,
-  chloreliefLogo,
-  lubieLogo,
 }) => {
   return (
     <div
       className={
         nav
-          ? "fixed left-0 top-0 w-full shadow-2xl h-full border-r border-apexpoint-dark-orange bg-white ease-in-out duration-500"
+          ? "fixed left-0 top-0 w-1/2 max-w-[250px] shadow-2xl h-full border-r bg-white ease-in-out duration-500"
           : "fixed left-[-100%] top-0 h-full ease-in-out duration-500"
       }
     >
       <div className="pt-7 px-5">
         <Image className="h-8 w-auto" src={apexLogo} alt="apexpoint" />
       </div>
-      <div className="h-full pt-10">
-        <Link
-          href="/chlorelief"
-          className="h-1/2 w-full flex items-center justify-center hover:bg-gray-200"
-        >
-          <Image
-            className="h-14 w-auto"
-            src={chloreliefLogo}
-            alt="chlorelief"
-          />
-        </Link>
-        <Link
-          href="/lubie"
-          className="h-1/2 w-full flex items-center justify-center hover:bg-gray-200"
-        >
-          <Image className="h-14 w-auto" src={lubieLogo} alt="lubie" />
-        </Link>
-      </div>
+      <ul className="w-full mt-10">
+        {navLinks.map((link) => (
+          <li className="w-full" key={link.href}>
+            <Link className="bg-zinc-100 hover:bg-zinc-300 flex w-full border border-zinc-200 px-6 py-4 font-semibold" href={link.href}>
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

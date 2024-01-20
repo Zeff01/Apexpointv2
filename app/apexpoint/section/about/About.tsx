@@ -9,23 +9,25 @@ const About: React.FC = () => {
   const mappedData = AboutData.map((data) => (
     <Card key={data.header}>
       <Image
-        className="h-auto mt-6 xl:w-[50px] md:w-[40px]"
+        className="h-auto w-auto mt-6 md:mt-4 xl:h-12 lg:h-11 md:h-10 min-[320px]:h-10"
         src={data.icon}
         alt={data.header}
       />
-      <h1 className="xl:text-xl lg:text-lg md:text-lg font-semibold">
+      <h1 className="text-xl xl:text-xl lg:text-lg md:text-base font-semibold">
         {data.header}
       </h1>
-      <p className="text-base mb-6 text-lg ">{data.info}</p>
+      <p className="mb-6 text-lg md:text-base min-[320px]:text-sm md:text-justify min-[320px]:text-center min-[375px]:text-base">
+        {data.info}
+      </p>
     </Card>
   ));
 
   return (
-    <main className="w-full relative lg:h-[275px] md:h-[225px] ">
-      <div className="h-full flex flex-col justify-center items-center relative mt-[5rem] top-[-21vh]  md:gap-10 gap-10 z-20 px-5 md:flex-row ">
+    <section id="about" className="py-6 bg-apexpoint-light-orange h-auto md:h-[50vh] w-full">
+      <div className="h-full w-full flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-5 md:gap-3">
         {mappedData}
       </div>
-    </main>
+    </section>
   );
 };
 
