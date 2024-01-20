@@ -15,18 +15,18 @@ import {
 function Herosec() {
   return (
     <>
-      <div className="h-screen w-full  flex flex-col items-center  bg-lubie-navy-blue md:space-y-18 space-y-16 font-ubuntu text-lubie-white-color">
-        <div className="w-full md:h-1/2 h-1/4 flex  flex-row justify-center  md:[mt-18px] mt-[20vh] md:[mb-0] mb-[5vh]">
-          <div className="flex flex-col w-1/8 items-center ml-32 mt-5 space-y-8">
-            <p className="text-center md:text-right mb-2">Nature & Health</p>
-            <p className="md:text-2xl mb-5 text-2xl font-bold md:text-right text-center">
+      <div className="h-screen w-full  flex flex-col items-center  bg-lubie-navy-blue md:space-y-18 space-y-12 font-ubuntu text-lubie-white-color">
+        <div className="w-full md:h-1/2 h-screen flex  flex-row justify-center  md:[mt-18px] mt-[15vh] mb-2 md:mb-[10vh]">
+          <div className="flex flex-col md:w-1/8 items-center md:ml-32 mt-5 space-y-8">
+            <p className="text-center   md:text-right mb-2">Nature & Health</p>
+            <p className="sm:text-2xl md:text-2xl mb-5 text-xl font-bold md:text-right text-center">
               The first <br></br> <span className="text-lubie-light-blue text-extra-bold">multi-purpose</span>  FDA registered <br></br>Lube in  the
               Philippines
             </p>
             <Button  title="Read More" />
           </div>
-          <div className="hidden md:flex justify-start ml-10 w-1/2  ">
-            <div className="h-[125%] w-[125%]  sticky mb-[10%]">
+          <div className="hidden md:flex justify-start   lg:ml-10 w-1/2  ">
+            <div className="h-[125%] w-[125%]  sticky ">
               <Image
                 src={Lubiehero}
                 alt="herlubie"
@@ -37,7 +37,7 @@ function Herosec() {
           </div>
         </div>
         <div className=" flex items-start h-[100%] w-full ">
-          <div className="flex flex-col md:flex-row justify-center items-center mt-12 w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center  mb-2  w-full">
               <div className="flex w-full md:w-auto justify-center">
                 <Icons imageUrl={icon1} />
                 <Icons imageUrl={icon2} />
