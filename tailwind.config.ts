@@ -8,12 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // screens: {
-      //   'sm': {'max': '640px'},    // Mobile screens
-      //   'md': {'max': '767px'},    // Tablet screens
-      //   'lg': {'max': '1023px'},   // Small desktop screens
-      //   'xl': {'max': '1279px'},   // Large desktop screens
-      // },
       colors: {
         lubie: {
           "dark-blue": "#0A1950",
@@ -30,8 +24,8 @@ const config: Config = {
           "green": "#40D63F",
         },
         chlorelief: {
-          chateaugreen: "#3db750",
-          springwood: "#f2f3f2",
+          "chateaugreen": "#3db750",
+          "springwood": "#f2f3f2",
           "soft-gray": "#a8b8d0",
           "soft-green": "#4EE35A",
           "dark-green": "#315634",

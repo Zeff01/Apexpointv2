@@ -10,7 +10,7 @@ import lubieLogo from "@/public/assets/lubie-name.png";
 
 // component
 import Burger from "./burger/Burger";
-import Navs from "./navs/Navs";
+import Navigation from "./navs/Navigation";
 import SmallNavs from "./navs/SmallNavs";
 import Logo from "./logo/Logo";
 
@@ -18,10 +18,10 @@ const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
 
   return (
-    <nav className="bg-white shadow-lg md:shadow-none fixed md:static flex w-full justify-between items-center px-12 h-[10vh] z-[9999]">
+    <nav className="bg-white shadow-lg md:shadow-none fixed flex w-full justify-between items-center px-12 h-[10vh] z-[9999]">
       <Logo apexLogo={apexLogo} />
       <Burger nav={nav} setNav={setNav} />
-      <Navs chloreliefLogo={chloreliefLogo} lubieLogo={lubieLogo} />
+      <Navigation />
       <SmallNavs
         nav={nav}
         apexLogo={apexLogo}

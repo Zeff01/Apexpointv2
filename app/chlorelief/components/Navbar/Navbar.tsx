@@ -7,6 +7,7 @@ import DesktopNav from "./NavView/DesktopNav";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "./NavView/Logo/Logo";
+import GoBackBtn from "./GoBackBtn/GoBackBtn";
 
 export default function Navbar() {
   //state for mobile menu
@@ -22,6 +23,7 @@ export default function Navbar() {
   //Jsx Structure
   return (
     <nav className="bg-chlorelief-dark-green font-mono justify-between flex flex-row w-full items-center px-[10px] h-[65px] z-[9999]">
+      <GoBackBtn />
       <Logo chloreliefLogo={chloreliefLogo} />
       <DesktopNav links={links} /> <div></div>
       <MobileNav navMenu={navMenu} setNavMenu={setNavMenu} links={links} />

@@ -1,20 +1,14 @@
 import React from "react";
-import Logo from "./Logo";
-import SocialMediaLinks from "./SocialMediaLinks";
-import BasicInfos from "./BasicInfos";
+import SocialMediaLinks from "./content/SocialMediaLinks";
+import BasicInfos from "./content/BasicInfos";
+import RightsReserved from "./content/RightsReserved";
 
 const Footer = () => {
   return (
-    <div className="bg-apexpoint-light-orange shadow-[0px_-2px_4px_0px_rgba(0,0,0,0.25)] flex flex-col gap-6 py-16 ">
-      <div className="py-5 w-[90%] mx-auto justify-between items-center md:border-b md:border-black ">
-        <div className="mx-auto w-[95%] flex items-center flex-col sm:flex-row gap-y-4 justify-between">
-          <Logo />
-          <SocialMediaLinks />
-        </div>
-      </div>
-      <div className="py-5 font-normal hidden md:flex">
-        <BasicInfos />
-      </div>
+    <div className="bg-apexpoint-light-orange flex flex-col  justify-center items-center py-8 px-8 gap-6">
+      <BasicInfos />
+      <SocialMediaLinks />
+      <RightsReserved />
     </div>
   );
 };

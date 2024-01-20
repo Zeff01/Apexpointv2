@@ -11,14 +11,11 @@ import Footer from "../components/Footer/Footer";
 export default function LandingPage() {
   return (
     <>
-    
-    
       <Navbar />
       <Hero />
       <Product />
       <Testimonials />
       <About />
-
       <Contacts />
       <Footer />
    
