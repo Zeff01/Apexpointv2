@@ -7,7 +7,7 @@ interface ButtonProps {
 export default function Button({ title }: ButtonProps) {
   return (
     <>
-      <button className="border-4 p-2 w-[150px] rounded-lg border-lubie-dark-blue">
+      <button className="border-2 p-2 w-[150px] rounded-lg border-lubie-white-color">
         {title}
       </button>
     </>

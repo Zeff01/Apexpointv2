@@ -10,11 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         lubie: {
-          "dark-blue": "#0A1950",
-          "white-color": "#FFFFFF",
+          "dark-blue": "#091A5A",
+          "white-color": "#F4F4F4",
           "light-blue": "#B6CBE0",
-          "navy-blue": "#1C3079",
-          "gray-white": "#F0F5F3",
+          "navy-blue": "#275AB5",
           "green-light": "#7FF0C3",
         },
         apexpoint: {
