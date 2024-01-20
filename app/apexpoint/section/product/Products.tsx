@@ -1,6 +1,5 @@
 import { Data, data } from "./data";
 import Card from "./components/Card";
-import ProductsSlider from "./productsSlider/ProductsSlider";
 
 export const Products = () => {
   return (
