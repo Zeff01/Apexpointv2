@@ -3,7 +3,6 @@ import Button from "../components/button";
 import Image from "next/image";
 import Icons from "../components/icons";
 import {
-  Lubiehero,
   LubieHero2,
   icon1,
   icon2,
@@ -12,6 +11,9 @@ import {
   icon5,
   icon6,
 } from "@/public/assets/lubie";
+import Header from "../components/animation/hero/header"
+import Intro from "../components/animation/hero/introduction"
+
 function Herosec() {
   return (
     <>
@@ -19,20 +21,12 @@ function Herosec() {
         <div className="w-full md:h-1/2 h-screen flex  flex-row justify-center  md:[mt-18px] mt-[15vh] mb-2 md:mb-[10vh]">
           <div className="flex flex-col md:w-1/8 items-center md:ml-32 mt-5 space-y-8">
             <p className="text-center   md:text-right mb-2">Nature & Health</p>
-            <p className="sm:text-2xl md:text-2xl mb-5 text-xl font-bold md:text-right text-center">
-              The first <br></br> <span className="text-lubie-light-blue text-extra-bold">multi-purpose</span>  FDA registered <br></br>Lube in  the
-              Philippines
-            </p>
+            <Intro />
             <Button  title="Read More" />
           </div>
           <div className="hidden md:flex justify-start   lg:ml-10 w-1/2  ">
-            <div className="h-[125%] w-[125%]  sticky ">
-              <Image
-                src={Lubiehero}
-                alt="herlubie"
-                className=" object-contain z-0"
-                layout="fill"
-              />
+            <div className="h-[125%] w-[125%]  sticky ml-20 ">
+           <Header/>
             </div>
           </div>
         </div>
