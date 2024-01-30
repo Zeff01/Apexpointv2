@@ -48,7 +48,7 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <div className="testimonials flex flex-col items-center bg-chlorelief-star-green h-[80vh] sm:h-[100vh]">
+    <div className="testimonials flex flex-col items-center bg-chlorelief-star-green h-[80vh] sm:h-[100vh] md:h-[120vh] lg:h-[80vh]">
       <div className="container text-lubie-dark-blue">
         <div className="wrapper flex items-center text-black pt-10 justify-center text-center flex-col md:flex-row md:text-left md:pt-20">
           <div className="left flex flex-col">
@@ -73,7 +73,7 @@ const Testimonials: React.FC = () => {
             </div>
             
             <div className=" mb-10 sm:mt-20">
-              <div className="sm:flex md:flex lg:hidden xl:hidden">
+              <div className="flex sm:flex md:flex lg:hidden xl:hidden">
               <Swiper
               spaceBetween={20}
               slidesPerView={1}
@@ -98,7 +98,7 @@ const Testimonials: React.FC = () => {
             </Swiper>
                 
               </div>
-              <div className="gap-6 hidden sm:hidden md:hidden lg:flex">
+              <div className="gap-6 hidden sm:hidden md:hidden lg:flex xl:flex">
                 {TestimonialsData.map((testimonial, index) => (
                   <TestimonialsComponent key={index} {...testimonial} />
                 ))}

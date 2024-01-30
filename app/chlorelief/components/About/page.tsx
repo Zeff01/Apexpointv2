@@ -32,7 +32,7 @@ const About = () => {
    
   ];
   return (
-    <div className="font-saira-condensed sm:py-40 md:py-40 lg:py-20 " id="about">
+    <div id='about' className="font-saira-condensed mt-10 sm:h-[10vh] md:h-[100vh] lg:h-[120vh]">
        <h2 className=" text-chlorelief-secondary-green text-center text-green-700 text-4xl sm:mt-20 md:mt-5 sm font-semibold">
             ABOUT THE BRAND
           </h2>
@@ -40,9 +40,9 @@ const About = () => {
         <div className="mb-5 lg:w-1/3 md:mx-20 text-chlorelief-secondary-gray sm:text-start md:text-center">
           <div className="text-gray-400 text-start pb-8">
             <h5 className="mt-5 font-light text-xl text-center sm:text-center md:text-center lg:text-left">CHLORELIEF</h5>
-            <p className="mt-10 text-center sm:text-center text-[12px] md:text-center md:text-2xl lg:text-left ">
-              Paraben-free – paraben is not a natural product and is not
-              something you&apos;d find naturally in the body. Using skin
+            <p className="mt-10 text-center sm:text-center text-[12px] md:text-center md:text-2xl lg:text-left">
+              Paraben-free paraben is not a natural product and is not
+              something you apod find naturally in the body. Using skin
               products with paraben will make skin dry, brittle, cracked, and
               swollen. Also, paraben can cause many chemicals to enter the body
               that should not be there.
@@ -53,10 +53,9 @@ const About = () => {
           <Image
             src={mainImg}
             alt="About Image"
-            layout="responsive"
             width={650}
             height={550}
-            className="rounded mt-10 hidden sm:hidden md:hidden lg:block"
+            className="mt-10 hidden sm:hidden md:hidden lg:block"
           />
         </div>
       </div>

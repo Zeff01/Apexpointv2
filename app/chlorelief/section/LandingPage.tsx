@@ -17,7 +17,7 @@ export default function LandingPage() {
       <Product />
       <About />
       <Banner/>
-      <div className="flex flex-col-reverse sm:flex-col">
+      <div className="flex flex-col sm:flex-col-reverse md:flex-col-reverse lg:flex-col">
       <Contacts />
       <Testimonials />
       </div>

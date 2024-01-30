@@ -69,7 +69,7 @@ const ProductList: React.FC = () => {
   ];
 
   return (
-    <div className="grid gap-4 place-items-center grid-cols-2 sm:grid-cols-2 sm:px-4 md:grid-cols-2 md:px-20 lg:grid-cols-4 lg:gap-auto xl:px-40">
+    <div className="grid gap-4 place-items-center grid-cols-2 sm:grid-cols-2 sm:px-4 md:grid-cols-2 md:px-20 lg:grid-cols-2 lg:gap-auto xl:grid-cols-4">
       {productsData.map((product, index) => (
         <ProductComponent key={index} {...product} />
       ))}
