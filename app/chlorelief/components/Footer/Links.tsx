@@ -1,5 +1,9 @@
 import {phone, email, shoppingbag, lazada,facebook,tiktok, instagram, linkedin, twitter, apexsmall, mercury, rose,lazada_store, shopee_store, snr, watsons} from '@/public/assets/lubie'
-
+import { FaTwitter } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { FaFacebook } from "react-icons/fa";
 import Image from "next/image";
 export default function FooterSection() {
   return (
@@ -105,45 +109,20 @@ export default function FooterSection() {
             </div>
             {/* Socials */}
             <div className='mt-12 w-full text-white flex justify-center items-center gap-x-7'>
-                <a href='#'>
-                    <Image
-                                src={tiktok}
-                                alt='herlubie'
-                                className=' object-contain text-white '
-
-                    />
+                <a href='#' className='text-2xl'>
+                     <FaFacebook />
                 </a>
-                <a href='#'>
-                    <Image
-                                src={instagram}
-                                alt='herlubie'
-                                className=' object-contain '
-
-                    />
+                <a href='#' className='text-2xl'>
+                     <FaTiktok />
                 </a>
-                <a href='#'>
-                    <Image
-                                src={facebook}
-                                alt='herlubie'
-                                className=' object-contain '
-
-                    />
+                <a href='#' className='text-2xl'>
+                     <CiLinkedin />
                 </a>
-                <a href='#'>
-                    <Image
-                                src={linkedin}
-                                alt='herlubie'
-                                className=' object-contain '
-
-                    />
+                <a href='#' className='text-2xl'>
+                    <PiInstagramLogoFill />
                 </a>
-                <a href='#'>
-                    <Image
-                                src={twitter}
-                                alt='herlubie'
-                                className=' object-contain '
-
-                    />
+                <a href='#' className='text-2xl'>
+                    <FaTwitter />
                 </a>
 
 
