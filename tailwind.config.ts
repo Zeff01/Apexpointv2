@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'saira-condensed': ['Saira Condensed', 'sans-serif'],
+      },
       colors: {
         lubie: {
           "dark-blue": "#091A5A",
@@ -24,11 +27,14 @@ const config: Config = {
         },
         chlorelief: {
           "chateaugreen": "#3db750",
-          "springwood": "#f2f3f2",
+          "springwood": "#0F5B33",
           "soft-gray": "#a8b8d0",
           "soft-green": "#4EE35A",
           "dark-green": "#315634",
           "soft-slate": "#708090",
+          "light-red": "#F4F4F4",
+          "star-green":"#DEFFE6",
+          "button": "#F07787"
         },
       },
     },

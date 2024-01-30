@@ -20,12 +20,11 @@ const ImageInfo = ({ name, logo }: Data) => {
   return (
     <div className="w-3/4 mx-4 h-auto">
       <Swiper
-        modules={[Navigation, A11y, Autoplay]}
+        modules={[Autoplay]}
         autoplay={true}
         speed={1000}
         spaceBetween={0}
         slidesPerView={1}
-        navigation
         loop={true}
       >
         {content}

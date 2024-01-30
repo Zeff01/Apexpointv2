@@ -1,24 +1,28 @@
+import Image from "next/image";
 export default function Hero() {
   return (
-    <div
-      className="  flex items-center justify-center flex-wrap"
-      style={{ backgroundColor: "#419F59" }}
-    >
-      <div className="flex flex-col items-center md:h-full">
-        <h1 className=" text-4xl font-extrabold font-saira condensed text-white ">
-          YOUR FIRST <br />
-          LINE OF DEFENSE
-        </h1>
-        <button className="mt-5 text-center font-extrabold text-white font-saira condensed text-lg bg-red-500 p-3 px-4 w-50 leading-[124.346%]">
-          Add to your cart
+    <div className="bg-chlorelief-springwood flex justify-end flex-col-reverse sm:h-[130vh] sm:flex-col-reverse md:flex-col-reverse md:h-[120vh] lg:flex-row lg:h-screen">
+      <div className="flex flex-col text-slate-300 text-lg items-center text-end justify-center w-full md:h-full xl:items-end">
+        <h1 className="text-white text-4xl font-extrabold py-14 -mt-20 text-center">Your first line of defense</h1>
+        <span>Lorem ipsum dolor sit eamet Lorem</span>
+        <span>ipsum dolor sit Lorem ipsum dolor sit</span>
+        <span>Lorem ipsum dolor sit eamet Lorem</span>
+        <span>ipsum dolor sit Lorem ipsum dolor</span>
+        <span>sitametamet</span>
+        <button className="my-10 text-center font-light text-slate-300 font-saira condensed text-md border-2 border-red-500 rounded-lg px-28 mx-2 py-2 w-50 hover:bg-red-500 duration-200">
+          Learn more
         </button>
       </div>
-      <img
-        src="/assets/flower.png"
-        className="flex"
-        alt="babypic"
-        style={{ maxWidth: "100%", marginBottom: "10px", marginLeft: "0" }}
+      <div className="w-full flex justify-center">
+      <Image
+        src="/assets/Group 70.png"
+        width={400}
+        height={500}
+        className="lg:w-full md:w-4/6 sm:w-5/6 "
+        alt="product picture"
       />
+      </div>
+     
     </div>
   );
 }

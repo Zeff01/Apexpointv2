@@ -4,9 +4,6 @@ import React, { useState } from "react";
 import chloreliefLogo from "@/public/assets/chlorelief-logo.png";
 import MobileNav from "./NavView/MobileNav";
 import DesktopNav from "./NavView/DesktopNav";
-import Image from "next/image";
-import Link from "next/link";
-import Logo from "./NavView/Logo/Logo";
 import GoBackBtn from "./GoBackBtn/GoBackBtn";
 
 export default function Navbar() {
@@ -14,19 +11,19 @@ export default function Navbar() {
   const [navMenu, setNavMenu] = useState<boolean>(false);
 
   const links = [
-    { text: "HOME", href: "#home" },
-    { text: "PRODUCTS", href: "#product" },
-    { text: "ABOUT", href: "#about" },
-    { text: "CONTACT", href: "#contact" },
+    { text: "Home", href: "#home",hover:"text-white hover:text-chlorelief-soft-green ease-in-out duration-700" },
+    { text: "Products", href: "#product",hover:"text-white hover:text-chlorelief-soft-green ease-in-out duration-700" },
+    { text: "About Us", href: "#about",hover:"text-white hover:text-chlorelief-soft-green ease-in-out duration-700" },
+    { text: "Contacts", href: "#contact",hover:"text-white hover:text-chlorelief-soft-green ease-in-out duration-700" },
   ];
 
   //Jsx Structure
   return (
-    <nav className="bg-chlorelief-dark-green font-mono justify-between flex flex-row w-full items-center px-[10px] h-[65px] z-[9999]">
-      <GoBackBtn />
-      <Logo chloreliefLogo={chloreliefLogo} />
-      <DesktopNav links={links} /> <div></div>
-      <MobileNav navMenu={navMenu} setNavMenu={setNavMenu} links={links} />
+    <main className="h-f">
+    <GoBackBtn />
+    <nav className="bg-chlorelief-springwood font-mono hover:text-chlorelief-soft-green ease-in-out duration-700">
+      <DesktopNav links={links} />
     </nav>
+    </main>
   );
 }

@@ -8,20 +8,19 @@ interface MobileNavProps {
   navMenu: boolean;
 
   setNavMenu: React.Dispatch<React.SetStateAction<boolean>>;
-  links: { text: string; href: string }[];
+  links: { text: string; href: string , hover:string }[];
 }
 
 const MobileNav: React.FC<MobileNavProps> = ({
   setNavMenu,
   navMenu,
-
   links,
 }) => {
   return (
-    <div className='md:hidden flex'>
-      <div className='  flex   bg-chlorelief-dark-green  px-6 py-3 '>
+    <div className='md:hidden flex justify-start'>
+      <div className='  flex bg-inherit  px-6 py-3 '>
         <div
-          className='md:hidden block cursor-pointer z-[9999] pt-[8px] text-chlorelief-soft-slate'
+          className='md:hidden block cursor-pointer z-[9999] pt-[8px] text-white'
           onClick={() => setNavMenu(!navMenu)}
         >
           {navMenu ? <IoClose size={32} /> : <GiHamburgerMenu size={32} />}
@@ -34,7 +33,7 @@ const MobileNav: React.FC<MobileNavProps> = ({
             animate={{ opacity: 1, x: '0%' }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className='top-0 right-0 shadow-md  w-[60%] h-full fixed  bg-chlorelief-dark-green font-medium z-[100] 
+            className='right-0 top-0 shadow-md w-[40%] fixed h-full bg-white font-medium z-[100] 
           '
             onClick={() => setNavMenu(!navMenu)}
           >
@@ -44,7 +43,7 @@ const MobileNav: React.FC<MobileNavProps> = ({
                   key={index}
                   onClick={() => setNavMenu(!navMenu)}
                   href={link.href}
-                  className='transition-color  flex flex-col items-center justify-center mb-4 text-chlorelief-soft-slate hover:text-chlorelief-soft-green ease-in-out duration-700'
+                  className={link.hover}
                 >
                   <li>{link.text}</li>
                 </Link>
