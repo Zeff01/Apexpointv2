@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link';
 import React from 'react';
 import { FaFacebook } from "react-icons/fa";
@@ -36,7 +37,7 @@ const Contacts = () => {
           <label htmlFor="contact">Contact</label>
           <input className='border-2 rounded-md w-full border-black mb-4' type="text" name="contact" id="contact" />
           <label htmlFor="message">Message</label>
-          <textarea className='border-2 p-2 rounded-md w-full border-black mb-4' name="message" id="message" rows='3' />
+          <textarea className='border-2 p-2 rounded-md w-full border-black mb-4' name="message" id="message" rows={3} />
           <button className='mx-auto py-1 px-5 rounded-xl hover:px-6 duration-100 bg-chlorelief-button text-white' type='submit'>Submit Order</button>
         </form>
       </div>
