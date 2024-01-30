@@ -11,17 +11,17 @@ export default function Navbar() {
   const [navMenu, setNavMenu] = useState<boolean>(false);
 
   const links = [
-    { text: "Home", href: "#home" },
-    { text: "Products", href: "#product" },
-    { text: "About Us", href: "#about" },
-    { text: "Contacts", href: "#contact" },
+    { text: "Home", href: "#home",hover:"text-white hover:text-chlorelief-soft-green ease-in-out duration-700" },
+    { text: "Products", href: "#product",hover:"text-white hover:text-chlorelief-soft-green ease-in-out duration-700" },
+    { text: "About Us", href: "#about",hover:"text-white hover:text-chlorelief-soft-green ease-in-out duration-700" },
+    { text: "Contacts", href: "#contact",hover:"text-white hover:text-chlorelief-soft-green ease-in-out duration-700" },
   ];
 
   //Jsx Structure
   return (
     <main className="h-f">
     <GoBackBtn />
-    <nav className="bg-chlorelief-springwood font-mono sticky">
+    <nav className="bg-chlorelief-springwood font-mono hover:text-chlorelief-soft-green ease-in-out duration-700">
       <DesktopNav links={links} />
     </nav>
     </main>

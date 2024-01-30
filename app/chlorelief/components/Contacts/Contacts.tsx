@@ -27,8 +27,8 @@ const Contacts = () => {
           <Link href='/'><FaTiktok /></Link>
         </div>
       </div>
-      <div className="right border-2 border-green-500 bg-gray-100 h-auto w-auto px-20 py-10 rounded-xl sm:w-auto lg:h-5/6 sm:h-auto text-gray-400 ">
-        <h1 className=' mb-10 text-center sm:text-2xl lg:text-4xl'>For Bulk Orders</h1>
+      <div className="right border-2  border-green-500 bg-gray-100 h-auto w-auto px-20 py-10 rounded-xl sm:w-auto lg:h-5/6 sm:h-auto text-gray-400 ">
+        <h1 className=' mb-10 text-center sm:text-2xl lg:text-4xl pb-20'>For Bulk Orders</h1>
         <form action="" className='flex flex-col gap-2'>
           <label htmlFor="name">Name</label>
           <input className='border-2 rounded-md w-full border-black mb-4' type="text" name="name" id="name" />

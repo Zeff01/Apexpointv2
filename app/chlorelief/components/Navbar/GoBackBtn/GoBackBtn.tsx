@@ -7,10 +7,10 @@ import  Link  from "next/link";
 
 
 const links = [
-  { text: "Home", href: "#home" },
-  { text: "Products", href: "#product" },
-  { text: "About Us", href: "#about" },
-  { text: "Contacts", href: "#contact" },
+  { text: "Home", href: "#home",hover:"transition-color  flex flex-col items-start px-10 mb-4 text-chlorelief-dark-green hover:text-chlorelief-soft-green ease-in-out duration-700"},
+  { text: "Products", href: "#product",hover:"transition-color  flex flex-col items-start px-10 mb-4 text-chlorelief-dark-green hover:text-chlorelief-soft-green ease-in-out duration-700" },
+  { text: "About Us", href: "#about",hover:"transition-color  flex flex-col items-start px-10 mb-4 text-chlorelief-dark-green hover:text-chlorelief-soft-green ease-in-out duration-700" },
+  { text: "Contacts", href: "#contact",hover:"transition-color  flex flex-col items-start px-10 mb-4 text-chlorelief-dark-green hover:text-chlorelief-soft-green ease-in-out duration-700" },
 ];
 
 

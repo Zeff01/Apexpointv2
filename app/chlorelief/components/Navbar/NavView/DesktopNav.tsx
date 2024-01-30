@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 interface DesktopNavProps {
-  links: { text: string; href: string }[];
+  links: { text: string; href: string; hover:string }[];
 }
 const DesktopNav: React.FC<DesktopNavProps> = ({ links }) => {
   return (
@@ -11,7 +11,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ links }) => {
         <button className='flex gap-10 font-semibold text-center text-xl '>
           {links.map((link, index) => (
             <Link
-              className='text-white hover:text-chlorelief-soft-green ease-in-out duration-700'
+              className={link.hover}
               key={index}
               href={link.href}
             >
