@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <div
       id="products"
-      className="w-full md:flex-row flex flex-col justify-center items-center md:h-[80vh] h-[190vh] md:mt-[70vh] mt-[20vh] font-ubuntu"
+      className="w-full md:flex-row flex flex-col justify-center items-center md:h-[80vh] h-[190vh] md:mt-[70vh] mt-[10vh] font-ubuntu"
     >
       <div className="">
       <div className="w-full flex flex-col items-center">

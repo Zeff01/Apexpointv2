@@ -18,7 +18,7 @@ function Herosec() {
   return (
     <>
       <div className="h-[120vh] md:h-screen w-full flex flex-col items-center bg-lubie-navy-blue md:space-y-18 space-y-12 font-ubuntu text-lubie-white-color">
-        <div className="w-full md:h-1/2 h-screen flex flex-row gap-[10vh] justify-center  md:mt-10px mt-[15vh] mb-[2vh] md:mb-[2vh] ">
+        <div className="w-full md:h-1/2 h-screen flex flex-row gap-[10vh] justify-center  md:mt-10px mt-[15vh] mb-[2vh] md:mb-[10vh] ">
           <div className="flex flex-col items-center mt-2 space-y-8 ">
             <p className="text-center md:text-right mb-2">Nature & Health</p>
             <Intro />
@@ -31,7 +31,7 @@ function Herosec() {
           </div>
         </div>
         <div className="flex items-start w-full">
-          <div className="flex flex-col md:flex-row justify-center items-center  mb-32  w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center  mb-32 w-full">
             <div className="flex w-full md:w-auto justify-center">
               <Icons imageUrl={icon1} />
               <Icons imageUrl={icon2} />
@@ -46,7 +46,7 @@ function Herosec() {
             </div>
           </div>
         </div>
-        <div className="flex md:mx-[50vh] md:flex-row flex-col md:space-y-0 space-y-4 justify-center items-center absolute md:top-[115vh] top-[150vh] z-10">
+        <div className="flex md:mx-[50vh] md:flex-row flex-col md:space-y-0 space-y-4 justify-center items-center absolute md:top-[115vh] top-[125vh] z-10">
           <div className="flex justify-center w-full h-[90%]">
             <Image src={Lubie} alt="herlubie" className="object-contain md:w-[500px] w-[300px] md:mb-12 mb-8" />
           </div>
@@ -67,7 +67,7 @@ function Herosec() {
         
         </div>
       </div>
-      <div className="w-full md:h-[0vh] h-[50vh]"></div>
+      <div className="w-full md:h-[0vh] h-[60vh]"></div>
     </>
   );
 }
