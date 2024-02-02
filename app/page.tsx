@@ -5,6 +5,11 @@ export default function Home() {
       {/* asdfsdafsafsd */}
       {/* asdfsdafsafsd */}
       {/* asdfsdafsafsd */}
+      {/* SAMPLE CODE PAYMENT FEATURE  with enchancement and bugfixed*/}
+      {/* SAMPLE CODE PAYMENT FEATURE  with enchancement and bugfixed*/}
+      {/* SAMPLE CODE PAYMENT FEATURE  with enchancement and bugfixed*/}
+      {/* SAMPLE CODE PAYMENT FEATURE  with enchancement and bugfixed*/}
+      {/* SAMPLE CODE PAYMENT FEATURE  with enchancement and bugfixed*/}
       <Page />
     </main>
   );
