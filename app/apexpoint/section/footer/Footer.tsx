@@ -13,7 +13,6 @@ const Footer = () => {
       <Policies />
       <Socials />
       <Credits />
-      <p>test</p>
     </Section>
   );
 };
