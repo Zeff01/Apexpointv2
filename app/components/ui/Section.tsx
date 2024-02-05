@@ -17,7 +17,7 @@ const Section: React.FC<SectionProps> = ({
 
   let additionalStyles = "px-[8%] pt-[5%]";
 
-  if (id === "store" || id === "products") {
+  if (id === "store") {
     additionalStyles = "px-0";
   } else if (id === "footer") {
     additionalStyles = "px-0";
