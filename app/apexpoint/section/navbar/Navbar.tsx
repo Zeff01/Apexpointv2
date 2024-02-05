@@ -18,7 +18,7 @@ const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
 
   return (
-    <nav className="bg-white shadow-lg md:shadow-none fixed flex w-full justify-between items-center px-12 h-[10vh] z-[9999]">
+    <nav className="bg-white shadow-lg md:shadow-md sticky top-0 flex w-full justify-between items-center px-12 h-[8vh] z-[9999]">
       <Logo apexLogo={apexLogo} />
       <Burger nav={nav} setNav={setNav} />
       <Navigation />

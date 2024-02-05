@@ -1,20 +1,18 @@
-import React, { FunctionComponent } from "react";
-import ContactForm from "./form/Form";
-import Links from "./links/Links";
+import React from "react";
+import Header from "@/app/components/ui/Header";
+import Section from "@/app/components/ui/Section";
+import ContactForm from "./components/form/ContactForm";
+import Links from "./components/Links/Links";
 
-export type ContactProps = {
-  //no props
-};
-
-const Contact: FunctionComponent<ContactProps> = ({}) => {
+const Contact = () => {
   return (
-    <section id="contact" className="flex flex-col py-16 gap-8 items-center ">
-      <h2 className="font-semibold text-[40px]">Contact Us</h2>
-      <div className="flex flex-col min-[800px]:flex-row-reverse md:gap-8 gap-y-4">
-        <ContactForm />
+    <Section id="contact" className="flex flex-col gap-8 items-center pb-[5%]">
+      <Header>Contact Us</Header>
+      <div className="flex flex-col min-[800px]:flex-row md:gap-8 gap-y-4">
         <Links />
+        <ContactForm />
       </div>
-    </section>
+    </Section>
   );
 };
 
