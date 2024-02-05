@@ -1,15 +1,19 @@
 import React from "react";
-import SocialMediaLinks from "./content/SocialMediaLinks";
-import BasicInfos from "./content/BasicInfos";
-import RightsReserved from "./content/RightsReserved";
+import Policies from "./component/Policies";
+import Section from "@/app/components/ui/Section";
+import Socials from "./component/Socials";
+import Credits from "./component/Credits";
 
 const Footer = () => {
   return (
-    <div className="bg-apexpoint-light-orange flex flex-col  justify-center items-center py-8 px-8 gap-6">
-      <BasicInfos />
-      <SocialMediaLinks />
-      <RightsReserved />
-    </div>
+    <Section
+      id="footer"
+      className="bg-apexpoint-light-orange flex flex-col justify-center items-center gap-6 pt-6 pb-2"
+    >
+      <Policies />
+      <Socials />
+      <Credits />
+    </Section>
   );
 };
 

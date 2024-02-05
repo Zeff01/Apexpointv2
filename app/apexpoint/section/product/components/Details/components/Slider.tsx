@@ -9,30 +9,33 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { Data } from "../data";
+import { ProductData } from "@/app/components/data/apexpoint/productData";
 
-const ImageInfo = ({ name, logo }: Data) => {
+const Slider = ({ name, logo }: ProductData) => {
   const content = logo?.map((item, index) => (
     <SwiperSlide key={index}>
-      <Image src={item.src} alt={item.name} className="rounded-2xl" />
+      <Image
+        src={item.src}
+        alt={item.name}
+        className="rounded-2xl object-contain w-full h-auto"
+      />
     </SwiperSlide>
   ));
   return (
-    <div className="w-3/4 mx-4 h-auto">
+    <div className="w-full h-auto">
       <Swiper
-        modules={[Autoplay]}
+        modules={[Navigation, A11y, Autoplay]}
         autoplay={true}
         speed={1000}
         spaceBetween={0}
         slidesPerView={1}
+        navigation
         loop={true}
       >
         {content}
       </Swiper>
     </div>
-    // </div>
   );
 };
 
-export default ImageInfo;
-
+export default Slider;
