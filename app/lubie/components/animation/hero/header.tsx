@@ -25,7 +25,7 @@ export default function Header()  {
            <Image src={Lubiehero}
             alt='Lubiehero' 
             className=" object-contain z-0"
-            layout=""/>
+           />
         
 
         </motion.div>
