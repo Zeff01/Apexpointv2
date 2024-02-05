@@ -6,7 +6,6 @@ import Navbar from "./section/navbar/Navbar";
 import Hero from "./section/hero/Hero";
 import About from "./section/about/About";
 import Stores from "./section/stores/Stores";
-import Footer from "./section/footer/Footer";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -23,7 +22,7 @@ const page = () => {
       <Products />
       <Contact />
       <Stores />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };
