@@ -14,11 +14,7 @@ const poppins = Poppins({
   display: "swap",
 });
 
-export interface pageProps {
-  //no props
-}
-
-const page: FunctionComponent<pageProps> = ({}) => {
+const page = () => {
   return (
     <main className={poppins.className}>
       <Navbar />
