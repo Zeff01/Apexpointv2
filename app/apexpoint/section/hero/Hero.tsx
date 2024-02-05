@@ -1,17 +1,31 @@
 import React from "react";
-import FirstSection from "./heroSection/section1/FirstSection";
-import SecondSection from "./heroSection/section2/SecondSection";
-import Video from "./videoSection/Video";
+import Section from "@/app/components/ui/Section";
+import Header from "./components/Header";
+import Description from "./components/Description";
+import Button from "@/app/components/ui/Button";
+import HeroImage from "./components/HeroImage";
 
 const Hero = () => {
   return (
-    <section id="home" className="w-full flex flex-col bg-apexpoint-light-orange shadow-lg pt-[10vh]">
-      <Video />
-      <div className="w-full h-[70vh] relative flex items-center px-14 my-0 md:my-10">
-        <SecondSection />
-        <FirstSection />
+    <Section
+      id="home"
+      className="flex flex-row bg-apexpoint-light-orange items-center justify-center gap-0 md:gap-10"
+    >
+      <div className="hidden md:block w-1/2">
+        <HeroImage />
       </div>
-    </section>
+      <div className="w-full md:w-1/2 flex flex-col gap-4 items-center md:items-start">
+        <Header />
+        <Description />
+        <Button
+          className="w-full md:w-fit min-[425px]:w-1/2"
+          variant="apexpoint"
+          url="#contact"
+        >
+          Contact Us
+        </Button>
+      </div>
+    </Section>
   );
 };
 

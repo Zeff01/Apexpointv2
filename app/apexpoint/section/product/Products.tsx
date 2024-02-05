@@ -1,17 +1,28 @@
-import { Data, data } from "./data";
-import Card from "./components/Card";
+import {
+  ProductData,
+  productData,
+} from "@/app/components/data/apexpoint/productData";
+import Section from "@/app/components/ui/Section";
+import Details from "./components/Details/Details";
+import Card from "@/app/components/ui/Card";
+import Header from "@/app/components/ui/Header";
 
 export const Products = () => {
   return (
-    <section id="products" className="min-w-full mt-14">
-      <h1 className="w-64 min-w-full font-semibold text-[40px] text-center mb-12">
-        Our Products
-      </h1>
-      <div className="w-full flex flex-col md:flex-row gap-10 md:gap-0">
-        {data.map((item: Data) => {
-          return <Card key={item.name} {...item} />;
+    <Section id="products" className="flex flex-col gap-4 min-[425px]:gap-10">
+      <Header>Our Products</Header>
+      <div className="w-full flex flex-col min-[425px]:items-center md:items-start justify-center md:flex-row gap-[6%]">
+        {productData.map((item: ProductData) => {
+          return (
+            <Card
+              className="h-full w-full min-[425px]:w-3/4 md:w-[45%] flex flex-col gap-6 mb-10"
+              key={item.name}
+            >
+              <Details {...item} />
+            </Card>
+          );
         })}
       </div>
-    </section>
+    </Section>
   );
 };

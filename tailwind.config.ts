@@ -29,12 +29,13 @@ const config: Config = {
           "chateaugreen": "#3db750",
           "springwood": "#0F5B33",
           "soft-gray": "#a8b8d0",
-          "soft-green": "#4EE35A",
-          "dark-green": "#315634",
+          "soft-green": "#419F59",
+          "dark-green": "#0F5B33",
           "soft-slate": "#708090",
           "light-red": "#F4F4F4",
           "star-green":"#DEFFE6",
-          "button": "#F07787"
+          "button": "#F07787",
+          "pink": "#F07787"
         },
       },
     },

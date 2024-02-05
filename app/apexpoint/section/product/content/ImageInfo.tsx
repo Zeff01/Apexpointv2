@@ -35,3 +35,4 @@ const ImageInfo = ({ name, logo }: Data) => {
 };
 
 export default ImageInfo;
+

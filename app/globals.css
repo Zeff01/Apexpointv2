@@ -16,10 +16,10 @@
   }
 }
 
-.swiper-slide {
+/* .swiper-slide {
   display: flex !important;
   justify-content: center;
-}
+} */
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -41,9 +41,9 @@
   }
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 html {
   scroll-behavior: smooth !important;

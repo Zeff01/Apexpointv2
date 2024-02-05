@@ -5,9 +5,11 @@ import { Products } from "./section/product/Products";
 import Navbar from "./section/navbar/Navbar";
 import Hero from "./section/hero/Hero";
 import About from "./section/about/About";
-import AvailableAt from "./section/available/AvailableAt";
-import Testimonials from "./section/testimonials/Testimonials";
+// import AvailableAt from "./section/available/AvailableAt";
+// import Testimonials from "./section/testimonials/Testimonials";
 import Footer from "./section/footer/footer";
+import Stores from "./section/stores/Stores";
+import MainFooter from "./section/footer/MainFooter";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -28,8 +30,10 @@ const page: FunctionComponent<pageProps> = ({}) => {
       <Products />
       {/* <Testimonials /> */}
       <Contact />
-      <AvailableAt />
-      <Footer />
+      {/* <AvailableAt /> */}
+      <Stores />
+      {/* <Footer /> */}
+      <MainFooter />
     </main>
   );
 };
