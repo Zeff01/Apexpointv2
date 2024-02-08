@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         'saira-condensed': ['Saira Condensed', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
       colors: {
         lubie: {
