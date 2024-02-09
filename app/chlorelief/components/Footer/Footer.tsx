@@ -11,64 +11,83 @@ import lazadaMobile from "@/public/assets/lazadaMobile.png";
 import shopee from "@/public/assets/shopee.png";
 import shopeeMobile from "@/public/assets/shopeeMobile.png";
 import FooterSection from "./Links";
+import { FaTwitter } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { FaFacebook } from "react-icons/fa";
+import { IconType } from "react-icons";
 
-
-interface Company {
+interface Store {
   name: string;
   img: StaticImageData;
+}
+
+interface Company {
+  stores: Store[];
+  socialicons: SocialIcon[];
 }
 
 interface SocialIcon {
-  name: string;
-  img: StaticImageData;
+  icon: IconType; // Use IconType from 'react-icons' for better type definition
+  url: string;
 }
 
 const companies: Company[] = [
-   {
-    name: "mercury",
-    img: mercury,
-  },
   {
-    name: "watsons",
-    img: watsons,
-  },
-  {
-    name: "rose",
-    img: rose,
-  },
-  {
-    name: "lazada",
-    img: lazada,
-  },
-  {
-    name: "shopee",
-    img: shopee,
+    stores: [
+      {
+        name: "mercury",
+        img: mercury,
+      },
+      {
+        name: "watsons",
+        img: watsons,
+      },
+      {
+        name: "rose",
+        img: rose,
+      },
+      {
+        name: "lazada",
+        img: lazada,
+      },
+      {
+        name: "shopee",
+        img: shopee,
+      },
+    ],
+    socialicons: [
+      {
+        icon: FaFacebook,
+        url: "www.facebook.com",
+      },
+      {
+        icon: FaTiktok,
+        url: "www.facebook.com",
+      },
+      {
+        icon: CiLinkedin,
+        url: "www.facebook.com",
+      },
+      {
+        icon: PiInstagramLogoFill,
+        url: "www.facebook.com",
+      },
+      {
+        icon: FaTwitter,
+        url: "www.facebook.com",
+      },
+    ],
   },
 ];
 
-
 const Footer = () => {
   return (
-<div>
-  <div className="text-center">
-    {/* Add any content for the header */}
-  </div>
-  <div className="stores flex-wrap justify-around py-5 my-5 px-10 items-center hidden sm:hidden md:hidden lg:flex ">
-    {companies.map((d, index) => (
-      <div className="grayscale"  key={index}>
-        <Image
-          src={d.img}
-          alt={d.name}
-          width={130}
-          height={80}
-        />
-      </div>
-    ))}
-  </div>
-  <FooterSection/>
-</div>
-
-
+    <FooterSection
+      companies={companies}
+      backgroundColor="bg-chlorelief-springwood"
+    />
   );
 };
 

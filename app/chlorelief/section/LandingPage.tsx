@@ -16,10 +16,10 @@ export default function LandingPage() {
       <Hero />
       <Product />
       <About />
-      <Banner/>
+      <Banner />
       <div className="flex flex-col sm:flex-col-reverse md:flex-col-reverse lg:flex-col">
-      <Contacts />
-      <Testimonials />
+        <Contacts />
+        <Testimonials />
       </div>
       <Footer />
     </>
