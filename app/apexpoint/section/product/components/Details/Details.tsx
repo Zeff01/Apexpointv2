@@ -6,6 +6,7 @@ import Description from "./components/Description";
 import List from "./components/List";
 import Button from "@/app/components/ui/Button";
 import Slider from "./components/Slider";
+import Carousel from "./components/Carousel";
 
 const Details = ({
   name,
@@ -18,13 +19,14 @@ const Details = ({
 }: ProductData) => {
   return (
     <>
-      <Slider name={name} logo={logo} />
-      <div className="px-0 md:px-[4%] flex flex-col gap-1 min-[425px]:gap-2 lg:gap-3">
+      {/* <Slider name={name} logo={logo} /> */}
+      <Carousel name={name} logo={logo} url={url} />
+      <div className="w-1/2 px-0 md:px-[4%] flex flex-col gap-1 min-[425px]:gap-2 lg:gap-3">
         <Logo className="object-fit" img={img} name={name} />
         <Title title={title} />
         <Description description={description} />
         <List benefits={benefits} />
-        <Button url={url} variant="apexpoint">
+        <Button className="w-[50%]" url={url} variant="apexpoint">
           Learn More!
         </Button>
       </div>

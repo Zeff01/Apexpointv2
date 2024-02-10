@@ -16,10 +16,13 @@
   }
 }
 
-/* .swiper-slide {
+.container {
   display: flex !important;
-  justify-content: center;
-} */
+}
+
+.slick-arrow::before {
+  color: #f29a38 !important;
+}
 
 .swiper-button-prev::after,
 .swiper-button-next::after {

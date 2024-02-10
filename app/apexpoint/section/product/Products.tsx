@@ -14,11 +14,13 @@ export const Products = () => {
       className="flex flex-col gap-4 min-[425px]:gap-10 pt-[5%]"
     >
       <Header>Our Products</Header>
-      <div className="w-full flex flex-col min-[425px]:items-center md:items-start justify-center md:flex-row gap-[6%]">
+      <div className="w-full flex flex-col min-[425px]:items-center md:items-start justify-center md:flex-col gap-y-10">
         {productData.map((item: ProductData) => {
           return (
             <Card
-              className="h-full w-full min-[425px]:w-3/4 md:w-[45%] flex flex-col gap-6 mb-10"
+              className={`h-full w-full flex ${
+                item.name === "chlorelief" ? "flex-row" : "flex-row-reverse"
+              } gap-6 mb-10`}
               key={item.name}
             >
               <Details {...item} />

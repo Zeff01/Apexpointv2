@@ -22,7 +22,7 @@ const Slider = ({ name, logo }: ProductData) => {
     </SwiperSlide>
   ));
   return (
-    <div className="w-full h-auto">
+    <div className="w-1/2 h-auto">
       <Swiper
         modules={[Navigation, A11y, Autoplay]}
         autoplay={true}

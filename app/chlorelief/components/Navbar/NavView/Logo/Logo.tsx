@@ -8,9 +8,11 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ chloreliefLogo }) => {
   return (
-    <Link href='/'>
+    <>
+    <Link href='/' className='overflow-x-hidden'>
       <Image className='h-8 w-auto' src={chloreliefLogo} alt='apexpoint' />
     </Link>
+    </>
   );
 };
 
