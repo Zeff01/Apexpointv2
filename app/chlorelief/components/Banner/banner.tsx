@@ -7,7 +7,6 @@ const Banner = () => {
       <Image
         src={bannerImg}
         alt="Banner"
-        layout="responsive"
         width={1000}
         height={500}
       />
