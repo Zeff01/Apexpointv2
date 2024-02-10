@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   const baseStyles = "w-fit text-center px-4 py-2 rounded";
   const variantStyles =
     variant === "apexpoint"
-      ? "bg-apexpoint-green text-white"
+      ? "bg-apexpoint-dark-orange text-white"
       : variant === "chlorelief"
       ? "bg-chlorelief-pink text-white"
       : "border-lubie-dark-blue";
