@@ -4,7 +4,6 @@ import { FooterDataType, footerData } from "../../data/apexpoint/footerData";
 import Socials from "@/app/apexpoint/section/footer/component/Socials";
 import Image from "next/image";
 import apexpointLogo from "@/public/assets/apexpoint-logo.png";
-
 type FooterProps = {
   variant: "chlorelief" | "lubie";
 };
@@ -14,19 +13,20 @@ type FooterProps = {
 const Footer: React.FC<FooterProps> = ({ variant }) => {
   const data = footerData.map((item: FooterDataType) => {
     return (
-      <div
-        key={item.title}
-        className={`p-4 ${
-          variant === "chlorelief"
-            ? "bg-chlorelief-springwood"
-            : "bg-lubie-dark-blue"
-        }`}
-      >
-        <p>{item.title}</p>
+      <div key={item.title} className="p-4">
+        <p className="m-3 ml-0 font-medium">{item.title}</p>
         <ul>
           {item.list.map((list, index) => (
-            <li key={index}>
-              {list.icon && <span>{list.icon}</span>}
+            <li key={index} className="flex gap-3 mb-3 text-sm">
+              {list.icon && (
+                <Image
+                  className="grayscale object-contain"
+                  src={list.icon}
+                  alt={list.information}
+                  width={19}
+                  height={19}
+                />
+              )}
               {list.information}
             </li>
           ))}
@@ -36,14 +36,25 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
   });
 
   return (
-    <Section id="footer" className="text-white">
-      <div>{data}</div>
-      <div>
-        <Socials className="bg-chlorelief-springwood" iconColor="text-white" />
+    <Section
+      id="footer"
+      className={`p-4 ${
+        variant === "chlorelief"
+          ? "bg-chlorelief-springwood"
+          : "bg-lubie-dark-blue"
+      }  text-white `}
+    >
+      <div className="md:flex w-100 justify-center md:gap-[50px] md:pt-[100px]  md:mb-[30px] sm:hidden ">
+        {data}
       </div>
-      <div className="bg-chlorelief-springwood">
-        <Image src={apexpointLogo} alt="apexpoint" />
-        <p>2021 © Copyright. All rights reserved.</p>
+      <div className="flex justify-center sm:mt-5">
+        <Socials iconColor="text-white" />
+      </div>
+      <div className="flex justify-center items-center gap-3 md:mb-20 md:mt-10 sm:mt-5 sm:mb-7">
+        <Image src={apexpointLogo} alt="apexpoint" width={30} />
+        <p className="text-lubie-light-blue text-xs m-0">
+          2021 © Copyright. All rights reserved.
+        </p>
       </div>
     </Section>
   );

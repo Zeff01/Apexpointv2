@@ -1,6 +1,8 @@
+import { StaticImageData } from "next/image";
+import { phone, email, shoppingbag, lazada } from "@/public/assets/lubie";
 export type FooterDataType = {
   title: string;
-  list: { icon?: string; information: string }[];
+  list: { icon?: StaticImageData; information: string }[];
 };
 
 export const footerData: FooterDataType[] = [
@@ -8,11 +10,11 @@ export const footerData: FooterDataType[] = [
     title: "Contact Us",
     list: [
       {
-        icon: "fone", // insert here the img/icon of fone
+        icon: phone, // insert here the img/icon of fone
         information: "+639-xxxxxxxxx",
       },
       {
-        icon: "fone", // insert here the img/icon of email
+        icon: email, // insert here the img/icon of email
         information: "info@gmail.com",
       },
     ],
@@ -30,11 +32,11 @@ export const footerData: FooterDataType[] = [
     title: "Our Shops",
     list: [
       {
-        icon: "shopee",
+        icon: shoppingbag,
         information: "Shopee",
       },
       {
-        icon: "lazada",
+        icon: lazada,
         information: "Lazada",
       },
     ],

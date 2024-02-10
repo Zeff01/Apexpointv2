@@ -9,7 +9,7 @@ import Contacts from "../components/Contacts/Contacts";
 // import Footer from "../components/Footer/Footer";
 import Banner from "../components/Banner/banner";
 import Footer from "@/app/components/section/Footer/Footer";
-
+import Store from "@/app/components/section/Store/Stores";
 export default function LandingPage() {
   return (
     <>
@@ -20,8 +20,9 @@ export default function LandingPage() {
       <Banner />
       <div className="flex flex-col sm:flex-col-reverse md:flex-col-reverse lg:flex-col">
         <Contacts />
-        <Testimonials />
+        {/* <Testimonials /> */}
       </div>
+      <Store />
       <Footer variant="chlorelief" />
     </>
   );
