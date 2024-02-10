@@ -2,7 +2,7 @@ import React from "react";
 import goBackImg from "@/public/assets/Back.png";
 import Image from "next/image";;
 import  Link  from "next/link";
-import MobileNav from "@/app/chlorelief/components/Navbar/NavView/MobileNav";
+//import MobileNav from "@/app/chlorelief/components/Navbar/NavView/MobileNav";
 import { useState } from "react";
 const links = [
   { text: "Home", href: "#home",hover:"flex flex-col items-start px-10 mb-4 text-blue-700 hover:text-blue-200 ease-in-out duration-700"},
@@ -18,7 +18,7 @@ const BackBtn = () => {
       <Image src={goBackImg} alt="Go back to Apexpoint" />
       <p className="text-sm text-chlorelief-light-red sm:text-lg">Back to Apexpoint</p>
     </Link>
-    <MobileNav navMenu={navMenu} setNavMenu={setNavMenu} links={links} />
+   {/* <MobileNav navMenu={navMenu} setNavMenu={setNavMenu} links={links} /> */} {/* to fix the imported file module */}
     </main>
   );
 };
