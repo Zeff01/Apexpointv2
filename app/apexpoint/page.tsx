@@ -5,7 +5,7 @@ import { Products } from "./section/product/Products";
 import Navbar from "./section/navbar/Navbar";
 import Hero from "./section/hero/Hero";
 import About from "./section/about/About";
-import Stores from "./section/stores/Stores";
+import Stores from "../components/section/Stores";
 import Footer from "./section/footer/Footer";
 
 const poppins = Poppins({

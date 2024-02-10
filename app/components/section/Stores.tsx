@@ -19,12 +19,8 @@ import Carousel from "./components/Carousel";
 
 const Stores = () => {
   return (
-    <Section
-      id="store"
-      className="h-auto flex flex-col items-center justify-center bg-white gap-6 pt-14 px-0"
-    >
+    <Section id="store" className="pt-14">
       <Header>Available to Stores</Header>
-
       <Carousel />
     </Section>
   );
