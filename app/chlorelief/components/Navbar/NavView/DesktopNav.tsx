@@ -7,8 +7,8 @@ interface DesktopNavProps {
 const DesktopNav: React.FC<DesktopNavProps> = ({ links }) => {
   return (
     <div className='md:block hidden'>
-      <div className='flex justify-center items-center'>
-        <button className='flex gap-10 font-semibold text-center text-xl '>
+      <div className='flex justify-center items-center  '>
+        <button className='flex gap-10 '>
           {links.map((link, index) => (
             <Link
               className={link.hover}
