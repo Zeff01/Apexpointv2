@@ -6,8 +6,9 @@ import Product from "../components/Product/product";
 import Testimonials from "../components/Testimonials/page";
 import About from "../components/About/page";
 import Contacts from "../components/Contacts/Contacts";
-import Footer from "../components/Footer/Footer";
+// import Footer from "../components/Footer/Footer";
 import Banner from "../components/Banner/banner";
+import Footer from "@/app/components/section/Footer/Footer";
 
 export default function LandingPage() {
   return (
@@ -16,12 +17,12 @@ export default function LandingPage() {
       <Hero />
       <Product />
       <About />
-      <Banner/>
+      <Banner />
       <div className="flex flex-col sm:flex-col-reverse md:flex-col-reverse lg:flex-col">
-      <Contacts />
-      <Testimonials />
+        <Contacts />
+        <Testimonials />
       </div>
-      <Footer />
+      <Footer variant="chlorelief" />
     </>
   );
 }
