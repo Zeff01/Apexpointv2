@@ -44,13 +44,13 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
           : "bg-lubie-dark-blue"
       }  text-white `}
     >
-      <div className="md:flex w-100 justify-center md:gap-[50px] md:pt-[100px]  md:mb-[30px] sm:hidden ">
+      <div className="md:flex w-100 justify-center md:gap-[50px] md:pt-[100px]  md:mb-[30px] hidden ">
         {data}
       </div>
-      <div className="flex justify-center sm:mt-5">
+      <div className="flex justify-center mt-5">
         <Socials iconColor="text-white" />
       </div>
-      <div className="flex justify-center items-center gap-3 md:mb-20 md:mt-10 sm:mt-5 sm:mb-7">
+      <div className="flex justify-center items-center gap-3 md:mb-20 mt-5 mb-7">
         <Image src={apexpointLogo} alt="apexpoint" width={30} />
         <p className="text-lubie-light-blue text-xs m-0">
           2021 © Copyright. All rights reserved.
