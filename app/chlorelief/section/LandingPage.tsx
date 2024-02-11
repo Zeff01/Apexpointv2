@@ -9,7 +9,7 @@ import Contacts from "../components/Contacts/Contacts";
 // import Footer from "../components/Footer/Footer";
 import Banner from "../components/Banner/banner";
 import Footer from "@/app/components/section/Footer/Footer";
-
+import Store from "@/app/components/section/Store/Stores";
 export default function LandingPage() {
   return (
     <>
@@ -22,6 +22,7 @@ export default function LandingPage() {
         <Contacts />
         <Testimonials />
       </div>
+      <Store />
       <Footer variant="chlorelief" />
     </>
   );
