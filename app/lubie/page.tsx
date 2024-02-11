@@ -8,6 +8,8 @@ import FooterSection from "./section/Footersec";
 import Testimonials from "./section/Testimonials";
 import AboutSection from "./section/AboutUs";
 import ContactSection from "./section/Contact";
+import Footer from "@/app/components/section/Footer/Footer";
+import Store from "@/app/components/section/Store/Stores";
 // layout
 export default function Page() {
   return (
@@ -18,8 +20,8 @@ export default function Page() {
       <AboutSection />
       <ContactSection />
       <Testimonials />
-      <StoreSection />
-      <FooterSection />
+      <Store />
+      <Footer variant="lubie" />
     </div>
   );
 }
