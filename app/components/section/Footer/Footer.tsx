@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
           : "bg-lubie-dark-blue"
       }  text-white `}
     >
-      <div className="md:flex w-100 justify-center md:gap-[100px] md:pt-[40px]  md:mb-[30px] hidden ">
+      <div className="md:flex w-100 md:justify-between md:px-8 lg:px-0 lg:justify-center lg:gap-[100px] md:pt-[40px]  md:mb-[30px] hidden ">
         {data}
       </div>
       <div className="flex justify-center mt-5">
