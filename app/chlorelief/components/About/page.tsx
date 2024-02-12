@@ -1,81 +1,73 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
+import { StaticImageData } from "next/image";
+import mainImg from "@/public/assets/chlorelief-products/chlorelief-white-bg.jpg";
 import serv from "@/public/assets/services.png";
 import ship from "@/public/assets/shipping.png";
 import ret from "@/public/assets/return-icon.png";
 import payment from "@/public/assets/payment.png";
-import mainImg from "@/public/assets/chlorelief-products/chlorelief-white-bg.jpg";
+
+interface About {
+  title: string;
+  img: StaticImageData;
+}
+
+const aboutData: About[] = [
+  { title: "services", img: serv },
+  { title: "shipping", img: ship },
+  { title: "return", img: ret },
+  { title: "payment", img: payment },
+];
 
 const About = () => {
-  interface About {
-    title: string;
-    img: StaticImageData;
-  }
-
-  const about: About[] = [
-    {
-      title: "services",
-      img: serv,
-    },
-    {
-      title: "shipping",
-      img: ship,
-    },
-    {
-      title: "return",
-      img: ret,
-    },
-    {
-      title: "payment",
-      img: payment,
-    },
-   
+  const aboutText = [
+    "Paraben-free paraben is not a ",
+    "natural product and is not",
+    "something you apod find naturally",
+    "in the body. Using skin products",
+    "with paraben will make skin dry,",
+    "brittle, cracked, and swollen.",
+    "Also, paraben can cause many",
+    "chemicals to enter the body that",
+    "that should not be there.",
   ];
+
   return (
-    <div id='about' className="font-saira-condensed mt-10 sm:h-[10vh] md:h-[100vh] lg:h-[120vh]">
-       <h2 className=" text-chlorelief-secondary-green text-center text-green-700 text-4xl sm:mt-20 md:mt-5 sm font-semibold">
-            ABOUT THE BRAND
-          </h2>
-      <div className="py-5 flex flex-col flex-wrap md:flex-row-reverse justify-around items-end sm:flex-col md:items-center ">
-        <div className="mb-5 lg:w-1/3 md:mx-20 text-chlorelief-secondary-gray sm:text-start md:text-center">
-          <div className="text-gray-400 text-start pb-8">
-            <h5 className="mt-5 font-light text-xl text-center sm:text-center md:text-center lg:text-left">CHLORELIEF</h5>
-            <p className="mt-10 text-center sm:text-center text-[12px] md:text-center md:text-2xl lg:text-left">
-              Paraben-free paraben is not a natural product and is not
-              something you apod find naturally in the body. Using skin
-              products with paraben will make skin dry, brittle, cracked, and
-              swollen. Also, paraben can cause many chemicals to enter the body
-              that should not be there.
-            </p>
-          </div>
-        </div>
-        <div>
-          <Image
-            src={mainImg}
-            alt="About Image"
-            width={650}
-            height={550}
-            className="mt-10 hidden sm:hidden md:hidden lg:block"
-          />
-        </div>
-      </div>
-      <div className="py-5 md:py-10  bg-chlorelief-primary-gray  rounded">
-        <div>
-          <div className="hidden items-center sm:hidden flex-row md:flex justify-evenly md:items-start">
-            {about.map((d, index) => (
-              <div key={index}>
-                <h2 className="text-green-500 font-bold">{d.title}</h2>
-                <Image
-                  src={d.img}
-                  alt="icon"
-                  width={80}
-                  height={20}
-                  className="py-2"
-                />
-              </div>
+    <div id='about' className="font-inter min-h-screen-sm h-auto sm:h-full">
+      <h2 className="text-chlorelief-chateaugreen font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop">
+        ABOUT THE BRAND
+      </h2>
+      <div className="flex flex-row-reverse items-center justify-center my-10 gap-40">
+        <div className="text-Body-Default sm:text-Body-Desktop">
+          <div className="text-gray-400 max-w-full-lg text-center md:text-left">
+            <h2 className="my-4">CHLORELIEF</h2>
+            {aboutText.map((text, index) => (
+              <p key={index}>{text}</p>
             ))}
           </div>
         </div>
+        <Image
+          src={mainImg}
+          alt="About Image"
+          className="hidden md:block object-scale-down"
+        />
+      </div>
+      <div className="hidden md:flex justify-evenly">
+        {aboutData.map((data, index) => (
+          <div key={index}>
+            <h2 className="text-chlorelief-chateaugreen font-bold ">{data.title}</h2>
+            <div className="h">
+            <Image
+              src={data.img}
+              alt="icon"
+              width={80}
+              height={20}
+              className="py-2 hue-rotate-90"
+              
+            />
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

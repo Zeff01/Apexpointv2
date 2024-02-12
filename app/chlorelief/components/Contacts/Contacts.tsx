@@ -11,7 +11,7 @@ import { CgMail } from "react-icons/cg";
 
 const Contacts = () => {
   return (
-    <div id='contact' className='h-[120vh] w-screen flex gap-4 flex-col justify-center items-center my-20 sm:gap-10 sm:flex-col sm:h-[120vh] md:flex-col lg:flex-row lg:h-[80vh]'>
+    <div id='contact' className='min-h-screen h-full w-screen flex gap-4 flex-col justify-center items-center my-20 sm:gap-10 sm:flex-col sm:h-[120vh] md:flex-col lg:flex-row lg:h-[80vh]'>
       <div className="left flex flex-col items-center border-4 border-green-500 shadow-lg px-24 py-10 rounded-xl sm:px-10 sm:h-[20vh] sm:w-[56%] md:w-[50%] md:h-[15%] lg:h-[96%] ">
         <h1 className='sm:text-2xl lg:text-3xl '>Connect with us</h1>
         <div className='hidden justify-center items-center text-md h-full sm:hidden sm:h-full text-xl md:hidden lg:flex flex-col'>

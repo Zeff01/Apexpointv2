@@ -16,7 +16,7 @@ const ProductComponent: React.FC<ProductProps> = ({
   Price,
 }: ProductProps) => {
   return (
-    <main className='flex flex-col gap-2 sm:gap-4 sm:h-[50vh] md:h-[60vh] lg:h-[60vh]'>
+    <main className='flex flex-col gap-2 min-h-screen-sm h-full'>
     <div className=' mt-4 rounded-lg shadow-md sm:py-2 px-5 bg-chlorelief-springwood md:px-4 md:py-4 lg:px-auto lg:bg-gray-100 lg:py-16'>
       <img className='w-18 h-24 px-12 object-contain sm:h-48 sm:w-full sm:px-0' src={ImageUrl} alt="Product Image" />
     </div>
