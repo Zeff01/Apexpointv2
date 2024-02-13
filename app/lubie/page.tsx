@@ -1,15 +1,13 @@
 "use client"; // This is a client component 👈🏽
 import React from "react";
-import Herosec from "./section/Herosec";
-import Navbar from "./section/Navbar";
-import StoreSection from "./section/Store";
-import Products from "./section/Products";
-import FooterSection from "./section/Footersec";
-import Testimonials from "./section/Testimonials";
-import AboutSection from "./section/AboutUs";
-import ContactSection from "./section/Contact";
-import Footer from "@/app/components/section/Footer/Footer";
-import Store from "@/app/components/section/Store/Stores";
+import Herosec from "./section/Hero/Herosec";
+import Navbar from "./section/Navbar/Navbar";
+import Products from "./section/Product/Products";
+import Testimonials from "./section/Testimonials/Testimonials";
+import AboutSection from "./section/About/AboutUs";
+import ContactSection from "./section/Contacts/Contact";
+import Footer from "@/components/footer/Footer";
+import Store from "@/components/sections/Stores";
 // layout
 export default function Page() {
   return (

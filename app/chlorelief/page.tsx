@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/hero";
-import Product from "./components/Product/product";
-import Testimonials from "./components/Testimonials/page";
-import About from "./components/About/page";
-import Footer from "@/app/components/section/Footer/Footer";
-import Store from "@/app/components/section/Store/Stores";
-import Banner from "./components/Banner/banner";
+import Navbar from "./section/NavBar/Navbar";
+import Hero from "./section/Hero/hero";
+import Product from "./section/Product/product";
+import Testimonials from "./section/Testimonials/page";
+import About from "./section/About/page";
+import Footer from "@/components/footer/Footer";
+import Store from "@/components/sections/Stores";
+import Banner from "./section/Banner/banner";
 
 export default function page() {
   return (

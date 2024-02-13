@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "@/app/components/ui/Section";
+import Section from "@/components/ui/Section";
 import Cards from "./components/Cards";
 
 const About = () => {

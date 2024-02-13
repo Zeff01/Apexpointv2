@@ -4,7 +4,7 @@ import Logo from "./components/Logo";
 import Title from "./components/Title";
 import Description from "./components/Description";
 import List from "./components/List";
-import Button from "@/app/components/ui/Button";
+import Button from "@/components/ui/Button";
 import Slider from "./components/Slider";
 import Carousel from "./components/Carousel";
 

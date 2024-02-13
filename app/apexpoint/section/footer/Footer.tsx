@@ -1,8 +1,8 @@
 import React from "react";
-import Policies from "./component/Policies";
-import Section from "@/app/components/ui/Section";
-import Socials from "./component/Socials";
-import Credits from "./component/Credits";
+import Policies from "./_modules/Policies";
+import Section from "@/components/ui/Section";
+import Socials from "./_modules/Socials";
+import Credits from "./_modules/Credits";
 
 const Footer = () => {
   return (
