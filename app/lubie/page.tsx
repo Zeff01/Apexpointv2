@@ -18,7 +18,7 @@ export default function Page() {
       <Herosec />
       <Products />
       <AboutSection />
-      <ContactSection />
+      <ContactSection variant="lubie" />
       <Testimonials />
       <Store />
       <Footer variant="lubie" />
