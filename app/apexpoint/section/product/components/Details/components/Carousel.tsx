@@ -9,11 +9,16 @@ const Carousel = ({ name, logo, url }: ProductData) => {
   const settings = {
     dots: true,
     fade: true,
+    autoplay: true,
     infinite: true,
     speed: 500,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
+    nextArrow: <></>,
+    prevArrow: <></>,
+    arrow: false,
   };
 
   const content = logo?.map(
@@ -30,7 +35,7 @@ const Carousel = ({ name, logo, url }: ProductData) => {
   );
 
   return (
-    <div className="w-1/2">
+    <div className="w-full md:w-1/2">
       <Slider {...settings}>{content}</Slider>
     </div>
   );

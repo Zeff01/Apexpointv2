@@ -51,3 +51,24 @@
 html {
   scroll-behavior: smooth !important;
 }
+
+.text-balance {
+  text-wrap: balance;
+}
+.img-md {
+  width: 510px;
+  height: 510px;
+  box-shadow: inset;
+}
+
+.img-sm {
+  width: 175px;
+  height: 175px;
+  box-shadow: inset;
+}
+
+img-2 {
+  width: 150px;
+  height: 345px;
+  box-shadow: inset;
+}

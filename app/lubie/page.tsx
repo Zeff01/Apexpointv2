@@ -13,7 +13,7 @@ import Store from "@/app/components/section/Store/Stores";
 // layout
 export default function Page() {
   return (
-    <div className="flex-col bg-white w-full h-screen ">
+    <div className="flex-col bg-white w-full  ">
       <Navbar />
       <Herosec />
       <Products />

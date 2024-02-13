@@ -13,7 +13,7 @@ type FooterProps = {
 const Footer: React.FC<FooterProps> = ({ variant }) => {
   const data = footerData.map((item: FooterDataType) => {
     return (
-      <div key={item.title} className="p-4">
+      <div key={item.title} className="p-4 ">
         <p className="m-3 ml-0 font-medium">{item.title}</p>
         <ul>
           {item.list.map((list, index) => (
@@ -44,10 +44,10 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
           : "bg-lubie-dark-blue"
       }  text-white `}
     >
-      <div className="md:flex w-100 md:justify-between md:px-8 lg:px-0 lg:justify-center lg:gap-[100px] md:pt-[40px]  md:mb-[30px] hidden ">
+      <div className="md:flex w-100 md:justify-between md:px-8 lg:px-0 lg:justify-center lg:gap-[50px]  md:mb-[10px] hidden ">
         {data}
       </div>
-      <div className="flex justify-center mt-5">
+      <div className="flex justify-center">
         <Socials iconColor="text-white" />
       </div>
       <div className="flex justify-center items-center gap-3  mt-5 mb-0">

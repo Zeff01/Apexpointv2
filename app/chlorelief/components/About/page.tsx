@@ -33,7 +33,7 @@ const About = () => {
   ];
 
   return (
-    <div id='about' className="font-inter min-h-screen-sm h-auto sm:h-full">
+    <div id="about" className="font-inter min-h-screen h-auto sm:h-full">
       <h2 className="text-chlorelief-chateaugreen font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop">
         ABOUT THE BRAND
       </h2>
@@ -55,16 +55,17 @@ const About = () => {
       <div className="hidden md:flex justify-evenly">
         {aboutData.map((data, index) => (
           <div key={index}>
-            <h2 className="text-chlorelief-chateaugreen font-bold ">{data.title}</h2>
+            <h2 className="text-chlorelief-chateaugreen font-bold ">
+              {data.title}
+            </h2>
             <div className="h">
-            <Image
-              src={data.img}
-              alt="icon"
-              width={80}
-              height={20}
-              className="py-2 hue-rotate-90"
-              
-            />
+              <Image
+                src={data.img}
+                alt="icon"
+                width={80}
+                height={20}
+                className="py-2 hue-rotate-90"
+              />
             </div>
           </div>
         ))}

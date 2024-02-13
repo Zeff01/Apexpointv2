@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <Section
       id="home"
-      className="flex flex-row bg-apexpoint-light-orange items-center justify-center gap-0 md:gap-10"
+      className="flex flex-row bg-apexpoint-light-orange items-center justify-center gap-0 md:gap-10 "
     >
       <div className="hidden md:block w-1/2">
         <HeroImage />

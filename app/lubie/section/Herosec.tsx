@@ -10,65 +10,126 @@ import {
   icon5,
   icon6,
 } from "@/public/assets/lubie";
+import { motion } from "framer-motion";
+import {
+  textAnimation,
+  headerAnimation,
+  containerAnimation,
+  itemAnimation,
+} from "../components/animation/hero/animation";
+import { Lubiehero } from "@/public/assets/lubie";
 import Lubie from "@/public/assets/sample.png";
-import Header from "../components/animation/hero/header";
-import Intro from "../components/animation/hero/introduction";
 
 function Herosec() {
   return (
-    <>
-      <div className="h-[120vh] md:h-screen w-full flex flex-col items-center bg-lubie-navy-blue md:space-y-18 space-y-12 font-ubuntu text-lubie-white-color">
-        <div className="w-full md:h-1/2 h-screen flex flex-row gap-[10vh] justify-center  md:mt-10px mt-[15vh] mb-[2vh] md:mb-[10vh] ">
+    <div className="  min-h-screen h-full relative">
+      <div className="  w-full flex flex-col items-center bg-lubie-navy-blue font-ubuntu text-lubie-white-color  justify-between">
+        {/* HERO TEXT AND ICON */}
+        <div className="w-full  flex flex-row  justify-center gap-20  pt-12 ">
           <div className="flex flex-col items-center mt-2 space-y-8 ">
-            <p className="text-center md:text-right mb-2">Nature & Health</p>
-            <Intro />
-            <Button title="Read More" />
+            <motion.div
+              variants={textAnimation}
+              initial="hidden"
+              animate="visible"
+            >
+              <p className="text-center md:text-right mb-2">Nature & Health</p>
+            </motion.div>
+            <motion.div
+              variants={textAnimation}
+              initial="hidden"
+              animate="visible"
+            >
+              <p className="sm:text-2xl md:text-2xl mb-5 text-xl font-bold md:text-right text-center">
+                The first <br></br>
+                <span className="text-lubie-light-blue text-extra-bold">
+                  multi-purpose
+                </span>
+                FDA registered <br></br>Lube in the Philippines
+              </p>
+            </motion.div>
+            <motion.div
+              variants={textAnimation}
+              initial="hidden"
+              animate="visible"
+            >
+              <Button title="Read More" />
+            </motion.div>
           </div>
           <div className="hidden md:flex justify-start ">
-            <div className="h-[125%] w-[125%] sticky ">
-              <Header />
+            <div className=" sticky  ">
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={headerAnimation}
+              >
+                <Image
+                  src={Lubiehero}
+                  alt="Lubiehero"
+                  className=" object-contain z-0"
+                />
+              </motion.div>
             </div>
           </div>
         </div>
-        <div className="flex items-start w-full">
-          <div className="flex flex-col md:flex-row justify-center items-center  mb-32 w-full">
-            <div className="flex w-full md:w-auto justify-center">
+
+        {/* HERO ICONS */}
+        <div className="flex items-start w-full mt-8 pb-8">
+          <motion.div
+            className="flex flex-col md:flex-row justify-center items-center w-full"
+            variants={containerAnimation}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.div
+              className="flex w-full md:w-auto justify-center"
+              variants={itemAnimation}
+            >
               <Icons imageUrl={icon1} />
               <Icons imageUrl={icon2} />
-            </div>
-            <div className="flex w-full md:w-auto justify-center ">
+            </motion.div>
+            <motion.div
+              className="flex w-full md:w-auto justify-center"
+              variants={itemAnimation}
+            >
               <Icons imageUrl={icon3} />
               <Icons imageUrl={icon4} />
-            </div>
-            <div className="flex w-full md:w-auto justify-center ">
+            </motion.div>
+            <motion.div
+              className="flex w-full md:w-auto justify-center"
+              variants={itemAnimation}
+            >
               <Icons imageUrl={icon5} />
               <Icons imageUrl={icon6} />
-            </div>
-          </div>
-        </div>
-        <div className="flex md:mx-[50vh] md:flex-row flex-col md:space-y-0 space-y-4 justify-center items-center absolute md:top-[115vh] top-[125vh] z-10">
-          <div className="flex justify-center w-full h-[90%]">
-            <Image src={Lubie} alt="herlubie" className="object-contain md:w-[500px] w-[300px] md:mb-12 mb-8" />
-          </div>
-            <div className="w-full flex flex-col mx-auto items-center justify-center space-y-6 text-lubie-dark-blue">
-              <p>Nature & Health</p>
-              <h2 className="md:text-3xl text-xl font-extrabold md:w-[auto] text-center">
-                <span className="text-lubie-navy-blue">Water-based</span> moisturizer
-              </h2>
-              <div className="md:mx-auto ">
-              <p className="md:text-left md:text-xl text-center px-5">
-                Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
-                dolor sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem
-                ipsum dolor sitametamet
-              </p>
-              </div>
-              <Button title="Read More" />
-            </div>
-        
+            </motion.div>
+          </motion.div>
         </div>
       </div>
-      <div className="w-full md:h-[0vh] h-[60vh]"></div>
-    </>
+
+      <div className=" flex md:flex-row flex-col  justify-center items-center   mt-8 relative  ">
+        <div className="flex justify-center w-full ">
+          <Image
+            src={Lubie}
+            alt="herlubie"
+            className="object-contain md:w-[500px] w-[300px] md:mb-12 mb-8"
+          />
+        </div>
+        <div className="w-full flex flex-col mx-auto items-center justify-center  text-lubie-dark-blue ">
+          <p>Nature & Health</p>
+          <h2 className="md:text-3xl text-xl font-extrabold md:w-[auto] text-center">
+            <span className="text-lubie-navy-blue">Water-based</span>{" "}
+            moisturizer
+          </h2>
+          <div className="md:mx-auto ">
+            <p className="md:text-left md:text-xl text-center px-5">
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor
+              sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
+              dolor sitametamet
+            </p>
+          </div>
+          <Button title="Read More" />
+        </div>
+      </div>
+    </div>
   );
 }
 

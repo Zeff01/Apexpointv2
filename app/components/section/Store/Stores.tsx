@@ -19,7 +19,7 @@ import Carousel from "./components/Carousel";
 
 const Stores = () => {
   return (
-    <Section id="store" className="hidden lg:block py-14">
+    <Section id="store" className="hidden lg:block  mt-28 ">
       <Header className="pb-4">Available to Stores</Header>
       <Carousel />
     </Section>

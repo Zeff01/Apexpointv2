@@ -21,7 +21,7 @@ const Details = ({
     <>
       {/* <Slider name={name} logo={logo} /> */}
       <Carousel name={name} logo={logo} url={url} />
-      <div className="w-1/2 px-0 md:px-[4%] flex flex-col gap-1 min-[425px]:gap-2 lg:gap-3">
+      <div className="w-full md:w-1/2 px-0 md:px-[4%] flex flex-col gap-1 min-[425px]:gap-2 lg:gap-3  ">
         <Logo className="object-fit" img={img} name={name} />
         <Title title={title} />
         <Description description={description} />
