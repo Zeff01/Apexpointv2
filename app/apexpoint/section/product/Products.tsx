@@ -9,10 +9,7 @@ import Header from "@/app/components/ui/Header";
 
 export const Products = () => {
   return (
-    <Section
-      id="products"
-      className="flex flex-col gap-4 min-[425px]:gap-10 pt-4  "
-    >
+    <Section id="products" className="flex flex-col gap-4 min-[425px]:gap-10 ">
       <Header>Our Products</Header>
       <div className="w-full flex flex-col min-[425px]:items-center md:items-start justify-center md:flex-col gap-y-10  ">
         {productData.map((item: ProductData) => {

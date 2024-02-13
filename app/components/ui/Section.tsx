@@ -15,10 +15,10 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   const baseStyles = "height-fit-content w-full";
 
-  let additionalStyles = "px-[9%] pt-[5%]";
+  let additionalStyles = "px-36 pt-20";
 
   if (id === "store" || id === "footer") {
-    additionalStyles = "px-0";
+    additionalStyles = "px-0 pt-20";
   }
 
   const combinedClassName =
