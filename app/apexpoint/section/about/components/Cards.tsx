@@ -1,6 +1,6 @@
-import { AboutData } from "@/app/components/data/apexpoint/aboutData";
-import Card from "@/app/components/ui/Card";
-import Icon from "@/app/components/ui/Icon";
+import { AboutData } from "@/components/data/apexpoint/aboutData";
+import Card from "@/components/ui/Card";
+import Icon from "@/components/ui/Icon";
 import Header from "./Header";
 import Description from "./Description";
 

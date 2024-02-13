@@ -1,11 +1,11 @@
 import {
   ProductData,
   productData,
-} from "@/app/components/data/apexpoint/productData";
-import Section from "@/app/components/ui/Section";
+} from "@/components/data/apexpoint/productData";
+import Section from "@/components/ui/Section";
 import Details from "./components/Details/Details";
-import Card from "@/app/components/ui/Card";
-import Header from "@/app/components/ui/Header";
+import Card from "@/components/ui/Card";
+import Header from "@/components/ui/Header";
 
 export const Products = () => {
   return (

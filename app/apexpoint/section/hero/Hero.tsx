@@ -1,8 +1,8 @@
 import React from "react";
-import Section from "@/app/components/ui/Section";
+import Section from "@/components/ui/Section";
 import Header from "./components/Header";
 import Description from "./components/Description";
-import Button from "@/app/components/ui/Button";
+import Button from "@/components/ui/Button";
 import HeroImage from "./components/HeroImage";
 
 const Hero = () => {

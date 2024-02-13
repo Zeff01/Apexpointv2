@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "@/app/components/ui/Header";
-import Section from "@/app/components/ui/Section";
+import Header from "@/components/ui/Header";
+import Section from "@/components/ui/Section";
 import ContactForm from "./components/form/ContactForm";
 import Links from "./components/Links/Links";
 

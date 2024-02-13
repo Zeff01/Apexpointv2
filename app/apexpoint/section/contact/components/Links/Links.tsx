@@ -2,8 +2,8 @@ import React from "react";
 import {
   LinksData,
   linksData,
-} from "@/app/components/data/apexpoint/linksData";
-import Card from "@/app/components/ui/Card";
+} from "@/components/data/apexpoint/linksData";
+import Card from "@/components/ui/Card";
 import Title from "./components/Title";
 import ButtonLink from "./components/ButtonLink";
 

@@ -27,7 +27,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-lg md:shadow-md sticky top-0 flex w-full justify-between items-center px-12 h-[8vh] z-[9999]">
+    <nav className="bg-white shadow-lg md:shadow-md sticky top-0 flex w-full justify-between items-center px-12">
       <Link href="/">
         <Image className="h-8 w-auto" src={apexLogo} alt="apexpoint" />
       </Link>
