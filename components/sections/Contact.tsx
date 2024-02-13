@@ -1,11 +1,8 @@
 import Socials from "@/app/apexpoint/section/footer/_modules/Socials";
+import {contactDataType,contactData,} from "@/components/data/apexpoint/contactData";
 
 
-import {
-  contactDataType,
-  contactData,
-} from "@/components/data/apexpoint/contactData";
-import Image from "next/image";
+
 type ContactProps = {
   variant: "chlorelief" | "lubie";
 };
@@ -135,7 +132,7 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
               <button
                 className={`p-2  font-bold w-[300px] rounded-lg border-box border-2 ${
                   variant === "chlorelief"
-                    ? "border-chlorelief-chateaugreen text-black-200 hover:bg-chlorelief-chateaugreen"
+                    ? "border-chlorelief-springwood text-black-200 hover:bg-chlorelief-springwood"
                     : "border-lubie-dark-blue text-black-200 hover:bg-lubie-dark-blue"
                 }  hover:text-white`}
               >

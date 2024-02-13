@@ -7,7 +7,7 @@ import About from "./section/About/page";
 import Footer from "@/components/footer/Footer";
 import Store from "@/components/sections/Stores";
 import Banner from "./section/Banner/banner";
-
+import ContactSection from "@/components/sections/Contact";
 export default function page() {
   return (
     <>
@@ -16,8 +16,8 @@ export default function page() {
       <Product />
       <About />
       <Banner />
+      <ContactSection variant="chlorelief" />
       <div className="flex flex-col sm:flex-col-reverse md:flex-col-reverse lg:flex-col">
-        {/* <Contacts /> */}
         <Testimonials />
       </div>
       <Store />
