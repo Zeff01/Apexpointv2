@@ -1,20 +1,16 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 interface DesktopNavProps {
-  links: { text: string; href: string; hover:string }[];
+  links: { text: string; href: string; hover: string }[];
 }
 const DesktopNav: React.FC<DesktopNavProps> = ({ links }) => {
   return (
-    <div className='md:block hidden '>
-      <div className='flex justify-center items-center  '>
-        <button className='flex gap-10 '>
+    <div className="md:block hidden ">
+      <div className="flex justify-center items-center  ">
+        <button className="flex gap-10 ">
           {links.map((link, index) => (
-            <Link
-              className={link.hover}
-              key={index}
-              href={link.href}
-            >
+            <Link className={link.hover} key={index} href={link.href}>
               {link.text}
             </Link>
           ))}
