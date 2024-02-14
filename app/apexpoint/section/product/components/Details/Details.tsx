@@ -1,4 +1,4 @@
-import { ProductData } from "@/app/components/data/apexpoint/productData";
+import { ProductData } from "@/components/data/apexpoint/productData";
 import React from "react";
 import Logo from "./components/Logo";
 import Title from "./components/Title";

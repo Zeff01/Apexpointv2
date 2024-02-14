@@ -1,7 +1,7 @@
 // components/Logo.tsx
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import { ProductData } from "@/app/components/data/apexpoint/productData";
+import { ProductData } from "@/components/data/apexpoint/productData";
 
 interface LogoProps extends Pick<ProductData, "img" | "name"> {
   className?: string;
