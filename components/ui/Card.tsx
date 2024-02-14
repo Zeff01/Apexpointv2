@@ -1,4 +1,3 @@
-// components/Card.tsx
 import React, { HTMLAttributes, ReactNode } from "react";
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {

@@ -1,4 +1,3 @@
-// components/Button.tsx
 import Link from "next/link";
 import React, { ButtonHTMLAttributes, ReactNode } from "react";
 import { UrlObject } from "url";

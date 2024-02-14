@@ -5,9 +5,10 @@ import Navbar from "./section/Navbar/Navbar";
 import Products from "./section/Product/Products";
 import Testimonials from "./section/Testimonials/Testimonials";
 import AboutSection from "./section/About/AboutUs";
-import ContactSection from "@/components/sections/Contact";
-import Footer from "@/components/footer/Footer";
-import Store from "@/components/sections/Stores";
+import ContactSection from "@/components/sections/contact/Contact";
+import Footer from "@/components/sections/footer/Footer";
+import Store from "@/components/sections/stores/Stores";
+
 // layout
 export default function Page() {
   return (
