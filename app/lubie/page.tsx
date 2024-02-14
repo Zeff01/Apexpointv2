@@ -9,6 +9,7 @@ import ContactSection from "@/components/sections/contact/Contact";
 import Footer from "@/components/sections/footer/Footer";
 import Store from "@/components/sections/stores/Stores";
 
+
 // layout
 export default function Page() {
   return (
