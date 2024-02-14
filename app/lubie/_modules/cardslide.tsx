@@ -20,7 +20,7 @@ export default function Cardslide() {
       disableOnInteraction: false // Continue autoplay after interaction
     }}
   >
-    <SwiperSlide><Cards /></SwiperSlide>
+    <SwiperSlide><Cards Comment='sample' ImageAlt='sampe' CustomerName='john doe' ImageUrl='#'/></SwiperSlide>
     
     {/* Add more SwiperSlides if needed */}
   </Swiper>
