@@ -13,9 +13,9 @@ const config: Config = {
         'inter': ['Inter', 'sans-serif']
       },
       fontSize: {
-        'Header-Desktop': '3em',
-        'Header-Default':'2.5em',
-        'Header-Mobile': '2em',
+        'Header-Desktop': '2.5em',
+        'Header-Default':'2em',
+        'Header-Mobile': '1.5em',
         'Body-Desktop': '1.5em',
         'Body-Default':'1em',
         'Caption-Default':'0.75em',

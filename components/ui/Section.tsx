@@ -1,4 +1,3 @@
-// components/Section.tsx
 import React, { HTMLAttributes, ReactNode } from "react";
 
 interface SectionProps extends HTMLAttributes<HTMLDivElement> {

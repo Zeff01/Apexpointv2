@@ -6,8 +6,8 @@ import Products from "./section/Product/Products";
 import Testimonials from "./section/Testimonials/Testimonials";
 import AboutSection from "./section/About/AboutUs";
 import ContactSection from "./section/Contacts/Contact";
-import Footer from "@/components/footer/Footer";
-import Store from "@/components/sections/Stores";
+import Footer from "@/components/sections/footer/Footer";
+import Store from "@/components/sections/stores/Stores";
 // layout
 export default function Page() {
   return (
