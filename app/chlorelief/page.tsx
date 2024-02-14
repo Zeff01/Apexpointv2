@@ -7,7 +7,7 @@ import About from "./section/About/page";
 import Footer from "@/components/sections/footer/Footer";
 import Store from "@/components/sections/stores/Stores";
 import Banner from "./section/Banner/banner";
-import ContactSection from "@/components/sections/Contact";
+import ContactSection from "@/components/sections/contact/Contact";
 export default function page() {
   return (
     <>
