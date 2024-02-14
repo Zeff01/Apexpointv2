@@ -1,6 +1,6 @@
 // components/Description.tsx
 import React from "react";
-import { ProductData } from "@/app/components/data/apexpoint/productData";
+import { ProductData } from "@/components/data/apexpoint/productData";
 
 interface DescriptionProps extends Pick<ProductData, "description"> {}
 

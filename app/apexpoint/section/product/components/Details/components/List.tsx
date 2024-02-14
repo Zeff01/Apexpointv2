@@ -1,6 +1,6 @@
 // components/List.tsx
 import React from "react";
-import { ProductData } from "@/app/components/data/apexpoint/productData";
+import { ProductData } from "@/components/data/apexpoint/productData";
 
 interface ListProps extends Pick<ProductData, "benefits"> {}
 
