@@ -4,8 +4,8 @@ import Hero from "./section/Hero/hero";
 import Product from "./section/Product/product";
 import Testimonials from "./section/Testimonials/page";
 import About from "./section/About/page";
-import Footer from "@/components/footer/Footer";
-import Store from "@/components/sections/Stores";
+import Footer from "@/components/sections/footer/Footer";
+import Store from "@/components/sections/stores/Stores";
 import Banner from "./section/Banner/banner";
 import ContactSection from "@/components/sections/Contact";
 export default function page() {

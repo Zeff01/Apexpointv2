@@ -8,6 +8,7 @@ import AboutSection from "./section/About/AboutUs";
 import ContactSection from "@/components/sections/Contact";
 import Footer from "@/components/footer/Footer";
 import Store from "@/components/sections/Stores";
+
 // layout
 export default function Page() {
   return (

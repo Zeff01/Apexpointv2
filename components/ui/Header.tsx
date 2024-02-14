@@ -6,7 +6,7 @@ interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
 
 const Header: React.FC<HeaderProps> = ({ children }) => {
   return (
-    <h1 className="text-2xl min-[425px]:text-3xl md:text-4xl w-64 min-w-full font-semibold text-center">
+    <h1 className="text-Header-Mobile min-[425px]:text-Header-Default md:text-Header-Desktop w-64 min-w-full font-semibold text-center">
       {children}
     </h1>
   );

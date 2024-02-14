@@ -1,4 +1,3 @@
-// components/ui/Icon.tsx
 import Image, { ImageProps, StaticImageData } from "next/image";
 import React from "react";
 

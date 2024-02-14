@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../ui/Section";
+import Section from "../../ui/Section";
 import { FooterDataType, footerData } from "@/components/data/apexpoint/footerData";
 import Socials from "@/app/apexpoint/section/footer/_modules/Socials";
 import Image from "next/image";
