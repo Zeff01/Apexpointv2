@@ -3,7 +3,7 @@ import Image from "next/image";
 import { StaticImageData } from "next/image";
 import mainImg from "@/public/assets/chlorelief-products/chlorelief-white-bg.jpg";
 import serv from "@/public/assets/chlorelief-assets/services.png";
-import ship from "@/public/assets/lubie-icons/shipping.png";
+import ship from "@/public/assets/lubie-assets/shipping.png";
 import ret from "@/public/assets/chlorelief-assets/return-icon.png";
 import payment from "@/public/assets/chlorelief-assets/payment.png";
 
