@@ -27,7 +27,7 @@ const ProductComponent: React.FC<ProductProps> = ({
         <p className='text-center text-green-400 text-3xl'>{Rating}</p>
       </div>
       <div>
-        <p className='font-semibold text-black text-3xl sm:w-24 text-end'>{Price}</p>
+        <p className='font-semibold text-gray-800 text-3xl sm:w-24 text-end'>{Price}</p>
       </div>
     </div>
   </main>
@@ -44,28 +44,28 @@ const ProductList: React.FC = () => {
       ProductDesc1: 'ChloRelief Anti Itch And',
       ProductDesc2: 'Antiseptic Wash 60ml',
       Rating: '★★★★★★',
-      Price: 'P 59',
+      Price: '₱ 59',
     },
     {
       ImageUrl: '/assets/alcohol-150ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And',
       ProductDesc2: 'Santizer 60ml',
       Rating: '★★★★★★',
-      Price: 'P 99',
+      Price: '₱ 99',
     },
     {
       ImageUrl: '/assets/calamine-60ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And ',
       ProductDesc2: 'Anti Rash Lotion 60ml',
       Rating: '★★★★★★',
-      Price: 'P 210',
+      Price: '₱ 210',
     },
     {
       ImageUrl: '/assets/calamine-120ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And',
       ProductDesc2: 'Anti Rash Lotion 120ml',
       Rating: '★★★★★★',
-      Price: 'P 420',
+      Price: '₱ 420',
     },
  
   ];
