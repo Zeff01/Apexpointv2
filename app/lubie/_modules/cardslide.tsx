@@ -1,9 +1,8 @@
 // Cardslide.jsx
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Cards from './cards/review'; // Import your Cards component
-import Cards1 from "./cards/review1";
-import Cards2 from "./cards/review2";
+import Cards from '@/components/cards/review'; // Import your Cards component
+
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -21,9 +20,8 @@ export default function Cardslide() {
       disableOnInteraction: false // Continue autoplay after interaction
     }}
   >
-    <SwiperSlide><Cards /></SwiperSlide>
-    <SwiperSlide><Cards1 /></SwiperSlide>
-    <SwiperSlide><Cards2 /></SwiperSlide>
+    <SwiperSlide><Cards Comment='sample' ImageAlt='sampe' CustomerName='john doe' ImageUrl='#'/></SwiperSlide>
+    
     {/* Add more SwiperSlides if needed */}
   </Swiper>
   );

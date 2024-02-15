@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { ProductData } from "@/app/components/data/apexpoint/productData";
+import { ProductData } from "@/components/data/apexpoint/productData";
 
 const Slider = ({ name, logo }: ProductData) => {
   const content = logo?.map((item, index) => (

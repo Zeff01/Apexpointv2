@@ -1,7 +1,7 @@
 "use client";
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { ProductData } from "@/app/components/data/apexpoint/productData";
+import { ProductData } from "@/components/data/apexpoint/productData";
 import Image from "next/image";
 import Link from "next/link";
 
