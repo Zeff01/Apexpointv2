@@ -5,18 +5,20 @@ import Navbar from "./section/Navbar/Navbar";
 import Products from "./section/Product/Products";
 import Testimonials from "./section/Testimonials/Testimonials";
 import AboutSection from "./section/About/AboutUs";
-import ContactSection from "./section/Contacts/Contact";
+import ContactSection from "@/components/sections/contact/Contact";
 import Footer from "@/components/sections/footer/Footer";
 import Store from "@/components/sections/stores/Stores";
+
+
 // layout
 export default function Page() {
   return (
-    <div className="flex-col bg-white w-full  ">
+    <div className="flex-col bg-white w-full">
       <Navbar />
       <Herosec />
       <Products />
       <AboutSection />
-      <ContactSection />
+      <ContactSection variant="lubie" />
       <Testimonials />
       <Store />
       <Footer variant="lubie" />
