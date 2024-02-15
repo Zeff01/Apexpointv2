@@ -1,7 +1,7 @@
-import chlorelief_img from "@/public/assets/chlorelief-logo.png";
-import chlorelief_logo from "@/public/assets/apex-chlorelief-ourProducts.jpg";
-import lubie_img from "@/public/assets/lubie-name.png";
-import lubie_logo from "@/public/assets/apex-lubie-ourProducts.jpg";
+import chlorelief_img from "@/public/assets/chlorelief-assets/chlorelief-logo.png";
+import chlorelief_logo from "@/public/assets/apex-about-icons/apex-chlorelief-ourProducts.jpg";
+import lubie_img from "@/public/assets/lubie-assets/lubie-name.png";
+import lubie_logo from "@/public/assets/apex-about-icons/apex-lubie-ourProducts.jpg";
 import { StaticImageData } from "next/image";
 
 // img products

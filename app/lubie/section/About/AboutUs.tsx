@@ -1,6 +1,6 @@
-import { shippingbag, truck, card, return1 } from "@/public/assets/lubie";
+import { shippingbag, truck, card, return1 } from "@/public/assets/apexpoint";
 import Image from "next/image";
-import Banner from "@/public/assets/banner.jpg";
+import Banner from "@/public/assets/lubie-assets/banner.jpg";
 
 const AboutSection = () => {
   return (
