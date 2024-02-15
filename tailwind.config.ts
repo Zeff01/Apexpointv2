@@ -29,6 +29,10 @@ const config: Config = {
           "light-blue": "#B6CBE0",
           "navy-blue": "#275AB5",
           "green-light": "#7FF0C3",
+          "dark-green" : "#57AD2E",
+          "green-subtle" : "#89C920",
+          "neon-green" : "#29ff00",
+
         },
         apexpoint: {
           "grey-text": "#595959",
@@ -43,7 +47,7 @@ const config: Config = {
           "soft-green": "#419F59",
           "dark-green": "#0F5B33",
           "soft-slate": "#708090",
-          "light-red": "#F4F4F4",
+          "light-red": "#F07787",
           "star-green":"#DEFFE6",
           "button": "#F07787",
           "pink": "#F07787"

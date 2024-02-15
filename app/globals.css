@@ -72,3 +72,11 @@ img-2 {
   height: 345px;
   box-shadow: inset;
 }
+.lubiewave{
+  background-image: url('../public/assets/lubie-products/lubiewaves.svg');
+  background-size: cover;
+}
+.chloreliefwave{
+  background-image: url('../public/assets/chlorelief-products/chloreliefwave.svg');
+  background-size: cover;
+}
