@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import Cards from '@/components/cards/review'; // Import your Cards component
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '@/public/assets/ap_testimonial_1_img.jpeg';
+import '@/public/assets/chlorelief-assets/ap_testimonial_1_img.jpeg';
 
 export default function Cardslide() {
   const settings = {

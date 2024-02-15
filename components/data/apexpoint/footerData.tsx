@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { phone, email, shoppingbag, lazada } from "@/public/assets/lubie";
+import { phone, email, shoppingbag, lazada } from "@/public/assets/apexpoint";
 export type FooterDataType = {
   title: string;
   list: { icon?: StaticImageData; information: string }[];
