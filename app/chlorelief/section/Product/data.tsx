@@ -54,14 +54,14 @@ const ProductList: React.FC = () => {
       Price: '₱ 99',
     },
     {
-      ImageUrl: '/assets/calamine-60ml.png',
+      ImageUrl: '/assets/chlorelief-assets/calamine-60ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And ',
       ProductDesc2: 'Anti Rash Lotion 60ml',
       Rating: '★★★★★★',
       Price: '₱ 210',
     },
     {
-      ImageUrl: '/assets/calamine-120ml.png',
+      ImageUrl: '/assets/chlorelief-assets/calamine-120ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And',
       ProductDesc2: 'Anti Rash Lotion 120ml',
       Rating: '★★★★★★',
@@ -71,7 +71,9 @@ const ProductList: React.FC = () => {
   ];
 
   return (
-    <div className="grid gap-4 place-items-center grid-cols-1 sm:grid-cols-2 sm:px-4 md:grid-cols-2 md:px-20 lg:grid-cols-2 lg:gap-auto xl:grid-cols-4">
+
+    <div className="grid gap-4 place-items-center grid-cols-1 sm:grid-cols-2 sm:px-4 md:grid-cols-2 md:px-20  lg:grid-cols-4">
+
       {productsData.map((product, index) => (
         <ProductComponent key={index} {...product} />
       ))}
