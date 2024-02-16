@@ -51,7 +51,7 @@ export default function Hero() {
             </div>
             <div className="min-w-screen w-full h-full flex justify-center items-center">
               <Image
-                src="/assets/Group 70.png"
+                src="/assets/chlorelief-assets/Group 70.png"
                 width={800} // Increased width for a bigger image
                 height={800} // Adjust height accordingly to maintain aspect ratio
                 className="min-h-full w-full object-contain sm:object-none" // Adjusted class for bigger image

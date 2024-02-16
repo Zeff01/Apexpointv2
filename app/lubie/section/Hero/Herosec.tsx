@@ -9,7 +9,7 @@ import {
   icon4,
   icon5,
   icon6,
-} from "@/public/assets/lubie";
+} from "@/public/assets/apexpoint";
 import { motion } from "framer-motion";
 import {
   textAnimation,
@@ -17,8 +17,7 @@ import {
   containerAnimation,
   itemAnimation,
 } from "../../_modules/animation/hero/animation";
-import { Lubiehero } from "@/public/assets/lubie";
-import Lubie from "@/public/assets/sample.png";
+import Lubie from "@/public/assets/lubie-assets/sample.png";
 
 function Herosec() {
   return (
@@ -63,7 +62,7 @@ function Herosec() {
                 variants={headerAnimation}
               >
                 <Image
-                  src={Lubiehero}
+                  src={""}
                   alt="Lubiehero"
                   className=" object-contain z-0"
                 />
