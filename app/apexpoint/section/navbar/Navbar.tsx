@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 // img
-import apexLogo from "@/public/assets/apexpoint-name.png";
+import apexLogo from "@/public/assets/apex-assets/apexpoint-name.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 

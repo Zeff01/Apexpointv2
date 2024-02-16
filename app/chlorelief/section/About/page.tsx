@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import mainImg from "@/public/assets/chlorelief-products/chlorelief-white-bg.jpg";
-import serv from "@/public/assets/services.png";
-import ship from "@/public/assets/shipping.png";
-import ret from "@/public/assets/return-icon.png";
-import payment from "@/public/assets/payment.png";
+import serv from "@/public/assets/chlorelief-assets/services.png";
+import ship from "@/public/assets/lubie-assets/shipping.png";
+import ret from "@/public/assets/chlorelief-assets/return-icon.png";
+import payment from "@/public/assets/chlorelief-assets/payment.png";
 
 interface About {
   title: string;

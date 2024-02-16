@@ -39,28 +39,28 @@ const ProductList: React.FC = () => {
   // Example data for four products
   const productsData: ProductProps[] = [
     {
-      ImageUrl: '/assets/calamine-60ml.png',
+      ImageUrl: '/assets/chlorelief-assets/calamine-60ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And ',
       ProductDesc2: 'Anti Rash Lotion 60ml',
       Rating: '★★☆☆☆☆',
       Price: 'P 210',
     },
     {
-      ImageUrl: '/assets/calamine-120ml.png',
+      ImageUrl: '/assets/chlorelief-assets/calamine-120ml.png',
       ProductDesc1: 'Anti Itch And',
       ProductDesc2: 'Anti Rash Lotion 120ml',
       Rating: '★★☆☆☆☆',
       Price: 'P 420',
     },
     {
-      ImageUrl: '/assets/antiseptic-150ml.png',
+      ImageUrl: '/assets/chlorelief-assets/antiseptic-150ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And',
       ProductDesc2: 'Antiseptic Wash 60ml',
       Rating: '★★☆☆☆☆',
       Price: 'P 59',
     },
     {
-      ImageUrl: '/assets/alcohol-150ml.png',
+      ImageUrl: '/assets/chlorelief-assets/alcohol-150ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And',
       ProductDesc2: 'Santizer 60ml',
       Rating: '★★★★★★',

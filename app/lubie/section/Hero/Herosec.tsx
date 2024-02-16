@@ -9,7 +9,7 @@ import {
   icon4,
   icon5,
   icon6,
-} from "@/public/assets/lubie";
+} from "@/public/assets/apexpoint";
 import { motion } from "framer-motion";
 import {
   textAnimation,
@@ -18,7 +18,8 @@ import {
   itemAnimation,
 } from "../../_modules/animation/hero/animation";
 import  Lubiehero  from "@/public/assets/lubie-products/lubiehero3.png";
-import Lubie from "@/public/assets/sample.png";
+import Lubie from "@/public/assets/lubie-assets/sample.png";
+
 
 function Herosec() {
   return (

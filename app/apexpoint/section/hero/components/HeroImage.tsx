@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "@/public/assets/apex-hero-bg.png";
+import heroImage from "@/public/assets/apex-assets/apex-hero-bg.png";
 import Image from "next/image";
 
 const HeroImage = () => {

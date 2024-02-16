@@ -23,17 +23,17 @@ const Products = () => {
         <div className="md:flex-row flex-col flex justify-center items-center w-full">
           <LubieCard
             title="10ml Lubie"
-            imageUrl="assets/lubie-10ml.png"
+            imageUrl="assets/lubie-assets/lubie-10ml.png"
             price="₱32"
           />
           <LubieCard
             title="35ml Lubie"
-            imageUrl="assets/lubie-35ml.png"
+            imageUrl="assets/lubie-assets/lubie-35ml.png"
             price="₱132"
           />
           <LubieCard
             title="100ml Lubie"
-            imageUrl="assets/lubie-100ml.png"
+            imageUrl="assets/lubie-assets/lubie-100ml.png"
             price="₱420"
           />
         </div>
