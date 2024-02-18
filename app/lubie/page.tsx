@@ -3,12 +3,11 @@ import React from "react";
 import Herosec from "./section/Hero/Herosec";
 import Navbar from "./section/Navbar/Navbar";
 import Products from "./section/Product/Products";
-import Testimonials from "./section/Testimonials/Testimonials";
+import Testimonials from "@/components/sections/testimonials/Testimonials/page";
 import AboutSection from "./section/About/AboutUs";
 import ContactSection from "@/components/sections/contact/Contact";
 import Footer from "@/components/sections/footer/Footer";
 import Store from "@/components/sections/stores/Stores";
-
 
 // layout
 export default function Page() {
@@ -19,7 +18,7 @@ export default function Page() {
       <Products />
       <AboutSection />
       <ContactSection variant="lubie" />
-      <Testimonials />
+      <Testimonials variant="lubie" />
       <Store />
       <Footer variant="lubie" />
     </div>

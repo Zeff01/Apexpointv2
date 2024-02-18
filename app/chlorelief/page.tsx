@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./section/NavBar/Navbar";
 import Hero from "./section/Hero/hero";
 import Product from "./section/Product/product";
-import Testimonials from "./section/Testimonials/page";
+import Testimonials from "@/components/sections/testimonials/Testimonials/page";
 import About from "./section/About/page";
 import Footer from "@/components/sections/footer/Footer";
 import Store from "@/components/sections/stores/Stores";
@@ -18,7 +18,7 @@ export default function page() {
       <Banner />
       <ContactSection variant="chlorelief" />
       <div className="flex flex-col sm:flex-col-reverse md:flex-col-reverse lg:flex-col">
-        <Testimonials />
+        <Testimonials variant="chlorelief" />
       </div>
       <Store />
       <Footer variant="chlorelief" />

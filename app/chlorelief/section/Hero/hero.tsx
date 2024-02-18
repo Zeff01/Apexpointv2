@@ -15,16 +15,19 @@ interface HeroSectionProps {
 
 const Data: HeroSectionProps[] = [
   {
-    SectionClass: "bg-chlorelief-springwood min-h-screen-xl h-full flex flex-row items-center justify-center font-inter pb-10 sm:pb-0 sm:h-screen",
+    SectionClass:
+      "bg-chlorelief-springwood min-h-screen-xl h-full flex flex-row items-center justify-center font-inter pb-10 sm:pb-0 sm:h-screen",
     HeaderText: "Your first line of defense",
     Text1: "Lorem ipsum dolor sit eamet Lorem Ipsum",
     Text2: "ipsum dolor sit Lorem ipsum dolor sit",
     Text3: "Lorem ipsum dolor sit eamet Lorem",
     Text4: "ipsum dolor sit Lorem ipsum dolor",
     Text5: "sitametamet",
-    TextStyle: "flex flex-col gap-1 items-center text-gray-200 opacity-90 text-Body-Default sm:text-Body-Desktop",
+    TextStyle:
+      "flex flex-col gap-1 items-center text-gray-200 opacity-90 text-Body-Default sm:text-Body-Desktop px-2",
     ButtonText: "Learn more",
-    ButtonStyle: "border-2 border-red-500 hover:bg-red-500 duration-300 text-white font-bold w-1/2 py-2 rounded-lg my-4 Text-Caption-Desktop",
+    ButtonStyle:
+      "border-2 border-red-500 hover:bg-red-500 duration-300 text-white font-bold w-1/2 py-2 rounded-lg my-4 Text-Caption-Desktop",
   },
 ];
 
@@ -45,9 +48,7 @@ export default function Hero() {
                 <span>{item.Text4}</span>
                 <span>{item.Text5}</span>
               </div>
-              <button className={item.ButtonStyle}>
-                {item.ButtonText}
-              </button>
+              <button className={item.ButtonStyle}>{item.ButtonText}</button>
             </div>
             <div className="min-w-screen w-full h-full flex justify-center items-center">
               <Image

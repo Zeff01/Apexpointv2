@@ -93,7 +93,7 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
 
   const data = contactData.map((contact: contactDataType) => {
     return (
-      <div className="flex flex-col items-start justify-start lg:w-[300px]">
+      <div className="flex flex-col items-start justify-start">
         <div className="flex space-x-2  justify-start">
           {<contact.icon className="text-3xl" />}
 
@@ -221,11 +221,12 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
         </div>
       </div>
 
-      <div className="flex flex-col md:mt-0 mt-12 md:flex-wrap  md:w-1/4 w-3/4 space-y-12 justify-start lg:pl-12">
+      <div className="flex flex-col md:mt-0 mt-12 md:flex-wrap  md:w-1/4 w-3/4 space-y-12 justify-center lg:pl-12">
         {data}
 
-        <div className="flex pl-10 lg:pl-10 md:pl-0 justify-start">
+        <div className="flex w-full items-center justfiy-center md:justify-start">
           <Socials
+            className="justify-center items-center w-full"
             iconColor={`${
               variant === "chlorelief"
                 ? "text-chlorelief-springwood"
