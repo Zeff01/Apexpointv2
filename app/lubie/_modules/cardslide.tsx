@@ -2,7 +2,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Cards from '@/components/cards/review'; // Import your Cards component
-
+import Testimonials from '@/app/apexpoint/section/testimonials/Testimonials';
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -20,7 +20,9 @@ export default function Cardslide() {
       disableOnInteraction: false // Continue autoplay after interaction
     }}
   >
-    <SwiperSlide><Cards Comment='sample' ImageAlt='sampe' CustomerName='john doe' ImageUrl='#'/></SwiperSlide>
+    <SwiperSlide>
+      {/* <Cards comment='sample' name='john doe' img="/#"/> */}
+    </SwiperSlide>
     
     {/* Add more SwiperSlides if needed */}
   </Swiper>
