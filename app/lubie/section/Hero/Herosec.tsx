@@ -115,7 +115,7 @@ function Herosec() {
           />
         </div>
         <div className="w-full flex flex-col mx-auto items-center justify-center  text-lubie-dark-blue ">
-          <p className="mb-6 font-semibold">Nature & Health</p>
+          <p className="mb-3 font-semibold">Nature & Health</p>
           <h2 className="text-4xl  font-extrabold md:w-[auto] text-center mb-6">
             <span className="text-lubie-navy-blue">Water-based</span> <br></br>
             moisturizer
