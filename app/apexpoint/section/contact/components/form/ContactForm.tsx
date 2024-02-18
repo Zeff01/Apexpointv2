@@ -1,116 +1,137 @@
 "use client";
-import React, { FunctionComponent, useState } from "react";
-import { Formik, Form } from "formik";
-import * as Yup from "yup";
-import { sendContactForm } from "@/app/apexpoint/lib/api";
+import React, { useRef, useState, FormEvent } from "react";
 import InputRow from "./components/InputRow";
 import TextInput from "./components/TextInput";
 import TextArea from "./components/TextArea";
 import Button from "./components/Button";
+import emailjs from "@emailjs/browser";
 
-type FormValues = {
-  name: string;
-  email: string;
-  phone: string;
-  message: string;
-};
+import {
+  validateInputs,
+  validateForm,
+  TMessageStatus,
+} from "@/utils/formUtils";
 
-type TMessageStatus = "standby" | "loading" | "success" | "error";
-
-const ContactForm: FunctionComponent = () => {
+const ContactForm = () => {
   const [messageStatus, setMessageStatus] = useState<TMessageStatus>("standby");
 
-  const handleSuccess = () => {
-    setMessageStatus("success");
-    setTimeout(() => {
-      setMessageStatus("standby");
-    }, 5000);
+  const formRef = useRef<HTMLFormElement>(null);
+  const userName = useRef<HTMLInputElement>(null);
+  const userEmail = useRef<HTMLInputElement>(null);
+  const userPhone = useRef<HTMLInputElement>(null);
+  const userMessage = useRef<HTMLTextAreaElement>(null);
+
+  const getInputValue = (
+    ref: React.RefObject<HTMLInputElement | HTMLTextAreaElement>
+  ) => ref.current?.value || "";
+
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+
+    const inputs = {
+      userName: getInputValue(userName),
+      userEmail: getInputValue(userEmail),
+      userPhone: getInputValue(userPhone),
+      userMessage: getInputValue(userMessage),
+    };
+
+    // Validate inputs...
+    const validationResults = validateInputs(inputs);
+
+    // Form is valid
+    const formisValid = validateForm(validationResults);
+
+    if (!formisValid) {
+      setMessageStatus("error");
+      return;
+    }
+
+    if (formRef.current) {
+      setMessageStatus("loading");
+      sendEmailRequest();
+    }
   };
 
-  const handleError = (error: Error) => {
-    setMessageStatus("error");
-    console.error("Error sending email:", error);
-    setTimeout(() => {
-      setMessageStatus("standby");
-    }, 6000);
-  };
+  const sendEmailRequest = () => {
+    const currentForm = formRef.current;
 
-  const handleSubmit = async (
-    values: any,
-    { setSubmitting, resetForm }: any
-  ) => {
-    setMessageStatus("loading");
-    try {
-      await sendContactForm(values);
-      handleSuccess();
-    } catch (error: any) {
-      handleError(error);
+    if (currentForm) {
+      emailjs
+        .sendForm(
+          "service_6eytzbl",
+          "template_1k8w2q5",
+          currentForm,
+          "NYOzmlYunw07zCeOw"
+        )
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            setMessageStatus("success");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            setMessageStatus("error");
+          }
+        );
+    } else {
+      console.error("Form reference is null.");
+      setMessageStatus("error");
     }
   };
 
   return (
-    <Formik
-      initialValues={{
-        name: "",
-        phone: "",
-        email: "",
-        message: "",
-      }}
-      validationSchema={Yup.object({
-        name: Yup.string().required("Name is required"),
-        phone: Yup.string().required("Number is required"),
-        email: Yup.string()
-          .email("Invalid email address")
-          .required("Email is required"),
-        message: Yup.string().required("Message is required"),
-      })}
-      onSubmit={handleSubmit}
+    <form
+      className="flex w-auto min-[375px]:w-[350px] flex-col items-center justify-center gap-8 sm:mx-auto sm:my-0 ss:w-full"
+      ref={formRef}
+      onSubmit={sendEmail}
     >
-      <Form className="flex w-auto min-[375px]:w-[350px] flex-col items-center justify-center gap-8 sm:mx-auto sm:my-0 ss:w-full">
-        <InputRow>
-          <TextInput
-            label="Name"
-            name="name"
-            id="name"
-            type="text"
-            placeholder="Enter your Name"
-          />
-        </InputRow>
+      <InputRow>
+        <TextInput
+          label="Name"
+          name="user_name"
+          id="name"
+          type="text"
+          placeholder="Enter your Name"
+          ref={userName}
+        />
+      </InputRow>
 
-        <InputRow>
-          <TextInput
-            label="Phone"
-            name="phone"
-            id="phone"
-            type="text"
-            placeholder="Enter your Phone"
-          />
-        </InputRow>
+      <InputRow>
+        <TextInput
+          label="Phone"
+          name="user_phone"
+          id="phone"
+          type="text"
+          placeholder="Enter your Phone"
+          ref={userPhone}
+        />
+      </InputRow>
 
-        <InputRow>
-          <TextInput
-            label="Email"
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Enter your Email"
-          />
-        </InputRow>
+      <InputRow>
+        <TextInput
+          label="Email"
+          name="user_email"
+          id="email"
+          type="email"
+          placeholder="Enter your Email"
+          ref={userEmail}
+        />
+      </InputRow>
 
-        <InputRow className="min-h-[11rem]">
-          <TextArea
-            label="Message"
-            name="message"
-            id="textarea"
-            type="textarea"
-            placeholder="Enter your message"
-          />
-        </InputRow>
-        <div className="w-full flex items-center justify-center">
-          <Button messageStatus={messageStatus} />
-        </div>
-      </Form>
-    </Formik>
+      <InputRow className="min-h-[11rem]">
+        <TextArea
+          label="Message"
+          name="message"
+          id="textarea"
+          placeholder="Enter your Message"
+          ref={userMessage}
+        />
+      </InputRow>
+
+      <div className="w-full flex items-center justify-center">
+        <Button messageStatus={messageStatus} />
+      </div>
+    </form>
   );
 };
 

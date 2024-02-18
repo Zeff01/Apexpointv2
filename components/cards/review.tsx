@@ -1,34 +1,43 @@
 import React from "react";
 import Stars from "@/app/lubie/_modules/stars";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import { TestimonialType } from "../data/chlorelief/testimonialData";
 
-interface CardsProps {
-  Comment:string;
-  ImageUrl:string;
-  ImageAlt:string;
-  CustomerName:string;
-}
-function Cards({Comment,ImageUrl,ImageAlt,CustomerName}:CardsProps) {
+const Cards = ({ name, comment, img }: TestimonialType) => {
   return (
-<div className="flex flex-col justify-center bg-white min-h-full max-w-fit p-10 lg:w-[25%] lg:h-full shadow-xl px-4 lg:min-w-screen w-full lg:px-10">
+    <div className="rounded-md shadow-md p-4 flex flex-col gap-2 min-[425px]:gap-6 bg-white max-w-[350px]">
       <div className="w-full flex justify-between items-center">
-          <Stars totalStars={5} />
-        <div className="my-6">
-          <Image src="/assets/user-quote.png" alt='' width={50} height={0} layout="responsive" />
+        <Stars totalStars={5} />
+        {/* <div className="my-6">
+          <Image
+            src="/assets/user-quote.png"
+            alt=""
+            width={50}
+            height={0}
+            layout="responsive"
+          />
+        </div> */}
+      </div>
+      <div>
+        <p className="text-sm sm:text-base">{comment}</p>
+      </div>
+      <div className="flex border-t-2 w-full items-center justify-center gap-4">
+        <Image
+          className="w-1/4 rounded-full mt-2 object-scale-auto sm:object-none"
+          src={img}
+          alt={name}
+          width={60}
+          height={0}
+        />
+        <div className="w-3/4 flex flex-col justify-center py-2">
+          <p className="text-sm sm:text-base md:text-Body-Default lg:text-xl xl:text-2xl font-bold">
+            {name}
+          </p>
+          <p className="text-sm sm:text-base md:text-Body-Default">CUSTOMER</p>
         </div>
       </div>
-      <div className="mb-10 ">
-        <p className="text-Caption-Mobile sm:text-Caption-Desktop">{Comment}</p>
-      </div>
-        <div className="flex border-t-2 justify-start gap-10 mt-10">
-        <Image className="rounded-full mt-4 object-scale-auto sm:object-none" src={ImageUrl} alt={ImageAlt} width={60} height={0} />
-        <div className="flex flex-col justify-center">
-          <p className="font-bold text-Body-Mobile sm:text-Body-Desktop  ">{CustomerName}</p>
-          <p>CUSTOMER</p>
-        </div>
-        </div>
-      </div>
+    </div>
   );
-}
+};
 
 export default Cards;

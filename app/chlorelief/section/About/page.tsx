@@ -33,11 +33,11 @@ const About = () => {
   ];
 
   return (
-    <div id="about" className="font-inter min-h-screen h-auto sm:h-full">
+    <div id="about" className="font-inter h-auto sm:h-full">
       <h2 className="text-chlorelief-chateaugreen font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop">
         ABOUT THE BRAND
       </h2>
-      <div className="flex flex-row-reverse items-center justify-center my-10 gap-40">
+      <div className="flex flex-row-reverse items-center justify-evenly my-10">
         <div className="text-Body-Default sm:text-Body-Desktop">
           <div className="text-gray-400 max-w-full-lg text-center md:text-left">
             <h2 className="my-4">CHLORELIEF</h2>
