@@ -1,6 +1,6 @@
 export const textAnimation = {
-  hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, delay: { stagger: 0.5 } },
+  hidden: { opacity: 0, x: 250 },
+  visible: { opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.75 } },
 };
 
 export const headerAnimation = {
@@ -8,7 +8,7 @@ export const headerAnimation = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { delay: 0.2, duration: 0.5 },
+    transition: { delay: 0.15, duration: 0.75 },
   },
 };
 
@@ -17,7 +17,7 @@ export const containerAnimation = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 0.2,
     },
   },
 };
@@ -28,7 +28,7 @@ export const itemAnimation = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.75,
     },
   },
 };

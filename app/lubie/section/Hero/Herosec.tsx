@@ -86,6 +86,11 @@ function Herosec() {
               variants={itemAnimation}
             >
               <Icons imageUrl={icon1} />
+            </motion.div>
+            <motion.div
+              className="flex w-full md:w-auto justify-center"
+              variants={itemAnimation}
+            >
               <Icons imageUrl={icon2} />
             </motion.div>
             <motion.div
@@ -93,6 +98,11 @@ function Herosec() {
               variants={itemAnimation}
             >
               <Icons imageUrl={icon3} />
+            </motion.div>
+            <motion.div
+              className="flex w-full md:w-auto justify-center"
+              variants={itemAnimation}
+            >
               <Icons imageUrl={icon4} />
             </motion.div>
             <motion.div
@@ -100,6 +110,11 @@ function Herosec() {
               variants={itemAnimation}
             >
               <Icons imageUrl={icon5} />
+            </motion.div>
+            <motion.div
+              className="flex w-full md:w-auto justify-center"
+              variants={itemAnimation}
+            >
               <Icons imageUrl={icon6} />
             </motion.div>
           </motion.div>
@@ -107,14 +122,24 @@ function Herosec() {
       </div>
 
       <div className=" flex md:flex-row flex-col  justify-center items-center   mt-8 relative  ">
-        <div className="flex justify-center w-full ">
+        <motion.div
+          className="flex justify-center w-full"
+          initial="hidden"
+          animate="visible"
+          variants={headerAnimation}
+        >
           <Image
             src={Lubie}
             alt="herlubie"
             className="object-contain md:w-[500px] w-[300px] md:mb-12 mb-8"
           />
-        </div>
-        <div className="w-full flex flex-col mx-auto items-center justify-center  text-lubie-dark-blue ">
+        </motion.div>
+        <motion.div
+          className="w-full flex flex-col mx-auto items-center justify-center  text-lubie-dark-blue "
+          variants={textAnimation}
+          initial="hidden"
+          animate="visible"
+        >
           <p className="mb-3 font-semibold">Nature & Health</p>
           <h2 className="text-4xl  font-extrabold md:w-[auto] text-center mb-6">
             <span className="text-lubie-navy-blue">Water-based</span> <br></br>
@@ -128,7 +153,7 @@ function Herosec() {
             </p>
           </div>
           <Button title="Read More" variant="about" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
