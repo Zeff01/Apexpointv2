@@ -14,7 +14,6 @@ function Imagelogo() {
           height={500}
           alt="mercury logo"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 10vw"
-          layout="responsive"
         />
       </div>
       <div className="image-container px-7" style={grayscaleStyle}>
@@ -24,7 +23,6 @@ function Imagelogo() {
           height={500}
           alt="lazada logo"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 10vw"
-          layout="responsive"
         />
       </div>
       <div className="image-container px-7" style={grayscaleStyle}>
@@ -34,7 +32,6 @@ function Imagelogo() {
           height={500}
           alt="lazada logo"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 10vw"
-          layout="responsive"
         />
       </div>
       <div className="image-container" style={grayscaleStyle}>
@@ -44,7 +41,6 @@ function Imagelogo() {
           height={500}
           alt="rose pharmacy logo"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 10vw"
-          layout="responsive"
         />
       </div>
       <div className="image-container px-7" style={grayscaleStyle}>
@@ -54,7 +50,6 @@ function Imagelogo() {
           height={500}
           alt="shopee logo"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 10vw"
-          //  layout="responsive"
         />
       </div>
     </div>

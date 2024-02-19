@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "@/public/assets/chlorelief-assets/ap_testimonial_1_img.jpeg";
 
 interface CardSlideProps {
-  cards: React.ReactNode[]; // You can adjust this type based on the actual type of your cards
+  cards: React.ReactNode[];
 }
 
 const CardSlide: React.FC<CardSlideProps> = ({ cards }) => {

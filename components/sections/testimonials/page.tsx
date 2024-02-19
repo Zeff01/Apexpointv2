@@ -7,7 +7,6 @@ import {
   testimonialData,
 } from "@/components/data/chlorelief/testimonialData";
 
-// Define the type for the 'variant' prop
 type VariantType = "chlorelief" | "lubie";
 
 interface TestimonialsProps {
@@ -20,7 +19,7 @@ function Testimonials({ variant }: TestimonialsProps) {
       return (
         <div
           key={index}
-          className="w-full items-center justify-center my-0 mx-auto container"
+          className="w-full md:w-auto items-center justify-center container"
         >
           <Cards name={item.name} comment={item.comment} img={item.img} />
         </div>
@@ -61,11 +60,11 @@ function Testimonials({ variant }: TestimonialsProps) {
         </div>
       </div>
 
-      <div className="w-full flex justify-between px-4 md:px-32">
+      <div className="w-full flex justify-between px-4">
         <div className="w-full block md:hidden">
           <Cardslide cards={testimonialCards} />
         </div>
-        <div className="hidden md:flex w-full items-center justify-evenly gap-4 p-20 min-[768px]:flex-col lg:flex-row">
+        <div className="hidden md:flex w-full items-center justify-center gap-4 pt-16 min-[768px]:flex-col lg:flex-row">
           {testimonialCards}
         </div>
       </div>
