@@ -75,12 +75,11 @@ html {
   height: 345px;
   box-shadow: inset;
 }
-.lubiewave{
-  background-image: url('../public/assets/lubie-products/lubiewaves.svg');
+.lubiewave {
+  background-image: url("../public/assets/lubie-products/lubiewaves.svg");
   background-size: cover;
 }
-.chloreliefwave{
-  background-image: url('../public/assets/chlorelief-assets/chloreliefmountains.png');
+.chloreliefwave {
+  background-image: url("../public/assets/chlorelief-assets/chloreliefmountains.png");
   background-size: cover;
 }
-
