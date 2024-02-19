@@ -5,7 +5,7 @@ import { TestimonialType } from "../data/chlorelief/testimonialData";
 
 const Cards = ({ name, comment, img }: TestimonialType) => {
   return (
-    <div className="rounded-md shadow-md p-4 flex flex-col gap-2 min-[425px]:gap-6 bg-white max-w-[350px]">
+    <div className="rounded-md p-4 flex flex-col gap-2 min-[425px]:gap-6 bg-white max-w-[350px] sm:shadow-md">
       <div className="w-full flex justify-between items-center">
         <Stars totalStars={5} />
         {/* <div className="my-6">
