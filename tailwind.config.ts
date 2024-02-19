@@ -9,18 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'saira-condensed': ['Saira Condensed', 'sans-serif'],
-        'inter': ['Inter', 'sans-serif']
+        "saira-condensed": ["Saira Condensed", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       fontSize: {
-        'Header-Desktop': '2.5em',
-        'Header-Default':'2em',
-        'Header-Mobile': '1.5em',
-        'Body-Desktop': '1.5em',
-        'Body-Default':'1em',
-        'Caption-Default':'0.75em',
-        'Caption-Mobile': '0.75em',
-        'Caption-Desktop': '1em'
+        "Header-Desktop": "2.5em",
+        "Header-Default": "2em",
+        "Header-Mobile": "1.5em",
+        "Body-Desktop": "1.5em",
+        "Body-Default": "1em",
+        "Caption-Default": "0.75em",
+        "Caption-Mobile": "0.75em",
+        "Caption-Desktop": "1em",
       },
       colors: {
         lubie: {
@@ -29,24 +29,28 @@ const config: Config = {
           "light-blue": "#B6CBE0",
           "navy-blue": "#275AB5",
           "green-light": "#7FF0C3",
+          "dark-green": "#57AD2E",
+          "green-subtle": "#89C920",
+          "neon-green": "#29ff00",
+          "white-blue": "#f0f5f3",
         },
         apexpoint: {
           "grey-text": "#595959",
           "dark-orange": "#F29A38",
           "light-orange": "#F3E1B9",
-          "green": "#40D63F",
+          green: "#40D63F",
         },
         chlorelief: {
-          "chateaugreen": "#3db750",
-          "springwood": "#0F5B33",
+          chateaugreen: "#3db750",
+          springwood: "#0F5B33",
           "soft-gray": "#a8b8d0",
           "soft-green": "#419F59",
           "dark-green": "#0F5B33",
           "soft-slate": "#708090",
-          "light-red": "#F4F4F4",
-          "star-green":"#DEFFE6",
-          "button": "#F07787",
-          "pink": "#F07787"
+          "light-red": "#F07787",
+          "star-green": "#DEFFE6",
+          button: "#F07787",
+          pink: "#F07787",
         },
       },
     },

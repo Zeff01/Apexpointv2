@@ -17,33 +17,35 @@ import {
   containerAnimation,
   itemAnimation,
 } from "../../_modules/animation/hero/animation";
-import Lubie from "@/public/assets/lubie-assets/sample.png";
+import Lubiehero from "@/public/assets/lubie-products/lubiehero3.png";
+import Lubie from "@/public/assets/lubie-products/aboutlubie.png";
 
 function Herosec() {
   return (
-    <div className="  min-h-screen h-full -z-10">
-      <div className="  w-full flex flex-col items-center bg-lubie-navy-blue font-ubuntu text-lubie-white-color  justify-between">
+    <div className="  min-h-screen h-full relative">
+      <div className="  w-full flex flex-col items-center  bg-lubie-navy-blue lubiewave font-ubuntu text-lubie-white-color  justify-between ">
         {/* HERO TEXT AND ICON */}
-        <div className="w-full  flex flex-row  justify-center gap-20  pt-12 ">
-          <div className="flex flex-col items-center mt-2 space-y-8 ">
+        <div className="w-full  flex md:flex-row flex-col justify-center  relative  pt-12 ">
+          <div className="flex flex-col justify-center items-center sm:items-start mt-2 space-y-8 z-10">
             <motion.div
               variants={textAnimation}
               initial="hidden"
               animate="visible"
             >
-              <p className="text-center md:text-right mb-2">Nature & Health</p>
+              <p className="text-center md:text-right">Nature & Health</p>
             </motion.div>
             <motion.div
               variants={textAnimation}
               initial="hidden"
               animate="visible"
             >
-              <p className="sm:text-2xl md:text-2xl mb-5 text-xl font-bold md:text-right text-center">
-                The first <br></br>
-                <span className="text-lubie-light-blue text-extra-bold">
-                  multi-purpose
+              <p className=" text-3xl mb-5 md:text-4xl lg:text-5xl lg:leading-[65px] font-bold text-center sm:text-start sm:w-full">
+                The first
+                <span className="text-lubie-neon-green text-extra-bold">
+                  &nbsp; Multi-purpose &nbsp;
                 </span>
-                FDA registered <br></br>Lube in the Philippines
+                <br></br>
+                FDA registered Lube <br></br> in the Philippines
               </p>
             </motion.div>
             <motion.div
@@ -51,20 +53,20 @@ function Herosec() {
               initial="hidden"
               animate="visible"
             >
-              <Button title="Read More" />
+              <Button title="Read More" variant="hero" />
             </motion.div>
           </div>
-          <div className="hidden md:flex justify-start ">
-            <div className=" sticky  ">
+          <div className="opacity-20 md:opacity-100 md:flex w-full sm:w-auto   justify-start w-100 absolute top-6  md:relative sm:p-0">
+            <div className=" sticky ">
               <motion.div
                 initial="hidden"
                 animate="visible"
                 variants={headerAnimation}
               >
                 <Image
-                  src={""}
+                  src={Lubiehero}
                   alt="Lubiehero"
-                  className=" object-contain z-0"
+                  className=" object-contain z-0 lg:w-[500px] sm:w-[300px] w-[270px] m-auto"
                 />
               </motion.div>
             </div>
@@ -113,19 +115,19 @@ function Herosec() {
           />
         </div>
         <div className="w-full flex flex-col mx-auto items-center justify-center  text-lubie-dark-blue ">
-          <p>Nature & Health</p>
-          <h2 className="md:text-3xl text-xl font-extrabold md:w-[auto] text-center">
-            <span className="text-lubie-navy-blue">Water-based</span>{" "}
+          <p className="mb-3 font-semibold">Nature & Health</p>
+          <h2 className="text-4xl  font-extrabold md:w-[auto] text-center mb-6">
+            <span className="text-lubie-navy-blue">Water-based</span> <br></br>
             moisturizer
           </h2>
-          <div className="md:mx-auto ">
-            <p className="md:text-left md:text-xl text-center px-5">
+          <div className="md:mx-auto mb-12">
+            <p className="md:text-left md:text-xl text-center px-5 lg:w-[600px]">
               Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor
               sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
               dolor sitametamet
             </p>
           </div>
-          <Button title="Read More" />
+          <Button title="Read More" variant="about" />
         </div>
       </div>
     </div>

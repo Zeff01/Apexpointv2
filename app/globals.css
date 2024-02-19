@@ -67,8 +67,17 @@ html {
   box-shadow: inset;
 }
 
-img-2 {
+.img-2 {
   width: 150px;
   height: 345px;
   box-shadow: inset;
 }
+.lubiewave{
+  background-image: url('../public/assets/lubie-products/lubiewaves.svg');
+  background-size: cover;
+}
+.chloreliefwave{
+  background-image: url('../public/assets/chlorelief-assets/chloreliefmountains.png');
+  background-size: cover;
+}
+
