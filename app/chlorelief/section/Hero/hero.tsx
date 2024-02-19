@@ -23,7 +23,7 @@ const Data: HeroSectionProps[] = [
 
     ButtonText: "Learn more",
     ButtonStyle:
-      "border-2 border-red-300 hover:bg-red-300 duration-300 text-white font-bold w-[200px] py-2 rounded-lg my-4 Text-Caption-Desktop bg-chlorelief-springwood",
+      "border-2 border-white hover:bg-white duration-300 text-white font-bold w-[200px] py-2 rounded-lg my-4 Text-Caption-Desktop bg-chlorelief-springwood hover:text-chlorelief-springwood ",
   },
 ];
 
