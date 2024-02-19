@@ -22,7 +22,7 @@ const ContactForm = () => {
   const userMessage = useRef<HTMLTextAreaElement>(null);
 
   const getInputValue = (
-    ref: React.RefObject<HTMLInputElement | HTMLTextAreaElement>
+    ref: React.RefObject<HTMLInputElement | HTMLTextAreaElement>,
   ) => ref.current?.value || "";
 
   const sendEmail = (e: FormEvent) => {
@@ -61,7 +61,7 @@ const ContactForm = () => {
           "service_6eytzbl",
           "template_1k8w2q5",
           currentForm,
-          "NYOzmlYunw07zCeOw"
+          "NYOzmlYunw07zCeOw",
         )
         .then(
           () => {
@@ -71,7 +71,7 @@ const ContactForm = () => {
           (error) => {
             console.log("FAILED...", error.text);
             setMessageStatus("error");
-          }
+          },
         );
     } else {
       console.error("Form reference is null.");

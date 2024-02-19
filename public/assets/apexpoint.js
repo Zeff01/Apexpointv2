@@ -1,4 +1,3 @@
-
 import icon1 from "../assets/svg/lubieIcon1.svg";
 import icon2 from "../assets/svg/lubieIcon2.svg";
 import icon3 from "../assets/svg/lubieIcon3.svg";
@@ -27,7 +26,6 @@ import truck from "../assets/svg/truck.svg";
 import card from "../assets/lubie-assets/card.svg";
 import shippingbag from "../assets/svg/shippingbag.svg";
 
-
 export {
   icon1,
   icon2,
@@ -55,5 +53,5 @@ export {
   return1,
   truck,
   card,
-  shippingbag
+  shippingbag,
 };

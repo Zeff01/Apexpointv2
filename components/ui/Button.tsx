@@ -21,8 +21,8 @@ const Button: React.FC<ButtonProps> = ({
     variant === "apexpoint"
       ? "bg-apexpoint-dark-orange text-white"
       : variant === "chlorelief"
-      ? "bg-chlorelief-pink text-white"
-      : "border-lubie-dark-blue";
+        ? "bg-chlorelief-pink text-white"
+        : "border-lubie-dark-blue";
 
   const combinedClassName =
     `${baseStyles} ${variantStyles} ${className}`.trim();

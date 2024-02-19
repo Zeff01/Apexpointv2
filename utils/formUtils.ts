@@ -1,7 +1,7 @@
 export type TMessageStatus = "standby" | "loading" | "success" | "error";
 
 export const validateInputs = (
-  inputs: Record<string, string>
+  inputs: Record<string, string>,
 ): Record<string, boolean> => {
   const validationResults: Record<string, boolean> = {};
 
@@ -17,7 +17,7 @@ export const validateInputs = (
 };
 
 export const validateForm = (
-  validationResults: Record<string, boolean>
+  validationResults: Record<string, boolean>,
 ): boolean => {
   return Object.values(validationResults).every((isValid) => isValid);
 };

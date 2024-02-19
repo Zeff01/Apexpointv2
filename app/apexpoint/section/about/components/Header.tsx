@@ -1,5 +1,5 @@
 // components/ui/Header.tsx
-import React from 'react';
+import React from "react";
 
 interface HeaderProps {
   text: string;

@@ -3,6 +3,7 @@ import ProductList from "./data";
 import {
   textAnimation,
   headerAnimation,
+  containerVariants,
 } from "@/components/animation/animation";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -42,7 +43,13 @@ export default function Product() {
             </p>
           </motion.div>
         </div>
-        <ProductList />
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+        >
+          <ProductList />
+        </motion.div>
       </div>
     </>
   );

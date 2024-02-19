@@ -11,7 +11,7 @@ interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 
 const TextArea: ForwardRefRenderFunction<HTMLTextAreaElement, TextAreaProps> = (
   { label, ...props },
-  ref: ForwardedRef<HTMLTextAreaElement>
+  ref: ForwardedRef<HTMLTextAreaElement>,
 ) => {
   return (
     <>

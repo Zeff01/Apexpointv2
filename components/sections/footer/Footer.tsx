@@ -1,14 +1,15 @@
 import React from "react";
 import Section from "../../ui/Section";
-import { FooterDataType, footerData } from "@/components/data/apexpoint/footerData";
+import {
+  FooterDataType,
+  footerData,
+} from "@/components/data/apexpoint/footerData";
 import Socials from "@/app/apexpoint/section/footer/_modules/Socials";
 import Image from "next/image";
 import apexpointLogo from "@/public/assets/apex-assets/apexpoint-logo.png";
 type FooterProps = {
   variant: "chlorelief" | "lubie";
 };
-
-
 
 const Footer: React.FC<FooterProps> = ({ variant }) => {
   const data = footerData.map((item: FooterDataType) => {

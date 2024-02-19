@@ -31,7 +31,7 @@ const Carousel = ({ name, logo, url }: ProductData) => {
             className="rounded-2xl object-contain w-full h-auto shadow-md"
           />
         </Link>
-      )
+      ),
   );
 
   return (

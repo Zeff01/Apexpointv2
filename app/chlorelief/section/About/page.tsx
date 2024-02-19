@@ -1,75 +1,113 @@
-import React from "react";
-import Image from "next/image";
-import { StaticImageData } from "next/image";
-import mainImg from "@/public/assets/chlorelief-products/chlorelief-white-bg.jpg";
-import serv from "@/public/assets/chlorelief-assets/services.png";
-import ship from "@/public/assets/lubie-assets/shipping.png";
-import ret from "@/public/assets/chlorelief-assets/return-icon.png";
-import payment from "@/public/assets/chlorelief-assets/payment.png";
-
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import { StaticImageData } from 'next/image';
+import mainImg from '@/public/assets/chlorelief-products/chlorelief-white-bg.jpg';
+import serv from '@/public/assets/chlorelief-assets/services.png';
+import ship from '@/public/assets/lubie-assets/shipping.png';
+import ret from '@/public/assets/chlorelief-assets/return-icon.png';
+import payment from '@/public/assets/chlorelief-assets/payment.png';
+import {
+  textAnimation,
+  AboutImage,
+  headerAnimation,
+  AboutText,
+  childrenVariants,
+  containerVariants,
+} from '@/components/animation/animation';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 interface About {
   title: string;
   img: StaticImageData;
 }
 
 const aboutData: About[] = [
-  { title: "services", img: serv },
-  { title: "shipping", img: ship },
-  { title: "return", img: ret },
-  { title: "payment", img: payment },
+  { title: 'services', img: serv },
+  { title: 'shipping', img: ship },
+  { title: 'return', img: ret },
+  { title: 'payment', img: payment },
 ];
 
 const About = () => {
+  const { ref, inView } = useInView();
   const aboutText = [
-    "Paraben-free paraben is not a ",
-    "natural product and is not",
-    "something you apod find naturally",
-    "in the body. Using skin products",
-    "with paraben will make skin dry,",
-    "brittle, cracked, and swollen.",
-    "Also, paraben can cause many",
-    "chemicals to enter the body that",
-    "that should not be there.",
+    'Paraben-free paraben is not a ',
+    'natural product and is not',
+    'something you apod find naturally',
+    'in the body. Using skin products',
+    'with paraben will make skin dry,',
+    'brittle, cracked, and swollen.',
+    'Also, paraben can cause many',
+    'chemicals to enter the body that',
+    'that should not be there.',
   ];
 
   return (
-    <div id="about" className="font-inter h-auto sm:h-full">
-      <h2 className="text-chlorelief-chateaugreen font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop">
-        ABOUT THE BRAND
-      </h2>
+    <div id="about" className="font-inter h-auto sm:h-full" ref={ref}>
+      <motion.div
+        variants={headerAnimation}
+        initial="hidden"
+        viewport={{ once: true }}
+        animate={inView ? 'visible' : 'hidden'}
+      >
+        <h2 className="text-chlorelief-chateaugreen font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop">
+          ABOUT THE BRAND
+        </h2>
+      </motion.div>
       <div className="flex flex-row-reverse items-center justify-evenly my-10">
         <div className="text-Body-Default sm:text-Body-Desktop">
           <div className="text-gray-400 max-w-full-lg text-center md:text-left">
-            <h2 className="my-4">CHLORELIEF</h2>
-            {aboutText.map((text, index) => (
-              <p key={index}>{text}</p>
-            ))}
+            <motion.div
+              variants={textAnimation}
+              initial="hidden"
+              viewport={{ once: true }}
+              animate={inView ? 'visible' : 'hidden'}
+            >
+              <h2 className="my-4">CHLORELIEF</h2>
+            </motion.div>
+
+            <motion.div
+              variants={AboutText}
+              initial="hidden"
+              viewport={{ once: true }}
+              animate={inView ? 'visible' : 'hidden'}
+            >
+              {aboutText.map((text, index) => (
+                <p key={index}>{text}</p>
+              ))}
+            </motion.div>
           </div>
         </div>
-        <Image
-          src={mainImg}
-          alt="About Image"
-          className="hidden md:block object-scale-down"
-        />
+
+        <motion.div
+          variants={AboutImage}
+          initial="hidden"
+          viewport={{ once: true }}
+          animate={inView ? 'visible' : 'hidden'}
+        >
+          <Image src={mainImg} alt="About Image" className="hidden md:block object-scale-down" />
+        </motion.div>
       </div>
-      <div className="hidden md:flex justify-evenly">
-        {aboutData.map((data, index) => (
-          <div key={index}>
-            <h2 className="text-chlorelief-chateaugreen font-bold ">
-              {data.title}
-            </h2>
-            <div className="h">
-              <Image
-                src={data.img}
-                alt="icon"
-                width={80}
-                height={20}
-                className="py-2 hue-rotate-90"
-              />
-            </div>
+
+      <motion.div ref={ref} variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
+        <motion.div variants={AboutImage}>
+          <div className="hidden md:flex justify-evenly">
+            {aboutData.map((data, index) => (
+              <motion.div
+                key={index}
+                variants={childrenVariants}
+                style={{ originX: 0 }} // Set origin to 0 for smoother animation
+              >
+                <h2 className="text-chlorelief-chateaugreen font-bold">{data.title}</h2>
+                <div className="h">
+                  <Image src={data.img} alt="icon" width={80} height={20} className="py-2 hue-rotate-90" />
+                </div>
+              </motion.div>
+            ))}
           </div>
-        ))}
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

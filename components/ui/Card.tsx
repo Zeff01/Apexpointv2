@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ children, className = "", ...rest }) => {
   const combinedClassName = `${baseStyles} ${className}`.trim();
 
   return (
-    <div className={combinedClassName} {...rest} >
+    <div className={combinedClassName} {...rest}>
       {children}
     </div>
   );
