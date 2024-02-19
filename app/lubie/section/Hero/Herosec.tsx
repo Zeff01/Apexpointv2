@@ -25,7 +25,7 @@ function Herosec() {
     <div className="  min-h-screen h-full relative">
       <div className="  w-full flex flex-col items-center  bg-lubie-navy-blue lubiewave font-ubuntu text-lubie-white-color  justify-between ">
         {/* HERO TEXT AND ICON */}
-        <div className="w-full  flex md:flex-row flex-col justify-center  relative  pt-12 ">
+        <div className="w-full  flex md:flex-row flex-col justify-center  relative  pt-12 px-6">
           <div className="flex flex-col justify-center items-center sm:items-start mt-2 space-y-8 z-10">
             <motion.div
               variants={textAnimation}
@@ -53,7 +53,10 @@ function Herosec() {
               initial="hidden"
               animate="visible"
             >
-              <Button title="Read More" variant="hero" />
+              <a href="#about">
+                {" "}
+                <Button title="Read More" variant="hero" />
+              </a>
             </motion.div>
           </div>
           <div className="opacity-20 md:opacity-100 md:flex w-full sm:w-auto   justify-start w-100 absolute top-6  md:relative sm:p-0">
