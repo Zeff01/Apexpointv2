@@ -121,7 +121,7 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
     >
       <div className="md:pr-[50px] lg:pr-[100px] space-y-6  flex flex-col    lg:border-r-2 lg:border-gray-200 ">
         <div className="mb-2">
-          <h2 className="text-5xl font font-bold drop-shadow-lg shadow-black mb-5">
+          <h2 className="text-5xl font font-bold drop-shadow-lg shadow-black mb-5 z-20">
             For Bulk Orders
           </h2>
           <p className="text-black-600 text-start">

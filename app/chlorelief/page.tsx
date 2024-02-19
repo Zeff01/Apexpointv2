@@ -16,8 +16,8 @@ export default function page() {
       <Product />
       <About />
       <Banner />
-      <ContactSection variant="chlorelief" />
       <div className="flex flex-col sm:flex-col-reverse md:flex-col-reverse lg:flex-col">
+        <ContactSection variant="chlorelief" />
         <Testimonials variant="chlorelief" />
       </div>
       <Store />

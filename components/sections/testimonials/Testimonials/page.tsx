@@ -28,7 +28,7 @@ function Testimonials({ variant }: TestimonialsProps) {
     }
   );
 
-  const containerClassName = `container flex flex-col justify-center items-center text-center lg:flex-row lg:text-start gap-4 ${
+  const containerClassName = `container flex flex-col justify-evenly items-center text-center lg:flex-row lg:text-start gap-4 ${
     variant === "chlorelief" ? "bg-chlorelief-star-green" : "bg-lubie-navy-blue"
   }`;
 
@@ -61,11 +61,11 @@ function Testimonials({ variant }: TestimonialsProps) {
         </div>
       </div>
 
-      <div className="w-full flex justify-between px-4">
+      <div className="w-full flex justify-between px-4 md:px-32">
         <div className="w-full block md:hidden">
           <Cardslide cards={testimonialCards} />
         </div>
-        <div className="hidden md:flex w-full items-center justify-between gap-4 p-10 min-[768px]:flex-col lg:flex-row">
+        <div className="hidden md:flex w-full items-center justify-evenly gap-4 p-20 min-[768px]:flex-col lg:flex-row">
           {testimonialCards}
         </div>
       </div>
