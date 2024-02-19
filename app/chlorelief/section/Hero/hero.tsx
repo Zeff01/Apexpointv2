@@ -23,7 +23,7 @@ const Data: HeroSectionProps[] = [
 
     ButtonText: "Learn more",
     ButtonStyle:
-      "border-2 border-red-500 hover:bg-red-500 duration-300 text-white font-bold w-[200px] py-2 rounded-lg my-4 Text-Caption-Desktop",
+      "border-2 border-white hover:bg-white duration-300 text-white font-bold w-[200px] py-2 rounded-lg my-4 Text-Caption-Desktop bg-chlorelief-springwood hover:text-chlorelief-springwood ",
   },
 ];
 
@@ -32,15 +32,18 @@ export default function Hero() {
     <>
       {Data.map((item, index) => (
         <div key={index} className={item.SectionClass}>
-          <div className="flex justify-center flex-col-reverse sm:flex-row sm:items-center sm:px-11 px-7  lg:px-[200px] relative  ">
+          <div className="flex justify-center flex-col-reverse sm:flex-row sm:items-center sm:px-11 px-7  xl:px-[200px] relative  ">
             <div className="flex flex-col sm:justify-end sm:items-start justify-center items-center max-w-screen-xl w-full gap-2">
-              <h1 className="text-white  font-bold text-center w-[372px] sm:w-auto sm:text-start pb-6 text-3xl   md:text-4xl lg:text-5xl lg:leading-[65px]">
+              <h1 className="text-white  font-bold text-center  sm:w-auto sm:text-start pb-6 text-3xl   md:text-4xl lg:text-5xl lg:leading-[65px]">
                 The first line of{" "}
-                <span className="text-red-500 text-extra-bold">defense</span>{" "}
+                <span className="text-red-300  text-extra-bold">defense</span>{" "}
                 against bacteria and viruses
               </h1>
 
-              <button className={item.ButtonStyle}>{item.ButtonText}</button>
+              <a href="#about">
+                {" "}
+                <button className={item.ButtonStyle}>{item.ButtonText}</button>
+              </a>
             </div>
             <div className="min-w-screen w-full h-full flex justify-center items-center ">
               <Image
