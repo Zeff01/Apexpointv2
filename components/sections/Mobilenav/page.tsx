@@ -15,8 +15,8 @@ const MobileNav: React.FC<MobileNavProps> = ({ links, variant = "blue" }) => {
   };
 
   return (
-    <div className={`fixed right-2 top-5 z-50 sm:hidden text-white`}>
-      <button className={`text-white`} onClick={handleClick}>
+    <div className={`fixed right-5 top-5 z-50 sm:hidden text-gray-300`}>
+      <button className={`text-inherit`} onClick={handleClick}>
         <Hamburger toggled={isOpen} toggle={setIsOpen} />
       </button>
       <div

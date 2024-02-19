@@ -34,7 +34,7 @@ function Testimonials({ variant }: TestimonialsProps) {
 
   return (
     <div
-      className={`testimonials min-h-screen flex flex-col justify-center items-center h-full w-full ${variant === "chlorelief" ? "bg-chlorelief-star-green" : "bg-lubie-navy-blue"} border-2 pt-4 pb-8`}
+      className={`testimonials min-h-screen flex flex-col justify-center items-center h-full w-full ${variant === "chlorelief" ? "bg-chlorelief-star-green" : "bg-lubie-navy-blue"} pt-4 pb-8`}
     >
       <div className={containerClassName}>
         <div>
