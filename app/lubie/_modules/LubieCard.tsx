@@ -12,7 +12,7 @@ const LubieCard = ({ title, imageUrl, price, quantity }: LubieCardProps) => {
   const [rateOne, setRateOne] = useState(5);
 
   return (
-    <div className="lg:min-w-[30.9%] md:min-w-[45.1%] min-w-[60%] ">
+    <div className="lg:min-w-[30.9%] md:min-w-[45.1%] max-w-[70%] ">
       <div className="flex w-auto rounded-lg flex-row  justify-center drop-shadow-lg bg-lubie-white-blue  relative shadow-sm ">
         <FaHeart
           className="absolute top-3 right-3 fill-lubie-green-light "
