@@ -1,7 +1,7 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { sendMail } from '../service/mailService';
+//import { NextRequest, NextResponse } from 'next/server';
+//import { sendMail } from '../service/mailService';
 
-export async function POST(req: NextRequest) {
+{/*(export async function POST(req: NextRequest) {
 	const { name, phone, email, message } = await req.json();
 	const response = await sendMail({
 		subject: 'From Portfolio Website',
@@ -11,4 +11,4 @@ export async function POST(req: NextRequest) {
 		message,
 	});
 	return NextResponse.json({ message: response });
-}
+}*/} 
