@@ -109,7 +109,7 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
   });
 
   return (
-    <div
+    <section
       id="contact"
       className={`flex flex-col md:flex-row w-full justify-center items-center p-12 md:pt-[100px] md:pb-[70px] bg-lubie-white-color
       ${
@@ -235,7 +235,7 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Contact;

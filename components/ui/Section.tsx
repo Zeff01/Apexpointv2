@@ -14,7 +14,7 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   const baseStyles = "height-fit-content w-full";
 
-  let additionalStyles = "px-36 pt-20";
+  let additionalStyles = "pt-20 px-6 md:px-10 lg:px-20 xl:px-24 2xl:px-32";
 
   if (id === "store" || id === "footer") {
     additionalStyles = "px-0 pt-20";

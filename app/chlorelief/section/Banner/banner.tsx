@@ -10,7 +10,6 @@ const Banner = () => {
         width={1000}
         height={500}
         className='object-cover w-full'
-        layout='responsive'
       />
     </div>
   )
