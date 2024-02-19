@@ -21,7 +21,7 @@ import Lubie from "@/public/assets/lubie-assets/sample.png";
 
 function Herosec() {
   return (
-    <div className="  min-h-screen h-full relative">
+    <div className="  min-h-screen h-full -z-10">
       <div className="  w-full flex flex-col items-center bg-lubie-navy-blue font-ubuntu text-lubie-white-color  justify-between">
         {/* HERO TEXT AND ICON */}
         <div className="w-full  flex flex-row  justify-center gap-20  pt-12 ">

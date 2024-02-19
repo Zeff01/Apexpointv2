@@ -4,9 +4,10 @@ import Link from "next/link"; // Assuming you're using Next.js for routing
 
 interface MobileNavProps {
   links: { text: string; href: string; hover: string }[];
+  variant?: "Lubie" | "Chlorelief"; // Define variant prop
 }
 
-const MobileNav: React.FC<MobileNavProps> = ({ links }) => {
+const MobileNav: React.FC<MobileNavProps> = ({ links, variant = "blue" }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -14,13 +15,13 @@ const MobileNav: React.FC<MobileNavProps> = ({ links }) => {
   };
 
   return (
-    <div className="fixed right-2 top-5  sm:hidden">
-      <button className="text-white" onClick={handleClick}>
+    <div className={`fixed right-2 top-5 z-50 sm:hidden text-white`}>
+      <button className={`text-white`} onClick={handleClick}>
         <Hamburger toggled={isOpen} toggle={setIsOpen} />
       </button>
       <div
-        className={`fixed left-0 top-0 h-screen bg-white shadow-lg w-auto px-10 z-[9999] transition-all duration-300 pt-8 ${
-          isOpen ? "translate-x-0 ]" : "-translate-x-full "
+        className={`fixed left-0 top-0 h-screen ${variant === "Lubie" ? "bg-sky-400" : "bg-green-400"} shadow-lg w-auto px-10 z-[99999] transition-all duration-300 pt-8 ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         {links.map((link, index) => (

@@ -16,7 +16,7 @@ interface HeroSectionProps {
 const Data: HeroSectionProps[] = [
   {
     SectionClass:
-      "bg-chlorelief-springwood min-h-screen-xl -z-10 h-full flex flex-row items-center justify-center font-inter pb-10 sm:pb-0 sm:h-screen",
+      "bg-chlorelief-springwood min-h-screen-xl h-full flex flex-row items-center justify-center font-inter pb-10 sm:pb-0 sm:h-screen",
     HeaderText: "Your first line of defense",
     Text1: "Lorem ipsum dolor sit eamet Lorem Ipsum",
     Text2: "ipsum dolor sit Lorem ipsum dolor sit",
@@ -24,7 +24,7 @@ const Data: HeroSectionProps[] = [
     Text4: "ipsum dolor sit Lorem ipsum dolor",
     Text5: "sitametamet",
     TextStyle:
-      "flex flex-col gap-1 items-center text-gray-200 opacity-90 text-Body-Default sm:text-Body-Desktop px-2 ",
+      "flex flex-col gap-1 items-center text-gray-200 text-Body-Default sm:text-Body-Desktop px-2 ",
     ButtonText: "Learn more",
     ButtonStyle:
       "border-2 border-red-500 hover:bg-red-500 duration-300 text-white font-bold w-1/2 py-2 rounded-lg my-4 Text-Caption-Desktop",
@@ -36,7 +36,7 @@ export default function Hero() {
     <>
       {Data.map((item, index) => (
         <div key={index} className={item.SectionClass}>
-          <div className="flex justify-end flex-col-reverse sm:flex-row sm:items-center">
+          <div className="flex justify-end flex-col-reverse md:flex-row sm:items-center">
             <div className="flex flex-col justify-end items-center max-w-screen-xl w-full gap-2">
               <h1 className="text-white text-Header-Mobile font-bold text-center pb-6 sm:text-Header-Desktop">
                 {item.HeaderText}

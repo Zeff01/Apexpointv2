@@ -11,7 +11,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ links }) => {
         <div className="flex justify-center items-center  ">
           <button className="flex gap-10 ">
             {links.map((link, index) => (
-              <Link key={index} href={link.href}>
+              <Link className={link.hover} key={index} href={link.href}>
                 {link.text}
               </Link>
             ))}
