@@ -4,7 +4,10 @@ import Banner from "@/public/assets/lubie-assets/banner.jpg";
 
 const AboutSection = () => {
   return (
-    <div className="hidden md:flex  flex-col mt-20 bg-opacity-40 bg-lubie-light-blue">
+    <div
+      className="hidden md:flex  flex-col mt-20 bg-opacity-40 bg-lubie-light-blue"
+      id="about"
+    >
       {/* Shipping Block */}
       <div className="pt-20 pb-28 mx-auto grid grid-cols-2 md:flex md:flex-row md:justify-center gap-x-5 px-1 md:px-0 gap-y-10">
         {[
