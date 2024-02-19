@@ -16,7 +16,7 @@ import {
   headerAnimation,
   containerAnimation,
   itemAnimation,
-} from "../../_modules/animation/hero/animation";
+} from "@/components/animation/animation";
 import Lubiehero from "@/public/assets/lubie-products/lubiehero3.png";
 import Lubie from "@/public/assets/lubie-products/aboutlubie.png";
 

@@ -1,6 +1,11 @@
 export const textAnimation = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 2, x: 0, transition: { staggerChildren: 0.5 } },
+};
+
+export const ImageAnimation = {
   hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, delay: { stagger: 0.5 } },
+  visible: { opacity: 1, x: 0, transition: { staggerChildren: 0.5 } },
 };
 
 export const headerAnimation = {

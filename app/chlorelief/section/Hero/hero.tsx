@@ -1,4 +1,13 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import {
+  textAnimation,
+  headerAnimation,
+  containerAnimation,
+  itemAnimation,
+  ImageAnimation,
+} from "@/components/animation/animation";
 
 interface HeroSectionProps {
   SectionClass: string;
@@ -34,22 +43,34 @@ export default function Hero() {
         <div key={index} className={item.SectionClass}>
           <div className="flex justify-center flex-col-reverse sm:flex-row sm:items-center sm:px-11 px-7  lg:px-[200px] relative  ">
             <div className="flex flex-col sm:justify-end sm:items-start justify-center items-center max-w-screen-xl w-full gap-2">
-              <h1 className="text-white  font-bold text-center w-[372px] sm:w-auto sm:text-start pb-6 text-3xl   md:text-4xl lg:text-5xl lg:leading-[65px]">
-                The first line of{" "}
-                <span className="text-red-500 text-extra-bold">defense</span>{" "}
-                against bacteria and viruses
-              </h1>
+              <motion.div
+                variants={textAnimation}
+                initial="hidden"
+                animate="visible"
+              >
+                <h1 className="text-white  font-bold text-center w-[372px] sm:w-auto sm:text-start pb-6 text-3xl   md:text-4xl lg:text-5xl lg:leading-[65px]">
+                  The first line of{" "}
+                  <span className="text-red-500 text-extra-bold">defense</span>{" "}
+                  against bacteria and viruses
+                </h1>
 
-              <button className={item.ButtonStyle}>{item.ButtonText}</button>
+                <button className={item.ButtonStyle}>{item.ButtonText}</button>
+              </motion.div>
             </div>
             <div className="min-w-screen w-full h-full flex justify-center items-center ">
-              <Image
-                src="/assets/chlorelief-products/chloreliefhero5.png"
-                width={400} // Increased width for a bigger image
-                height={400} // Adjust height accordingly to maintain aspect ratio
-                className="min-h-full w-full object-contain " // Adjusted class for bigger image
-                alt="product picture"
-              />
+              <motion.div
+                variants={ImageAnimation}
+                initial="hidden"
+                animate="visible"
+              >
+                <Image
+                  src="/assets/chlorelief-products/chloreliefhero5.png"
+                  width={400} // Increased width for a bigger image
+                  height={400} // Adjust height accordingly to maintain aspect ratio
+                  className="min-h-full w-full object-contain " // Adjusted class for bigger image
+                  alt="product picture"
+                />
+              </motion.div>
             </div>
           </div>
         </div>
