@@ -27,7 +27,7 @@ export default function Navbar() {
     },
   ];
 
-  //Jsx Structure
+  //Jsx  Structure
   return (
     <>
       <nav className="bg-lubie-soft-blue md:text-white sticky top-0 z-50">
