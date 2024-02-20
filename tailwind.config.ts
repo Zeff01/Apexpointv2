@@ -34,11 +34,13 @@ const config: Config = {
           'neon-green': '#29ff00',
           'white-blue': '#f0f5f3',
           'soft-blue': '#6198FF',
+          'nav-blue': '#C3D3E3',
         },
         apexpoint: {
           'grey-text': '#595959',
           'dark-orange': '#F29A38',
           'light-orange': '#F3E1B9',
+          'nav-orange': '#f2ba66',
           green: '#40D63F',
         },
         chlorelief: {
