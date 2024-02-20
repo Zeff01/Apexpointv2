@@ -16,6 +16,7 @@ interface NavLink {
   label: string;
 }
 
+{/*Links for the navbar */}
 const navLinks: NavLink[] = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About Us' },

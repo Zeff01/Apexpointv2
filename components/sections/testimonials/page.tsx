@@ -35,16 +35,14 @@ function Testimonials({ variant }: TestimonialsProps) {
             CUSTOMERS REVIEW
           </p>
           <h1
-            className={`text-Header-Mobile font-extrabold gap-4 flex md:text-Header-Default max-w-screen-sm ${variant === 'chlorelief' ? 'text-black' : 'text-white'}`}
+            className={`text-Header-Mobile p-4 font-extrabold gap-2 flex md:text-Header-Default max-w-screen-sm ${variant === 'chlorelief' ? 'text-black' : 'text-white'}`}
           >
             What Our Customers Say About Our Products
           </h1>
         </div>
-        <div className="right text-Body-Default w-4/5 lg:w-1/3 my-4">
+        <div className="right text-Body-Default w-4/5 lg:w-1/3 my-2 pb-4">
           <p className={`${variant === 'chlorelief' ? 'text-black' : 'text-white'}`}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe magni aliquam hic, temporibus nemo omnis,
-            consequatur voluptate tempore exercitationem nesciunt natus ipsa aut perspiciatis reiciendis fugit earum.
-            Repellat, nam? Nisi.
+          We take pride in delivering high-quality skincare products that nourish and enhance the natural beauty of your skin. But don't just take our word for it hear what our happy customers have to say!
           </p>
         </div>
       </div>
