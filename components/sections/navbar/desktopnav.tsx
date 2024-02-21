@@ -16,7 +16,9 @@ interface NavLink {
   label: string;
 }
 
-{/*Links for the navbar */}
+{
+  /*Links for the navbar */
+}
 const navLinks: NavLink[] = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About Us' },
@@ -26,16 +28,20 @@ const navLinks: NavLink[] = [
 
 const DesktopNav: React.FC<DesktopNavProps> = ({ title }) => {
   return (
-    <nav className="shadow-lg md:shadow-md flex w-full justify-between items-center px-12 py-4">
+    <nav className="shadow-lg md:shadow-md flex w-full justify-between items-center sm:px-12 px-3 py-4">
       <div className="flex items-center gap-2">
         <Link href="/">
-          <Image className="h-10 w-auto hover:opacity-80 hover:scale-105 duration-200" src={apexLogo} alt="apexpoint" />
+          <Image
+            className="h-10 w-auto filter invert hover:opacity-80 hover:scale-105 duration-200"
+            src={apexLogo}
+            alt="apexpoint"
+          />
         </Link>
         <div className="border-l-2 pl-2 flex flex-col items-start gap-2">
           {title === 'Apexpoint' ? (
             <>
-              <Link className="hover:opacity-80 hover:scale-105 duration-200" href="/chlorelief">
-                <Image className="h-6 w-auto" src={chloroLogo} alt="chlorelief" />
+              <Link className="hover:opacity-80 hover:scale-105 duration-200 " href="/chlorelief">
+                <Image className="h-6 w-auto " src={chloroLogo} alt="chlorelief" />
               </Link>
               <Link className="hover:opacity-80 hover:scale-105 duration-200" href="/lubie">
                 <Image className="h-6 w-auto object-contain" src={lubieLogo} alt="lubie" />
@@ -44,7 +50,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ title }) => {
           ) : title === 'Lubie' ? (
             <Image className="h-8 w-auto object-contain" src={lubieLogo} alt="lubie" />
           ) : (
-            <Image className="h-8 w-auto" src={chloroLogo} alt="chlorelief" />
+            <Image className="h-8 w-auto filter brightness-110" src={chloroLogo} alt="chlorelief" />
           )}
         </div>
       </div>
