@@ -57,8 +57,8 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
       <div
         className={
           nav
-            ? `fixed right-0 top-0 w-1/2 max-w-[250px] shadow-2xl h-full border-r ${backgroundClass} flex flex-col justify-between  ease-in-out duration-500 z-[70]`
-            : 'fixed right-[-100%] top-0 h-full ease-in-out duration-500 z-[70] flex flex-col justify-between'
+            ? `fixed right-0 top-0 w-1/2 max-w-[250px] overflow-hidden shadow-2xl h-full border-r ${backgroundClass} flex flex-col justify-between  ease-in-out duration-500 z-[70]`
+            : 'fixed right-[-100%] top-0 h-full overflow-hidden ease-in-out duration-500 z-[70] flex flex-col justify-between'
         }
       >
         <div
@@ -77,7 +77,7 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
             </li>
           ))}
         </ul>
-        <div className={`${textcolor} px-6 py-6 mb-11 text-2xl font-bold`}>
+        <div className={`${textcolor} px-6 py-6 mb-11 text-1xl sm:text-2xl font-bold`}>
           {variant === 'apex' ? (
             <>
               <Link className="flex items-center mb-5" href="/chlorelief">
