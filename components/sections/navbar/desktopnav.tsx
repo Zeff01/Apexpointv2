@@ -50,7 +50,11 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ title }) => {
           ) : title === 'Lubie' ? (
             <Image className="h-8 w-auto object-contain" src={lubieLogo} alt="lubie" />
           ) : (
-            <Image className="h-8 w-auto filter brightness-110" src={chloroLogo} alt="chlorelief" />
+            <Image
+              className="h-8 w-auto filter brightness-110 contrast-200 saturate-150"
+              src={chloroLogo}
+              alt="chlorelief"
+            />
           )}
         </div>
       </div>
