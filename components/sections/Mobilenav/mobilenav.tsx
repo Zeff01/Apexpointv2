@@ -77,32 +77,33 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
             </li>
           ))}
         </ul>
-        <div className={`${textcolor} px-6 py-6 mb-11 text-1xl sm:text-2xl font-bold`}>
+        <div className={`${textcolor} px-6 py-6 mb-11 text-xl sm:text-2xl font-bold`}>
           {variant === 'apex' ? (
             <>
               <Link className="flex items-center mb-5" href="/chlorelief">
-                <BiSolidLeftArrow /> <p className="ml-3 ">CHLORELIEF</p>
+                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3 ">CHLORELIEF</p>
               </Link>
               <Link className="flex items-center mb-5" href="/lubie">
-                <BiSolidLeftArrow /> <p className="ml-3 ">LUBIE</p>
+                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3 ">LUBIE</p>
               </Link>
             </>
           ) : variant === 'lubie' ? (
             <>
               <Link className="flex items-center mb-5" href="/">
-                <BiSolidLeftArrow /> <p className="ml-3">APEXPOINT</p>
+                <BiSolidLeftArrow />
+                <p className="ml-1 sm:ml-3">APEXPOINT</p>
               </Link>
               <Link className="flex items-center mb-5" href="/chlorelief">
-                <BiSolidLeftArrow /> <p className="ml-3">CHLORELIEF</p>
+                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3">CHLORELIEF</p>
               </Link>
             </>
           ) : (
             <>
               <Link className="flex items-center mb-5" href="/">
-                <BiSolidLeftArrow /> <p className="ml-3 ">APEXPOINT</p>
+                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3 ">APEXPOINT</p>
               </Link>
               <Link className="flex items-center mb-5" href="/lubie">
-                <BiSolidLeftArrow /> <p className="ml-3">LUBIE</p>
+                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3">LUBIE</p>
               </Link>
             </>
           )}

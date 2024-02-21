@@ -10,7 +10,7 @@ import Lubie from '@/public/assets/lubie-products/aboutlubie.png';
 
 function Herosec() {
   return (
-    <div className="  min-h-screen h-full relative flex flex-col justify-center items-center">
+    <div className="  overflow-hidden min-h-screen h-full relative flex flex-col justify-center items-center">
       <div className="  w-full flex flex-col items-center  bg-lubie-navy-blue lubiewave font-ubuntu text-lubie-white-color  justify-between ">
         {/* HERO TEXT AND ICON */}
         <div className="w-full  flex md:flex-row flex-col justify-center  relative  pt-12 px-6">
