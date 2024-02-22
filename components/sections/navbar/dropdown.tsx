@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 
 import DownArrowIcon from '@/components/icons/arrowdown';
@@ -18,7 +18,9 @@ const DropdownMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  document.addEventListener('mousedown', closeOpenMenus);
+  useEffect(() => {
+    document.addEventListener('mousedown', closeOpenMenus);
+  });
 
   return (
     <div ref={dropmenu} className="relative inline-block text-left">
