@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import Hamburger from 'hamburger-react';
 import Link from 'next/link';
 import { BiSolidLeftArrow } from 'react-icons/bi';
+import RightArrowIcon from '@/components/icons/arrowright';
+
 interface NavLink {
   href: string;
   label: string;
@@ -11,8 +13,8 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About Us' },
   { href: '#products', label: 'Products' },
+  { href: '#about', label: 'About Us' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -48,10 +50,7 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
 
   return (
     <>
-      <button
-        className={`flex md:hidden ${hamburgerColor} fixed right-5  ${variant === `apex` ? `top-5` : `top-2`}  z-[60]`}
-        onClick={() => setNav(!nav)}
-      >
+      <button className={`flex md:hidden ${hamburgerColor} fixed right-5 top-2 z-[60]`} onClick={() => setNav(!nav)}>
         <Hamburger toggled={nav} toggle={setNav} />
       </button>
       <div
@@ -69,22 +68,42 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
         </div>
 
         <ul className={`w-full mt-20 text-xl  ${textcolor}`}>
-          {navLinks.map((link) => (
-            <li className="w-full" key={link.href}>
-              <Link className=" hover:bg-zinc-100 flex w-full font-bold px-6 py-4 " href={link.href}>
-                {link.label}
-              </Link>
-            </li>
-          ))}
+          {navLinks.map((link) =>
+            variant === 'apex' && link.label === 'Products' ? (
+              <>
+                <h2 className="flex w-full font-bold px-6 py-4">Products</h2>
+                <div className="px-4">
+                  <li className="w-full flex items-center hover:bg-zinc-100 px-6 py-4 gap-3" key={link.href}>
+                    <RightArrowIcon />
+                    <Link className="flex w-full font-bold" href="/chlorelief">
+                      Chlorelief
+                    </Link>
+                  </li>
+                  <li className="w-full flex items-center hover:bg-zinc-100 px-6 py-4 gap-3" key={link.href}>
+                    <RightArrowIcon />
+                    <Link className="flex w-full font-bold" href="/lubie">
+                      Lubie
+                    </Link>
+                  </li>
+                </div>
+              </>
+            ) : (
+              <li className="w-full" key={link.href}>
+                <Link className=" hover:bg-zinc-100 flex w-full font-bold px-6 py-4 " href={link.href}>
+                  {link.label}
+                </Link>
+              </li>
+            ),
+          )}
         </ul>
         <div className={`${textcolor} px-6 py-6 mb-11 text-xl sm:text-2xl font-bold`}>
-          {variant === 'apex' ? (
+          {variant === 'chlorelief' ? (
             <>
-              <Link className="flex items-center mb-5" href="/chlorelief">
-                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3 ">CHLORELIEF</p>
+              <Link className="flex items-center mb-5" href="/">
+                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3 ">APEXPOINT</p>
               </Link>
               <Link className="flex items-center mb-5" href="/lubie">
-                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3 ">LUBIE</p>
+                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3">LUBIE</p>
               </Link>
             </>
           ) : variant === 'lubie' ? (
@@ -98,14 +117,7 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
               </Link>
             </>
           ) : (
-            <>
-              <Link className="flex items-center mb-5" href="/">
-                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3 ">APEXPOINT</p>
-              </Link>
-              <Link className="flex items-center mb-5" href="/lubie">
-                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3">LUBIE</p>
-              </Link>
-            </>
+            <></>
           )}
         </div>
       </div>
