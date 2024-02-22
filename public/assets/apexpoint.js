@@ -26,6 +26,12 @@ import truck from "../assets/svg/truck.svg";
 import card from "../assets/lubie-assets/card.svg";
 import shippingbag from "../assets/svg/shippingbag.svg";
 
+
+//image assets for apexpoint carousel
+import lubieBottle from "./svg/asset_1.svg";
+import chloBottle1 from "./svg/asset_2.svg";
+import chloBottle2 from "./svg/asset_3.svg";
+
 export {
   icon1,
   icon2,
@@ -54,4 +60,10 @@ export {
   truck,
   card,
   shippingbag,
+
+  //exported image for apexpoint
+  chloBottle1,
+  chloBottle2,
+  lubieBottle
+
 };
