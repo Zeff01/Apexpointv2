@@ -7,6 +7,7 @@ import serv from '@/public/assets/chlorelief-assets/services.png';
 import ship from '@/public/assets/lubie-assets/shipping.png';
 import ret from '@/public/assets/chlorelief-assets/return-icon.png';
 import payment from '@/public/assets/chlorelief-assets/payment.png';
+import Shipping from "@/components/sections/about/about"
 import {
   textAnimation,
   AboutImage,
@@ -90,24 +91,7 @@ const About = () => {
         </motion.div>
       </div>
 
-      <motion.div ref={ref} variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
-        <motion.div variants={AboutImage}>
-          <div className="hidden md:flex justify-evenly">
-            {aboutData.map((data, index) => (
-              <motion.div
-                key={index}
-                variants={childrenVariants}
-                style={{ originX: 0 }} // Set origin to 0 for smoother animation
-              >
-                <h2 className="text-chlorelief-chateaugreen font-bold">{data.title}</h2>
-                <div className="h">
-                  <Image src={data.img} alt="icon" width={80} height={20} className="py-2 hue-rotate-90" />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </motion.div>
+     <Shipping variant='chlorelief' />
     </div>
   );
 };
