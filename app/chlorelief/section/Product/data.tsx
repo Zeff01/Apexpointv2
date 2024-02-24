@@ -1,5 +1,6 @@
 import React from "react";
-
+import {motion} from "framer-motion"
+import  { SocialStagger ,fadeInOutDownToUp} from "@/components/animation/animation"
 interface ProductProps {
   ImageUrl: string;
   ProductDesc1: string;
@@ -16,7 +17,9 @@ const ProductComponent: React.FC<ProductProps> = ({
   Price,
 }: ProductProps) => {
   return (
-    <main className="flex flex-col gap-2  h-full">
+    <motion.main 
+     variants={fadeInOutDownToUp}
+      className="flex flex-col gap-2  h-full">
       <div className=" mt-4 rounded-lg shadow-md py-3  px-0 flex justify-center bg-chlorelief-springwood md:px-4 md:py-4 lg:px-auto lg:py-10">
         <img
           className="h-48  lg:h-64 w-18  object-contain sm:w-full sm:px-0"
@@ -36,7 +39,7 @@ const ProductComponent: React.FC<ProductProps> = ({
           </p>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 };
 //☆☆☆☆ star backup
@@ -74,11 +77,15 @@ const ProductList: React.FC = () => {
   ];
 
   return (
-    <div className="grid gap-4 place-items-center grid-cols-1 sm:grid-cols-2 sm:px-4 md:grid-cols-2 md:px-20  lg:grid-cols-4">
+    <motion.div
+    variants={SocialStagger}
+     initial="hidden"
+     whileInView="visible"
+    className="grid gap-4 place-items-center grid-cols-1 sm:grid-cols-2 sm:px-4 md:grid-cols-2 md:px-20  lg:grid-cols-4">
       {productsData.map((product, index) => (
         <ProductComponent key={index} {...product} />
       ))}
-    </div>
+    </motion.div>
   );
 };
 

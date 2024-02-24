@@ -134,6 +134,21 @@ export const ScaleFadeInOutDownToUp = {
   },
 };
 
+export const ScaleFadeItem = {
+  hidden: { opacity: 0,  scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+  },
+};
+
+export const ScaleItem = {
+  hidden: {  scale: 0 },
+  visible: {
+    scale: 1,
+  },
+};
+
 export const SocialStagger = {
   hidden: { opacity: 1, scale: 0 },
   visible: {

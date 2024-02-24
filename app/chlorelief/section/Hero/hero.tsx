@@ -61,7 +61,7 @@ export default function Hero() {
                 animate={inView ? 'visible' : 'hidden'} // Use inView to determine animation visibility
               >
                 <Image
-                  src="/assets/chlorelief-products/chloreliefhero5.png"
+                  src="/assets/chlorelief-products/chloreliefhero5.webp"
                   width={400} // Increased width for a bigger image
                   height={400} // Adjust height accordingly to maintain aspect ratio
                   className="min-h-full w-full object-contain " // Adjusted class for bigger image
