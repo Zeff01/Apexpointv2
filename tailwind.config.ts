@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         'saira-condensed': ['Saira Condensed', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        share: ['Share', 'sans-serif'],
       },
       fontSize: {
         'Header-Desktop': '2.5em',
