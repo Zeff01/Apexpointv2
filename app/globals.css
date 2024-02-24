@@ -83,3 +83,9 @@ html {
   background-image: url('../public/assets/chlorelief-products/chloreliefwave1.svg');
   background-size: cover;
 }
+.blue-filter {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(11%) saturate(7311%) hue-rotate(197deg) brightness(98%) contrast(93%)
+}
+.chlorelief-filter{
+  filter: brightness(0) saturate(100%) invert(59%) sepia(14%) saturate(1915%) hue-rotate(78deg) brightness(98%) contrast(96%);
+}

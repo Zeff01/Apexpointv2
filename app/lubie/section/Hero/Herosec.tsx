@@ -4,8 +4,8 @@ import Image from 'next/image';
 import Icons from '../../_modules/icons';
 import { icon1, icon2, icon3, icon4, icon5, icon6 } from '@/public/assets/apexpoint';
 import { motion } from 'framer-motion';
-import { textAnimation, headerAnimation, containerAnimation, itemAnimation } from '@/components/animation/animation';
-import Lubiehero from '@/public/assets/lubie-products/lubiehero3.png';
+import { textAnimation, headerAnimation, containerAnimation, itemAnimation , SocialStagger,} from '@/components/animation/animation';
+import Lubiehero from '@/public/assets/lubie-products/lubiehero3.webp';
 import Lubie from '@/public/assets/lubie-products/aboutlubie.png';
 
 function Herosec() {
@@ -50,29 +50,30 @@ function Herosec() {
         <div className="flex items-start w-full mt-8 pb-8">
           <motion.div
             className="flex flex-col md:flex-row justify-center items-center w-full"
-            variants={containerAnimation}
+            variants={SocialStagger}
             initial="hidden"
             animate="visible"
           >
-            <motion.div className="flex w-full md:w-auto justify-center" variants={itemAnimation}>
+            <div className="flex w-full md:w-auto justify-center" >
               <Icons imageUrl={icon1} />
               <Icons imageUrl={icon2} />
-            </motion.div>
-            <motion.div className="flex w-full md:w-auto justify-center" variants={itemAnimation}>
+            </div>
+            <div className="flex w-full md:w-auto justify-center" >
               <Icons imageUrl={icon3} />
               <Icons imageUrl={icon4} />
-            </motion.div>
-            <motion.div className="flex w-full md:w-auto justify-center" variants={itemAnimation}>
+            </div>
+            <div className="flex w-full md:w-auto justify-center" >
               <Icons imageUrl={icon5} />
               <Icons imageUrl={icon6} />
-            </motion.div>
-          </motion.div>
+            </div>
+         
+        </motion.div>
         </div>
       </div>
 
       <div className=" flex md:flex-row flex-col  justify-center items-center   mt-8 relative container ">
         <div className="flex justify-center align-start w-full ">
-          <Image src={Lubie} alt="herlubie" className="object-contain md:w-[500px] w-[300px] md:mb-12 mb-8" />
+          <Image src={Lubie} loading='lazy' alt="herlubie" className="object-contain md:w-[500px] w-[300px] md:mb-12 mb-8" />
         </div>
         <div className="w-full flex flex-col mx-auto items-center justify-center  text-lubie-dark-blue ">
           <p className="mb-3 font-semibold">Nature & Health</p>

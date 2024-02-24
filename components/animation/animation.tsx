@@ -63,3 +63,100 @@ export const itemAnimation = {
     },
   },
 };
+
+export const fadeInOutRightToLeft = {
+  hidden: { opacity: 0, x: 25 },
+  visible: {
+    opacity: 1,
+    x: 0,
+  },
+};
+
+export const fadeInOutLeftToRight = {
+  hidden: { opacity: 0, x: -25 },
+  visible: {
+    opacity: 1,
+    x: 0,
+  },
+};
+
+export const fadeInOutUpToDown = {
+  hidden: { opacity: 0, y: -25 },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
+export const fadeInOutDownToUp = {
+  hidden: { opacity: 0, y: 25 },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
+//// with scale
+
+export const ScaleFadeInOutRightToLeft = {
+  hidden: { opacity: 0, x: 25, scale: 0 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+  },
+};
+
+export const ScaleFadeInOutLeftToRight = {
+  hidden: { opacity: 0, x: -25, scale: 0 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+  },
+};
+
+export const ScaleFadeInOutUpToDown = {
+  hidden: { opacity: 0, y: -25, scale: 0 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+  },
+};
+
+export const ScaleFadeInOutDownToUp = {
+  hidden: { opacity: 0, y: 25, scale: 0 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+  },
+};
+
+export const ScaleFadeItem = {
+  hidden: { opacity: 0,  scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+  },
+};
+
+export const ScaleItem = {
+  hidden: {  scale: 0 },
+  visible: {
+    scale: 1,
+  },
+};
+
+export const SocialStagger = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};

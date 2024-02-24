@@ -7,6 +7,7 @@ import serv from '@/public/assets/chlorelief-assets/services.png';
 import ship from '@/public/assets/lubie-assets/shipping.png';
 import ret from '@/public/assets/chlorelief-assets/return-icon.png';
 import payment from '@/public/assets/chlorelief-assets/payment.png';
+import Shipping from "@/components/sections/about/about"
 import {
   textAnimation,
   AboutImage,
@@ -44,7 +45,7 @@ const About = () => {
   ];
 
   return (
-    <div id="about" className="font-inter h-auto sm:h-full" ref={ref}>
+    <div id="about" className="font-inter h-auto   sm:h-full" ref={ref}>
       <motion.div
         variants={headerAnimation}
         initial="hidden"
@@ -55,59 +56,44 @@ const About = () => {
           ABOUT THE BRAND
         </h2>
       </motion.div>
-      <div className="flex flex-row-reverse items-center justify-center md:justify-evenly my-10">
-        <div className="text-Body-Default sm:text-Body-Desktop">
-          <div className="text-gray-400 max-w-full-lg text-center md:text-left">
-            <motion.div
-              variants={textAnimation}
-              initial="hidden"
-              viewport={{ once: true }}
-              animate={inView ? 'visible' : 'hidden'}
-            >
-              <h2 className="my-4">CHLORELIEF</h2>
-            </motion.div>
+     <div className='w-full flex justify-center items-end'>
+     <div className="flex flex-row-reverse items-end justify-center md:justify-between my-10 md:min-w-[760px]">
+ 
+ <div className="text-gray-400 text-lg max-w-full-lg text-center md:text-left flex flex-col h-full pb-7">
+   <motion.div
+     variants={textAnimation}
+     initial="hidden"
+     viewport={{ once: true }}
+     animate={inView ? 'visible' : 'hidden'}
+   >
+     <h2 className="my-2">CHLORELIEF</h2>
+   </motion.div>
 
-            <motion.div
-              variants={AboutText}
-              initial="hidden"
-              viewport={{ once: true }}
-              animate={inView ? 'visible' : 'hidden'}
-            >
-              {aboutText.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
-            </motion.div>
-          </div>
-        </div>
+   <motion.div
+     variants={AboutText}
+     initial="hidden"
+     viewport={{ once: true }}
+     animate={inView ? 'visible' : 'hidden'}
+   >
+     {aboutText.map((text, index) => (
+       <p key={index}>{text}</p>
+     ))}
+   </motion.div>
+ </div>
 
-        <motion.div
-          variants={AboutImage}
-          initial="hidden"
-          viewport={{ once: true }}
-          animate={inView ? 'visible' : 'hidden'}
-        >
-          <Image src={mainImg} alt="About Image" className="hidden md:block object-scale-down" />
-        </motion.div>
-      </div>
 
-      <motion.div ref={ref} variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
-        <motion.div variants={AboutImage}>
-          <div className="hidden md:flex justify-evenly">
-            {aboutData.map((data, index) => (
-              <motion.div
-                key={index}
-                variants={childrenVariants}
-                style={{ originX: 0 }} // Set origin to 0 for smoother animation
-              >
-                <h2 className="text-chlorelief-chateaugreen font-bold">{data.title}</h2>
-                <div className="h">
-                  <Image src={data.img} alt="icon" width={80} height={20} className="py-2 hue-rotate-90" />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </motion.div>
+<motion.div
+ variants={AboutImage}
+ initial="hidden"
+ viewport={{ once: true }}
+ animate={inView ? 'visible' : 'hidden'}
+>
+ <Image src={mainImg} width={400} alt="About Image" className="hidden md:block object-contain" />
+</motion.div>
+</div>
+     </div>
+
+     <Shipping variant='chlorelief' />
     </div>
   );
 };
