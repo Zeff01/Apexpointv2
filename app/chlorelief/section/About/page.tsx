@@ -55,7 +55,7 @@ const About = () => {
           ABOUT THE BRAND
         </h2>
       </motion.div>
-      <div className="flex flex-row-reverse items-center justify-evenly my-10">
+      <div className="flex flex-row-reverse items-center justify-center md:justify-evenly my-10">
         <div className="text-Body-Default sm:text-Body-Desktop">
           <div className="text-gray-400 max-w-full-lg text-center md:text-left">
             <motion.div

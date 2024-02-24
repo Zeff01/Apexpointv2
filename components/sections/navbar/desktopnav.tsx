@@ -28,16 +28,16 @@ const navLinks: NavLink[] = [
 
 const DesktopNav: React.FC<DesktopNavProps> = ({ title }) => {
   return (
-    <nav className="shadow-lg md:shadow-md flex w-full justify-between items-center sm:px-12 px-3 py-4">
+    <nav className="shadow-lg md:shadow-md flex w-full justify-between items-center sm:px-12 px-3 py-4 ">
       <div className="flex items-center gap-2">
         <Link href="/">
           <Image
-            className="h-10 w-auto filter invert hover:opacity-80 hover:scale-105 duration-200"
+            className="hidden md:block h-10 w-auto filter invert hover:opacity-80 hover:scale-105 duration-200"
             src={apexLogo}
             alt="apexpoint"
           />
         </Link>
-        <div className="border-l-2 pl-2 flex flex-col items-start gap-2">
+        <div className="border-l-none md:border-l-2 pl-2  flex flex-col items-start gap-2">
           {title === 'Apexpoint' ? (
             <>
               <Link className="hover:opacity-80 hover:scale-105 duration-200 " href="/chlorelief">
