@@ -16,7 +16,6 @@ export default function Product() {
       >
         <div
          
-
         >
           <h1 className="text-red-500 font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop my-6">
             OUR PRODUCTS
