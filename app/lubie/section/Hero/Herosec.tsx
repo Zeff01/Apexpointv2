@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Icons from '../../_modules/icons';
 import { icon1, icon2, icon3, icon4, icon5, icon6 } from '@/public/assets/apexpoint';
 import { motion } from 'framer-motion';
-import { textAnimation, headerAnimation, containerAnimation, itemAnimation , SocialStagger,} from '@/components/animation/animation';
+import { textAnimation,fadeInOutLeftToRight, SocialStagger, fadeInOutRightToLeft,} from '@/components/animation/animation';
 import Lubiehero from '@/public/assets/lubie-products/lubiehero3.webp';
 import Lubie from '@/public/assets/lubie-products/aboutlubie.png';
 
@@ -14,28 +14,51 @@ function Herosec() {
       <div className="  w-full flex flex-col items-center  bg-lubie-navy-blue lubiewave font-ubuntu text-lubie-white-color  justify-between ">
         {/* HERO TEXT AND ICON */}
         <div className="w-full  flex md:flex-row flex-col justify-center  relative  pt-12 px-6">
-          <div className="flex flex-col justify-center items-center sm:items-start mt-2 space-y-8 z-10">
-            <motion.div variants={textAnimation} initial="hidden" animate="visible">
-              <p className="text-center md:text-right">Nature & Health</p>
-            </motion.div>
-            <motion.div variants={textAnimation} initial="hidden" animate="visible">
-              <p className=" text-3xl mb-5 md:text-4xl lg:text-5xl lg:leading-[65px] font-bold text-center sm:text-start sm:w-full">
+          <motion.div 
+          initial="hidden"
+          whileInView="visible"
+           variants={SocialStagger}
+       
+          className="flex flex-col justify-center items-center sm:items-start mt-2 space-y-8 z-10">
+          
+              <motion.p 
+              variants={fadeInOutLeftToRight}
+              transition={{
+                duration:0.5
+               }}
+              className="text-center md:text-right">Nature & Health</motion.p>
+    
+
+              <motion.p
+               variants={fadeInOutLeftToRight}
+               transition={{
+                duration:0.5
+               }}
+               className=" text-3xl mb-5 md:text-4xl lg:text-5xl lg:leading-[65px] font-bold text-center sm:text-start sm:w-full">
                 The first
                 <span className="text-lubie-neon-green text-extra-bold">&nbsp; Multi-purpose &nbsp;</span>
                 <br></br>
                 FDA registered Lube <br></br> in the Philippines
-              </p>
-            </motion.div>
-            <motion.div variants={textAnimation} initial="hidden" animate="visible">
-              <a href="#about">
+              </motion.p>
+   
+  
+              <motion.a 
+               variants={fadeInOutLeftToRight}
+               transition={{
+                duration:0.5
+               }}
+              href="#about">
                 {' '}
                 <Button title="Read More" variant="hero" />
-              </a>
-            </motion.div>
-          </div>
+              </motion.a>
+ 
+          </motion.div>
           <div className="opacity-20 md:opacity-100 md:flex w-full sm:w-auto   justify-start w-100 absolute top-6  md:relative sm:p-0">
             <div className=" sticky ">
-              <motion.div initial="hidden" animate="visible" variants={headerAnimation}>
+              <motion.div initial="hidden" whileInView="visible" variants={fadeInOutRightToLeft}
+              transition={{
+                duration:0.5
+              }}>
                 <Image
                   src={Lubiehero}
                   alt="Lubiehero"
@@ -52,7 +75,7 @@ function Herosec() {
             className="flex flex-col md:flex-row justify-center items-center w-full"
             variants={SocialStagger}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
           >
             <div className="flex w-full md:w-auto justify-center" >
               <Icons imageUrl={icon1} />
