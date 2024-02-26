@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Icons from '../../_modules/icons';
 import { icon1, icon2, icon3, icon4, icon5, icon6 } from '@/public/assets/apexpoint';
 import { motion } from 'framer-motion';
-import { textAnimation,fadeInOutLeftToRight, SocialStagger, fadeInOutRightToLeft,} from '@/components/animation/animation';
+import { FadeStagger,fadeInOutLeftToRight, SocialStagger, fadeInOutRightToLeft, fadeInOutUpToDown,} from '@/components/animation/animation';
 import Lubiehero from '@/public/assets/lubie-products/lubiehero3.webp';
 import Lubie from '@/public/assets/lubie-products/aboutlubie.png';
 
@@ -95,23 +95,50 @@ function Herosec() {
       </div>
 
       <div className=" flex md:flex-row flex-col  justify-center items-center   mt-8 relative container ">
-        <div className="flex justify-center align-start w-full ">
+        <motion.div 
+          variants={fadeInOutLeftToRight}
+          initial="hidden"
+          whileInView="visible"
+          transition={{
+           duration:0.5
+          }}
+        className="flex justify-center align-start w-full ">
           <Image src={Lubie} loading='lazy' alt="herlubie" className="object-contain md:w-[500px] w-[300px] md:mb-12 mb-8" />
-        </div>
-        <div className="w-full flex flex-col mx-auto items-center justify-center  text-lubie-dark-blue ">
-          <p className="mb-3 font-semibold">Nature & Health</p>
-          <h2 className="text-4xl  font-extrabold md:w-[auto] text-center mb-6">
+        </motion.div>
+        <motion.div 
+        variants={FadeStagger}
+        initial="hidden"
+        whileInView="visible"
+        className="w-full flex flex-col mx-auto items-center justify-center  text-lubie-dark-blue ">
+          <motion.p 
+           variants={fadeInOutUpToDown}
+           transition={{
+            duration:0.5
+           }}
+          className="mb-3 font-semibold">Nature & Health</motion.p>
+          <motion.h2
+            transition={{
+              duration:0.5
+             }}
+             variants={fadeInOutUpToDown}
+              className="text-4xl  font-extrabold md:w-[auto] text-center mb-6">
             <span className="text-lubie-navy-blue">Water-based</span> <br></br>
             moisturizer
-          </h2>
+          </motion.h2>
           <div className="md:mx-auto mb-12">
-            <p className="md:text-left md:text-xl text-center px-5 lg:w-[600px]">
+            <motion.p 
+              variants={fadeInOutUpToDown}
+                transition={{
+                  duration:0.5
+                 }}
+               
+            className="md:text-left md:text-xl text-center px-5 lg:w-[600px]">
               Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet Lorem
               ipsum dolor sit Lorem ipsum dolor sitametamet
-            </p>
+            </motion.p>
           </div>
           <Button title="Read More" variant="about" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
