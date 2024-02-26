@@ -1,6 +1,7 @@
 import React from "react";
 import LubieCard from "../../_modules/LubieCard";
-
+import {motion} from "framer-motion"
+import { fadeInOutDownToUp, SocialStagger, } from '@/components/animation/animation';
 const Products = () => {
   return (
     <div
@@ -9,19 +10,39 @@ const Products = () => {
     >
       <div className="">
         <div className="w-full flex flex-col items-center mb-5">
-          <h1 className="md:text-5xl text-4xl text-lubie-dark-blue  font-extrabold lg:text-4xl drop-shadow-md">
+          <motion.h1
+            variants={fadeInOutDownToUp}
+            initial="hidden"
+            whileInView="visible"
+            transition={{
+              duration: 0.5,
+            
+            }}
+          className="md:text-5xl text-4xl text-lubie-dark-blue  font-extrabold lg:text-4xl drop-shadow-md">
             Our Products
-          </h1>
-          <p className="md:text-xl text-lubie-dark-blue text-center py-8 w-[60%]">
+          </motion.h1>
+          <motion.p 
+             variants={fadeInOutDownToUp}
+             initial="hidden"
+             whileInView="visible"
+             transition={{
+               duration: 0.5,
+               delay:0.2
+             }}
+          className="md:text-xl text-lubie-dark-blue text-center motion.y-8 w-[60%]">
             Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor
             sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
             dolor sitametamet
-          </p>
+          </motion.p>
         </div>
 
         {/* Items Sections */}
         <div className="md:flex-row  flex justify-center items-center w-full ">
-          <div className="container flex flex-wrap justify-center items-center gap-7 lg:w-[1200px] ">
+          <motion.div 
+           variants={SocialStagger}
+           initial="hidden"
+           whileInView="visible"
+          className="container flex flex-wrap justify-center items-center gap-7 lg:w-[1200px] ">
             <LubieCard
               title="10ml Lubie"
               imageUrl="assets/lubie-assets/lubie-10ml.png"
@@ -40,7 +61,7 @@ const Products = () => {
               price="₱420"
               quantity="100"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

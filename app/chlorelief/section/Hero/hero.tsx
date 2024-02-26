@@ -2,13 +2,11 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
-  textAnimation,
-  headerAnimation,
-  containerAnimation,
-  itemAnimation,
-  ImageAnimation,
+ fadeInOutLeftToRight,
+ fadeInOutRightToLeft,
+
 } from '@/components/animation/animation';
-import { useInView } from 'react-intersection-observer';
+
 
 interface HeroSectionProps {
   SectionClass: string;
@@ -36,16 +34,19 @@ const Data: HeroSectionProps[] = [
 ];
 
 export default function Hero() {
-  const { ref, inView } = useInView();
+
   return (
     <>
       {Data.map((item, index) => (
         <div key={index} className={item.SectionClass}>
           <div
             className="flex justify-center flex-col-reverse sm:flex-row sm:items-center sm:px-11 px-7  xl:px-[200px] relative"
-            ref={ref}
+ 
           >
-            <motion.div variants={textAnimation} initial="hidden" animate="visible">
+            <motion.div variants={fadeInOutLeftToRight} initial="hidden" whileInView="visible"
+            transition={{
+              duration:0.5
+            }}>
               <div className="flex flex-col sm:justify-end sm:items-start justify-center items-center max-w-screen-xl w-full gap-2">
                 <h1 className="text-white  font-bold text-center w-[372px] sm:w-auto sm:text-start pb-6 text-3xl   md:text-4xl lg:text-5xl lg:leading-[65px]">
                   The first line of <span className="text-red-500 text-extra-bold">defense</span> against bacteria and
@@ -56,9 +57,13 @@ export default function Hero() {
             </motion.div>
             <div className="min-w-screen w-full h-full flex justify-center items-center ">
               <motion.div
-                variants={ImageAnimation}
+                variants={ fadeInOutRightToLeft}
                 initial="hidden"
-                animate={inView ? 'visible' : 'hidden'} // Use inView to determine animation visibility
+                whileInView="visible"
+                transition={{
+                  duration:0.5
+                }}
+            // Use inView to determine animation visibility
               >
                 <Image
                   src="/assets/chlorelief-products/chloreliefhero5.webp"

@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Section from "../../ui/Section";
 import {
@@ -7,6 +8,8 @@ import {
 import Socials from "@/app/apexpoint/section/footer/_modules/Socials";
 import Image from "next/image";
 import apexpointLogo from "@/public/assets/apex-assets/apexpoint-logo.png";
+import {motion} from "framer-motion"
+import {FadeStagger, fadeInOutDownToUp, fadeInOutLeftToRight} from "@/components/animation/animation"
 type FooterProps = {
   variant: "chlorelief" | "lubie";
 };
@@ -14,11 +17,28 @@ type FooterProps = {
 const Footer: React.FC<FooterProps> = ({ variant }) => {
   const data = footerData.map((item: FooterDataType) => {
     return (
-      <div key={item.title} className="p-4 ">
-        <p className="m-3 ml-0 font-medium">{item.title}</p>
-        <ul>
+      <motion.div
+      variants={FadeStagger}
+      initial="hidden"
+      whileInView="visible"
+      key={item.title} className="p-4 ">
+        <motion.p
+        variants={fadeInOutLeftToRight}
+        transition={{
+          duration:0.5
+        }}
+        className="m-3 ml-0 font-medium">{item.title}</motion.p>
+        <motion.ul
+        >
+          
           {item.list.map((list, index) => (
-            <li key={index} className="flex gap-3 mb-3 text-sm">
+            <motion.li
+            variants={fadeInOutLeftToRight}
+            transition={{
+              duration:0.5
+            }}
+            
+            key={index} className="flex gap-3 mb-3 text-sm">
               {list.icon && (
                 <Image
                   className="grayscale object-contain"
@@ -29,10 +49,10 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
                 />
               )}
               {list.information}
-            </li>
+            </motion.li>
           ))}
-        </ul>
-      </div>
+        </motion.ul>
+      </motion.div>
     );
   });
 
@@ -51,12 +71,21 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
       <div className="flex justify-center">
         <Socials iconColor="text-white" />
       </div>
-      <div className="flex justify-center items-center gap-3  mt-5 mb-0">
+      <motion.div 
+        variants={fadeInOutDownToUp}
+        initial="hidden"
+        whileInView="visible"
+        transition={{
+          duration:1
+        }}
+      className="flex justify-center items-center gap-3  mt-5 mb-0">
         <Image src={apexpointLogo} alt="apexpoint" width={30} />
-        <p className="text-lubie-light-blue text-xs m-0">
+        <p 
+       
+        className="text-lubie-light-blue text-xs m-0">
           2021 © Copyright. All rights reserved.
         </p>
-      </div>
+      </motion.div>
     </Section>
   );
 };

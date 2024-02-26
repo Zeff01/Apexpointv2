@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { FaHeart } from "react-icons/fa";
+import {motion} from "framer-motion"
+import { fadeInOutDownToUp} from '@/components/animation/animation';
 interface LubieCardProps {
   title: string;
   imageUrl: string;
@@ -12,7 +14,9 @@ const LubieCard = ({ title, imageUrl, price, quantity }: LubieCardProps) => {
   const [rateOne, setRateOne] = useState(5);
 
   return (
-    <div className="lg:min-w-[30.9%] md:min-w-[45.1%] max-w-[70%] ">
+    <motion.div
+    variants={fadeInOutDownToUp}
+    className="lg:min-w-[30.9%] md:min-w-[45.1%] max-w-[70%] ">
       <div className="flex w-auto rounded-lg flex-row  justify-center drop-shadow-lg bg-lubie-white-blue  relative shadow-sm ">
         <FaHeart
           className="absolute top-3 right-3 fill-lubie-green-light "
@@ -54,7 +58,7 @@ const LubieCard = ({ title, imageUrl, price, quantity }: LubieCardProps) => {
 
         <p className="text-4xl  px-3 text-lubie-dark-blue font-bold">{price}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

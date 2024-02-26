@@ -9,14 +9,8 @@ import ret from '@/public/assets/chlorelief-assets/return-icon.png';
 import payment from '@/public/assets/chlorelief-assets/payment.png';
 import Shipping from "@/components/sections/about/about"
 import {
-  textAnimation,
-  AboutImage,
-  headerAnimation,
-  AboutText,
-  childrenVariants,
-  containerVariants,
+ fadeInOutDownToUp,fadeInOutRightToLeft,fadeInOutLeftToRight
 } from '@/components/animation/animation';
-import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 interface About {
   title: string;
@@ -31,7 +25,7 @@ const aboutData: About[] = [
 ];
 
 const About = () => {
-  const { ref, inView } = useInView();
+
   const aboutText = [
     'Paraben-free paraben is not a ',
     'natural product and is not',
@@ -45,36 +39,40 @@ const About = () => {
   ];
 
   return (
-    <div id="about" className="font-inter h-auto   sm:h-full" ref={ref}>
-      <motion.div
-        variants={headerAnimation}
-        initial="hidden"
-        viewport={{ once: true }}
-        animate={inView ? 'visible' : 'hidden'}
-      >
-        <h2 className="text-chlorelief-chateaugreen font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop">
+    <div id="about" className="font-inter h-auto   sm:h-full">
+   
+
+        <motion.h2
+          variants={fadeInOutDownToUp}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration:0.5}}
+        className="text-chlorelief-chateaugreen font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop">
           ABOUT THE BRAND
-        </h2>
-      </motion.div>
+        </motion.h2>
+  
      <div className='w-full flex justify-center items-end'>
      <div className="flex flex-row-reverse items-end justify-center md:justify-between my-10 md:min-w-[760px]">
  
  <div className="text-gray-400 text-lg max-w-full-lg text-center md:text-left flex flex-col h-full pb-7">
-   <motion.div
-     variants={textAnimation}
-     initial="hidden"
-     viewport={{ once: true }}
-     animate={inView ? 'visible' : 'hidden'}
-   >
-     <h2 className="my-2">CHLORELIEF</h2>
-   </motion.div>
+  
+     <motion.h2
+        variants={fadeInOutRightToLeft}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration:0.5}}
+     className="my-2">CHLORELIEF</motion.h2>
+  
 
    <motion.div
-     variants={AboutText}
-     initial="hidden"
-     viewport={{ once: true }}
-     animate={inView ? 'visible' : 'hidden'}
-   >
+      variants={fadeInOutRightToLeft}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration:0.5}}
+  
+
+
+   >  
      {aboutText.map((text, index) => (
        <p key={index}>{text}</p>
      ))}
@@ -83,10 +81,11 @@ const About = () => {
 
 
 <motion.div
- variants={AboutImage}
- initial="hidden"
- viewport={{ once: true }}
- animate={inView ? 'visible' : 'hidden'}
+   variants={fadeInOutLeftToRight}
+   initial="hidden"
+   whileInView="visible"
+   transition={{ duration:0.5}}
+
 >
  <Image src={mainImg} width={400} alt="About Image" className="hidden md:block object-contain" />
 </motion.div>
