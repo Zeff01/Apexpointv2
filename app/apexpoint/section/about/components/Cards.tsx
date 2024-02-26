@@ -7,7 +7,7 @@ import Description from "./Description";
 const Cards: React.FC = () => {
   const mappedData = AboutData.map((data) => (
     <Card
-      className="w-full flex flex-col items-center justify-start gap-2 max-w-[325px] p-6 md:p-4 lg:p-6 min-h-[250px] md:min-h-0 shadow-md rounded-md"
+      className="bg-white w-full flex flex-col items-center justify-start gap-2 max-w-[325px] p-6 md:p-4 lg:p-6 min-h-[250px] md:min-h-0 shadow-md rounded-md"
       key={data.header}
     >
       <Icon
