@@ -31,7 +31,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ title }) => {
     <nav className="font-share font-bold shadow-lg md:shadow-md flex w-full justify-between items-center sm:px-12 px-3 py-4">
       <div className="flex items-center gap-2">
        
-          <div className="hidden md:flex">
+          <div className=" md:flex">
             <Link href="/">
               <Image
                 className={`h-8 w-auto filter ${title === 'Apexpoint' ? "" : 'invert'} hover:opacity-80 hover:scale-105 duration-200`}

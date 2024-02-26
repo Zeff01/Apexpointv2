@@ -83,6 +83,10 @@ html {
   background-image: url('../public/assets/chlorelief-products/chloreliefwave1.svg');
   background-size: cover;
 }
+.apex{
+  background-image: url('../public/assets/apex-assets/apexherobg.svg');
+  background-size: cover;
+}
 .blue-filter {
   filter: brightness(0) saturate(100%) invert(30%) sepia(11%) saturate(7311%) hue-rotate(197deg) brightness(98%) contrast(93%)
 }
@@ -95,6 +99,7 @@ html {
   border-radius: 50px!important;
 }
 
+
 .swiper-slide {
   background-position: center;
   background-size: cover;
@@ -106,6 +111,7 @@ html {
 
 }
 
+
 .swiper-slide img {
   padding: 50px!important;
   width: 100%;
@@ -115,17 +121,33 @@ html {
  border-radius: 50px!important;
  
 }
-
+@media screen and (max-width: 1440px){
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px!important;
+    height: 450px!important;
+    border-radius: 15px!important;
+  
+  
+  }
+  
+  .swiper-slide img {
+    padding: 50px!important;
+    object-fit: contain;
+   border-radius: 50px!important;
+   
+  }   
+  }
 @media screen and (max-width: 620px){
   
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
+
   width: 150px!important;
   height: 300px!important;
   border-radius: 15px!important;
-  background-color: transparent ;
-  position: relative!important;
+
 
 }
 
