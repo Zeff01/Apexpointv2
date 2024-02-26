@@ -6,7 +6,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const Card: React.FC<CardProps> = ({ children, className = "", ...rest }) => {
-  const baseStyles = "bg-white border-1 border-solid border-black";
+  const baseStyles = " border-1 border-solid border-black";
 
   // Combine baseStyles and additional className
   const combinedClassName = `${baseStyles} ${className}`.trim();

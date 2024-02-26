@@ -89,3 +89,29 @@ html {
 .chlorelief-filter{
   filter: brightness(0) saturate(100%) invert(59%) sepia(14%) saturate(1915%) hue-rotate(78deg) brightness(98%) contrast(96%);
 }
+.swiper {
+  
+  width: 100%;
+  border-radius: 50px!important;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px!important;
+  height: 500px!important;
+  border-radius: 50px!important;
+  background-color: transparent ;
+  position: relative!important;
+
+}
+
+.swiper-slide img {
+  padding: 50px!important;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+ background-color: antiquewhite;
+ border-radius: 50px!important;
+ 
+}
