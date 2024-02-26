@@ -168,8 +168,7 @@ function Herosec() {
               }}
               className="md:text-left md:text-xl text-center px-5 lg:w-[600px]"
             >
-              Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet Lorem
-              ipsum dolor sit Lorem ipsum dolor sitametamet
+               Lubie is glycerin-free, paraben free, odor-free, water-based lubricant that reduces discomfort from dryness and friction.
             </motion.p>
           </div>
           <Button title="Read More" variant="about" />
