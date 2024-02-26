@@ -9,7 +9,7 @@ export default function Product() {
     <>
 
       <div
-        id="product"
+        id="products"
         className="flex flex-col items-center min-h-screen h-full font-intra my-10 mb-20"
 
       >

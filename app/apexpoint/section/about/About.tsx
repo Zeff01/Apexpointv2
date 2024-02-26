@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Section
       id="about"
-      className=" bg-apexpoint-light-orange  w-full flex flex-col md:flex-row gap-8 items-center md:items-stretch justify-between    py-8"
+      className=" bg-apexpoint-light-orange pb-20  w-full flex flex-col md:flex-row gap-8 items-center md:items-stretch justify-between    py-8"
     >
  
      <Cards />

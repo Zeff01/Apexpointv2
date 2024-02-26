@@ -18,9 +18,12 @@ import Link from 'next/link';
 
 
 const ApexSlider = () => {
-    const colors = ["#368D2E", "#B7CED7", "#FC9BB2", "#B7CED7"];
+    const colors = ["#368D2E", "#B7CED7", "#FC9BB2",];
 
-function getColor(index: number) {
+function getColor(index: number , length:number) {
+     
+    if(index > length ) return colors[2];
+     
     const baseIndex = index % colors.length; // Cycle through all colors
     return colors[baseIndex];
 }
@@ -29,50 +32,56 @@ function getColor(index: number) {
     {
         image:chloroProduct2,
   
-        productlink : "#"
+        productlink : "/chlorelief#products"
       },
       {
         image:lubieProduct3,
    
-        productlink : "#"
+        productlink : "/lubie#products"
       },
     {
       image:lubieProduct1,
 
-      productlink : "#FC9BB2"
+      productlink : "/lubie#products"
     },
-    {
-      image:chloroProduct2,
-
-      productlink : "#"
-    },
+ 
     {
       image:lubieProduct2,
 
-      productlink : "#"
+      productlink : "/lubie#products"
     },
     {
       image:chloroProduct1,
 
-      productlink : "#"
+      productlink : "/chlorelief#products"
     },
     {
       image:chloroProduct4,
 
-      productlink : "#"
+      productlink : "/chlorelief#products"
     },
     {
         image:chloroProduct3,
   
-        productlink : "#"
+        productlink : "/lubie#products"
       },
- 
+      {
+        image:chloroProduct2,
+  
+        productlink : "/chlorelief#products"
+      },
+      {
+        image:lubieProduct3,
+   
+        productlink : "/lubie#products"
+      },
+   
   
   ]
   return (
 <>
       <Swiper
-       initialSlide={1}
+        initialSlide={1}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -82,7 +91,7 @@ function getColor(index: number) {
           rotate: 0,
           stretch: 0,
           depth: 100,
-          modifier: 2.5,
+          modifier: 3,
           slideShadows: false
         }}
         // pagination={true}
@@ -92,8 +101,8 @@ function getColor(index: number) {
        
         {ApexSliderData.map((slide, slide_id) => (
           <SwiperSlide key={slide_id}>
-          <Image alt="1" src={slide.image} style={{backgroundColor:getColor(slide_id)}} className="shadow-lg"/>
-          <Link href={slide.productlink} className="absolute  bottom-1 md:bottom-6 right-6 text-sm md:text-lg text-white">View More</Link>
+          <Image alt="1" src={slide.image} style={{backgroundColor:getColor(slide_id,ApexSliderData.length )}} className="shadow-lg"/>
+          <Link href={slide.productlink} className="absolute hover:text-apexpoint-dark-orange  bottom-1  sm:bottom-6 right-6 text-sm md:text-lg text-white">View More </Link>
         </SwiperSlide>
       ))}
        
