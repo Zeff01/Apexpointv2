@@ -87,13 +87,13 @@ function getColor(index: number) {
         }}
         // pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper mt-6"
+        className="mySwiper md:mt-6"
       >
        
         {ApexSliderData.map((slide, slide_id) => (
           <SwiperSlide key={slide_id}>
           <Image alt="1" src={slide.image} style={{backgroundColor:getColor(slide_id)}} className="shadow-lg"/>
-          <Link href={slide.productlink} className="absolute bottom-6 right-6 text-white">View More</Link>
+          <Link href={slide.productlink} className="absolute  bottom-1 md:bottom-6 right-6 text-sm md:text-lg text-white">View More</Link>
         </SwiperSlide>
       ))}
        
