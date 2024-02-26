@@ -36,6 +36,10 @@ function Testimonials({ variant }: TestimonialsProps) {
           variants={fadeInOutLeftToRight}
           initial="hidden"
           whileInView="visible"
+          transition={{
+      
+            duration:0.5
+          }}
             className={`text-Body-Desktop text pt-2 font-medium ${variant === 'chlorelief' ? 'text-black' : 'text-white'}`}
           >
             CUSTOMERS REVIEW
@@ -45,7 +49,8 @@ function Testimonials({ variant }: TestimonialsProps) {
           initial="hidden"
           whileInView="visible"
           transition={{
-            delay:0.3
+            delay:0.3,
+            duration:0.5
           }}
             className={`text-Header-Mobile py-4 font-extrabold gap-2 flex md:text-Header-Default max-w-screen-sm ${variant === 'chlorelief' ? 'text-black' : 'text-white'}`}
           >
@@ -57,6 +62,7 @@ function Testimonials({ variant }: TestimonialsProps) {
          initial="hidden"
          whileInView="visible"
          transition={{
+          duration:0.5,
           delay:0.5
         }}
         className="right text-Body-Default w-4/5 lg:w-1/3 my-2 pb-4">
@@ -71,6 +77,9 @@ function Testimonials({ variant }: TestimonialsProps) {
          variants={fadeInOutLeftToRight}
          initial="hidden"
          whileInView="visible"
+         transition={{
+          duration:0.5
+         }}
         className="w-full block md:hidden">
           <Cardslide cards={testimonialCards} />
         </motion.div>
@@ -78,6 +87,10 @@ function Testimonials({ variant }: TestimonialsProps) {
         variants={SocialStagger}
         initial="hidden"
         whileInView="visible"
+        transition={{
+          delayChildren:0.5,
+       
+        }}
          className="hidden md:flex w-full items-center justify-center gap-4 pt-16 min-[768px]:flex-col lg:flex-row">
           {testimonialCards}
         </motion.div>
