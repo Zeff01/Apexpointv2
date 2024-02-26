@@ -74,7 +74,7 @@ const About = () => {
      initial="hidden"
      viewport={{ once: true }}
      animate={inView ? 'visible' : 'hidden'}
-   >
+   >  
      {aboutText.map((text, index) => (
        <p key={index}>{text}</p>
      ))}
