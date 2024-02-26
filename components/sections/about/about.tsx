@@ -20,25 +20,25 @@ export const About : React.FC<VariantType> = ({ variant }) => {
         imgSrc: shippingbag,
         title: "Shop Online",
         description:
-          "Lorem ipsum dolor sit consectetur adipiscing Aenean nec mattis quam.",
+          "Explore our diverse range of products with ease, all from the comfort of your home.",
       },
       {
         imgSrc: truck,
         title: "Shipping",
         description:
-          "Lorem ipsum dolor sit consectetur adipiscing Aenean nec mattis quam.",
-      },
+          "Enjoy reliable and efficient doorstep delivery for a seamless shopping experience.",
+        },
       {
         imgSrc: return1,
         title: "Return Policy",
         description:
-          "Lorem ipsum dolor sit consectetur adipiscing Aenean nec mattis quam.",
+          "Shop worry-free with our hassle-free return policy, ensuring your satisfaction.",
       },
       {
         imgSrc: card,
         title: "Payment Methods",
         description:
-          "Lorem ipsum dolor sit consectetur adipiscing Aenean nec mattis quam.",
+          "Choose your preferred secure payment option for a smooth and convenient transaction process.",
       },
     ].map((item, index) => (
       <motion.div
@@ -52,10 +52,10 @@ export const About : React.FC<VariantType> = ({ variant }) => {
            
           className={`object-contain ${variant === 'lubie' ? 'blue-filter' : "chlorelief-filter" }`}
         />
-        <p className={`text-xl font-bold ${variant === 'lubie' ? "text-lubie-navy-blue" : "text-chlorelief-chateaugreen" } `}>
+        <p className={`text-xl font-bold ${variant === 'lubie' ? "text-lubie-navy-blue" : "text-chlorelief-springwood" } `}>
           {item.title}
         </p>
-        <p className={`text-sm ${variant === 'lubie' ? "text-lubie-navy-blue" : "text-chlorelief-chateaugreen" } text-balance `}>
+        <p className={`text-sm ${variant === 'lubie' ? "text-lubie-navy-blue" : "text-chlorelief-springwood" } text-balance `}>
           {item.description}
         </p>
       </motion.div>

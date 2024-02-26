@@ -18,7 +18,7 @@ const Products = () => {
               duration: 0.5,
             
             }}
-          className="md:text-5xl text-4xl text-lubie-dark-blue  font-extrabold lg:text-4xl drop-shadow-md">
+          className="md:text-5xl text-4xl text-lubie-dark-blue  font-extrabold lg:text-4xl drop-shadow-md mb-6">
             Our Products
           </motion.h1>
           <motion.p 
@@ -29,10 +29,8 @@ const Products = () => {
                duration: 0.5,
                delay:0.2
              }}
-          className="md:text-xl text-lubie-dark-blue text-center motion.y-8 w-[60%]">
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor
-            sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum
-            dolor sitametamet
+          className="md:text-xl text-lubie-dark-blue text-center motion.y-8 w-[60%] mb-4">
+            Introducing our product section: Dive into the world of Lubie, a glycerin-free, paraben-free, and odor-free water-based lubricant meticulously crafted to alleviate discomfort caused by dryness and friction. Elevate your intimate experiences with Lubie's premium formula designed for ultimate pleasure and comfort.
           </motion.p>
         </div>
 
