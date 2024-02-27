@@ -1,12 +1,12 @@
-import React, { HTMLAttributes, ReactNode } from "react";
+import React, { HTMLAttributes, ReactNode } from 'react';
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   className?: string;
 }
 
-const Card: React.FC<CardProps> = ({ children, className = "", ...rest }) => {
-  const baseStyles = " border-1 border-solid border-black";
+const Card: React.FC<CardProps> = ({ children, className = '', ...rest }) => {
+  const baseStyles = ' border-1 border-solid border-black';
 
   // Combine baseStyles and additional className
   const combinedClassName = `${baseStyles} ${className}`.trim();
