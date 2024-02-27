@@ -1,12 +1,24 @@
-import React from "react";
-import { LinksData, linksData } from "@/components/data/apexpoint/linksData";
-import Card from "@/components/ui/Card";
-import Title from "./components/Title";
-import ButtonLink from "./components/ButtonLink";
+'use client';
+
+import React from 'react';
+import { LinksData, linksData } from '@/components/data/apexpoint/linksData';
+import Card from '@/components/ui/Card';
+import Title from './components/Title';
+import ButtonLink from './components/ButtonLink';
+import { fadeInOutLeftToRight } from '@/components/animation/animation';
+import { motion } from 'framer-motion';
 
 const Links = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 justify-center pb-16">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInOutLeftToRight}
+      transition={{
+        duration: 0.5,
+      }}
+      className="grid grid-cols-1 gap-4 md:grid-cols-2 justify-center pb-16"
+    >
       {linksData.map((item: LinksData, index) => (
         <Card
           key={index}
@@ -17,7 +29,7 @@ const Links = () => {
           <ButtonLink link={item.link} linkText={item.linkText} />
         </Card>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

@@ -8,7 +8,7 @@ import About from './section/about/About';
 import Stores from '../../components/sections/stores/Stores';
 import Footer from './section/footer/Footer';
 import MobileNav from '@/components/sections/Mobilenav/mobilenav';
-import Hero from "@/components/sections/hero/apexhero"
+import Hero from '@/components/sections/hero/apexhero';
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
@@ -20,8 +20,7 @@ const page = () => {
     <main className={poppins.className}>
       <Navbar />
       <MobileNav variant="apex" />
-        <Hero />
-
+      <Hero />
       <About />
       <Products />
       <Contact />

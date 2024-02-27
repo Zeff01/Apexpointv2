@@ -1,8 +1,8 @@
-import React from "react";
-import Header from "@/components/ui/Header";
-import Section from "@/components/ui/Section";
-import ContactForm from "./components/form/ContactForm";
-import Links from "./components/Links/Links";
+import React from 'react';
+import Header from '@/components/ui/Header';
+import Section from '@/components/ui/Section';
+import ContactForm from './components/form/ContactForm';
+import Links from './components/Links/Links';
 
 const Contact = () => {
   return (
