@@ -23,7 +23,7 @@ export const contactData: contactDataType[] = [
     icon: MdLocationOn,
     information: [
       {
-        details: "Lorem ipsum dolor sit amet, consectetu",
+        details: "Quezon City",
       },
     ],
   },
@@ -32,7 +32,7 @@ export const contactData: contactDataType[] = [
     icon: MdCall,
     information: [
       {
-        details: "Lorem ipsum dolor sit amet, consectetu",
+        details: "+63 995 577 6733",
       },
     ],
   },
