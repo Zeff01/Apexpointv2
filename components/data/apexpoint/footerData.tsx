@@ -11,11 +11,11 @@ export const footerData: FooterDataType[] = [
     list: [
       {
         icon: phone, // insert here the img/icon of fone
-        information: "+639-xxxxxxxxx",
+        information: "+63 995 577 6733",
       },
       {
         icon: email, // insert here the img/icon of email
-        information: "info@gmail.com",
+        information: "apexpointph@gmail.com",
       },
     ],
   },
