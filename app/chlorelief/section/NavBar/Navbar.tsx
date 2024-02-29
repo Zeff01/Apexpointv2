@@ -3,7 +3,7 @@
 import DesktopNav from '@/components/sections/navbar/desktopnav';
 
 export default function Navbar() {
-  const title = 'Chorelief';
+  const title = 'ChloRelief';
 
   //Jsx Structure
   return (
