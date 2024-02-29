@@ -3,7 +3,7 @@
 import DesktopNav from '@/components/sections/navbar/desktopnav';
 
 export default function Navbar() {
-  const title = 'Lubie';
+  const title = 'LUBIE';
 
   //Jsx  Structure
   return (

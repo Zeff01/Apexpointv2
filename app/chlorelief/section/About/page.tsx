@@ -61,7 +61,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         transition={{ duration:0.5}}
-     className="my-2">CHLORELIEF</motion.h2>
+     className="my-2">ChloRelief</motion.h2>
   
 
    <motion.div

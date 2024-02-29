@@ -47,7 +47,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ title }) => {
               <h2>ChloRelief</h2>
             </Link>
             <Link className="hover:opacity-80 hover:scale-105 duration-200" href="/lubie">
-              <h2>Lubie</h2>
+              <h2>LUBIE</h2>
             </Link>
           </div>
         ) : (

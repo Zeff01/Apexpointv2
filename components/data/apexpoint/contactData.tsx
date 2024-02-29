@@ -1,8 +1,9 @@
 import { MdLocationOn, MdOutlineShoppingBag, MdCall } from "react-icons/md";
+import Link from "next/link"
 export type contactDataType = {
   title: string;
   icon: React.ComponentType<any>;
-  information: { details: string }[];
+  information: { details:React.ReactNode }[];
 };
 
 export const contactData: contactDataType[] = [
@@ -11,10 +12,18 @@ export const contactData: contactDataType[] = [
     icon: MdOutlineShoppingBag,
     information: [
       {
-        details: "• Shopee Link",
+        details:(
+        <> 
+        <Link className="text-bold" href="https://shopee.ph/apexpoint" passHref> Shopee </Link>
+        </>
+        ),
       },
       {
-        details: "• Lazada Link",
+        details:(
+        <> 
+        <Link href="https://www.lazada.com.ph/shop/apexpoint1629967874/" passHref> Lazada </Link>
+        </>
+        ),
       },
     ],
   },

@@ -1,8 +1,9 @@
 import { StaticImageData } from "next/image";
+import Link from "next/link";
 import { phone, email, shoppingbag, lazada } from "@/public/assets/apexpoint";
 export type FooterDataType = {
   title: string;
-  list: { icon?: StaticImageData; information: string }[];
+  list: { icon?: StaticImageData; information: React.ReactNode }[];
 };
 
 export const footerData: FooterDataType[] = [
@@ -22,8 +23,12 @@ export const footerData: FooterDataType[] = [
   {
     title: "Information",
     list: [
-      { information: "About Us" },
-      { information: "Our Products" },
+      { information: (<> 
+        <Link className="text-bold" href="#About" passHref> About Us </Link>
+        </>), },
+      { information: (<> 
+        <Link className="text-bold" href="#Products" passHref> Our Products </Link>
+        </>), },
       { information: "Customer Reviews" },
       { information: "Brands" },
     ],
@@ -33,11 +38,17 @@ export const footerData: FooterDataType[] = [
     list: [
       {
         icon: shoppingbag,
-        information: "Shopee",
+        information:  (<> 
+        <Link className="text-bold" href="https://shopee.ph/apexpoint" passHref> Shopee </Link>
+        </>),
       },
       {
         icon: lazada,
-        information: "Lazada",
+        information: (
+          <> 
+          <Link href="https://www.lazada.com.ph/shop/apexpoint1629967874/" passHref> Lazada </Link>
+          </>
+          ),
       },
     ],
   },

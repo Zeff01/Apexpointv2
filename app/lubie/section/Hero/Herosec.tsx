@@ -168,7 +168,7 @@ function Herosec() {
               }}
               className="md:text-left md:text-xl text-center px-5 lg:w-[600px]"
             >
-               Lubie is glycerin-free, paraben free, odor-free, water-based lubricant that reduces discomfort from dryness and friction.
+               LUBIE is glycerin-free, paraben free, odor-free, water-based lubricant that reduces discomfort from dryness and friction.
             </motion.p>
           </div>
           <Button title="Read More" variant="about" />
