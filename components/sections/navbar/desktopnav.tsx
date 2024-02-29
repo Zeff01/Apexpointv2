@@ -44,7 +44,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ title }) => {
         {title === 'Apexpoint' ? (
           <div className="h-9 hidden md:flex border-black border-l-2 pl-2 flex-col justify-center">
             <Link className="hover:opacity-80 hover:scale-105 duration-200 " href="/chlorelief">
-              <h2>Chlorelief</h2>
+              <h2>ChloRelief</h2>
             </Link>
             <Link className="hover:opacity-80 hover:scale-105 duration-200" href="/lubie">
               <h2>Lubie</h2>
