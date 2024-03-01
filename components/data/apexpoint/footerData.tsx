@@ -3,7 +3,8 @@ import Link from "next/link";
 import { phone, email, shoppingbag, lazada } from "@/public/assets/apexpoint";
 export type FooterDataType = {
   title: string;
-  list: { icon?: StaticImageData; information: React.ReactNode }[];
+  list: { icon?: StaticImageData;  href?: string; information: string; }[];
+ 
 };
 
 export const footerData: FooterDataType[] = [
@@ -23,14 +24,11 @@ export const footerData: FooterDataType[] = [
   {
     title: "Information",
     list: [
-      { information: (<> 
-        <Link className="text-bold" href="#About" passHref> About Us </Link>
-        </>), },
-      { information: (<> 
-        <Link className="text-bold" href="#Products" passHref> Our Products </Link>
-        </>), },
-      { information: "Customer Reviews" },
-      { information: "Brands" },
+      { information: "About Us",
+    href:"#about" },
+      { information: "Our Products",href:"#product" },
+      { information: "Customer Reviews",href:"#"},
+      { information: "Brands", href:"#" },
     ],
   },
   {
@@ -38,27 +36,23 @@ export const footerData: FooterDataType[] = [
     list: [
       {
         icon: shoppingbag,
-        information:  (<> 
-        <Link className="text-bold" href="https://shopee.ph/apexpoint" passHref> Shopee </Link>
-        </>),
+        information:  "Shopee",
+        href: "https://shopee.ph/apexpoint",
       },
       {
         icon: lazada,
-        information: (
-          <> 
-          <Link href="https://www.lazada.com.ph/shop/apexpoint1629967874/" passHref> Lazada </Link>
-          </>
-          ),
+        information: "Lazada",
+        href: "https://www.lazada.com.ph/shop/apexpoint1629967874/",
       },
     ],
   },
   {
     title: "Others",
     list: [
-      { information: "Supports" },
-      { information: "Services" },
-      { information: "Terms and Conditions" },
-      { information: "Privacy Policy" },
+      { information: "Supports", href: "" },
+      { information: "Services", href: "" },
+      { information: "Terms and Conditions",  href: "" },
+      { information: "Privacy Policy", href: ""},
     ],
   },
 ];

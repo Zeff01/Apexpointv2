@@ -1,5 +1,6 @@
 'use client';
 import emailjs from '@emailjs/browser';
+import Link from "next/link";
 import Socials from '@/app/apexpoint/section/footer/_modules/Socials';
 import { contactDataType, contactData } from '@/components/data/apexpoint/contactData';
 import { validateInputs, validateForm, TMessageStatus } from '@/utils/formUtils';
@@ -83,7 +84,7 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
 
   const data = contactData.map((contact: contactDataType) => {
     return (
-      <motion.div
+      <motion.div 
         variants={fadeInOutRightToLeft}
         transition={{ duration: 0.5 }}
         className="flex flex-col items-start justify-start"
@@ -94,9 +95,16 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
         </div>
         <div className="pl-10">
           {contact.information.map((details, index) => (
-            <p key={index}>{details.details}</p>
-          ))}
+        <div key={index}>
+          <p>{details.info} {details.href && (<><Link href={details.href}>{details.details}</Link></>)}</p>
+
+
+
+
         </div>
+          ))}
+            </div>
+      
       </motion.div>
     );
   });

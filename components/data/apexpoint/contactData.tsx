@@ -3,7 +3,7 @@ import Link from "next/link"
 export type contactDataType = {
   title: string;
   icon: React.ComponentType<any>;
-  information: { details:React.ReactNode }[];
+  information: { details?: string; href?: string; info?: string; }[];
 };
 
 export const contactData: contactDataType[] = [
@@ -12,18 +12,14 @@ export const contactData: contactDataType[] = [
     icon: MdOutlineShoppingBag,
     information: [
       {
-        details:(
-        <> 
-        <Link className="text-bold" href="https://shopee.ph/apexpoint" passHref> Shopee </Link>
-        </>
-        ),
+        details: "Shopee",
+      href: "https://shopee.ph/apexpoint",
+      
+        
       },
       {
-        details:(
-        <> 
-        <Link href="https://www.lazada.com.ph/shop/apexpoint1629967874/" passHref> Lazada </Link>
-        </>
-        ),
+        details: "Lazada",
+         href: "https://www.lazada.com.ph/shop/apexpoint1629967874/",
       },
     ],
   },
@@ -32,7 +28,7 @@ export const contactData: contactDataType[] = [
     icon: MdLocationOn,
     information: [
       {
-        details: "Quezon City",
+        info: "Quezon City",
       },
     ],
   },
@@ -41,7 +37,7 @@ export const contactData: contactDataType[] = [
     icon: MdCall,
     information: [
       {
-        details: "+63 995 577 6733",
+        info: "+63 995 577 6733",
       },
     ],
   },
