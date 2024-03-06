@@ -9,6 +9,7 @@ export default function Navbar() {
   return (
     <nav className="bg-chlorelief-dark-green text-white sticky top-0 z-50 ">
       <DesktopNav title={title} />
+      
     </nav>
   );
 }
