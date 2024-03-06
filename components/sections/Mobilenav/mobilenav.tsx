@@ -115,6 +115,7 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
               <Link className="flex items-center mb-5" href="/chlorelief">
                 <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3">CHLORELIEF</p>
               </Link>
+              
             </>
           ) : (
             <></>

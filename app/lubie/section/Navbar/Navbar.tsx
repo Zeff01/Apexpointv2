@@ -10,6 +10,7 @@ export default function Navbar() {
     <>
       <nav className="bg-lubie-soft-blue text-white sticky top-0 z-50">
         <DesktopNav title={title} />
+
       </nav>
     </>
   );
