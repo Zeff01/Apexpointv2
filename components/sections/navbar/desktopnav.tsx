@@ -76,7 +76,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ title }) => {
           ),
         )}
       </ul>
-      <div className="absolute md:left-3 left-0 top-15">
+      <div className="hidden">
         <BackgroundMusic />
       </div>
     </nav>
