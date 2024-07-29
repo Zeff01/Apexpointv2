@@ -76,7 +76,7 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
                   <li className="w-full flex items-center hover:bg-zinc-100 px-6 py-4 gap-3" key={link.href}>
                     <RightArrowIcon />
                     <Link className="flex w-full font-bold" href="/chlorelief">
-                      Chlorelief
+                      ChloRelief
                     </Link>
                   </li>
                   <li className="w-full flex items-center hover:bg-zinc-100 px-6 py-4 gap-3" key={link.href}>
