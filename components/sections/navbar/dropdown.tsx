@@ -36,12 +36,11 @@ const DropdownMenu = () => {
             <h2>ALL PRODUCTS</h2>
             <div className="flex flex-col pl-5">
               <Link className="font-semibold hover:opacity-65 duration-200" href="/chlorelief">
-                Chlorelief
+                ChloRelief
               </Link>
               <Link className="font-semibold hover:opacity-65 duration-200" href="/lubie">
                 Lubie
               </Link>
-              
             </div>
           </div>
         </div>
