@@ -43,10 +43,10 @@ function Herosec() {
               }}
               className=" text-3xl mb-5 md:text-4xl lg:text-5xl lg:leading-[65px] font-bold text-center sm:text-start sm:w-full"
             >
-              The first
-              <span className="text-lubie-neon-green text-extra-bold">&nbsp; Multi-purpose &nbsp;</span>
+              The First
+              <span className="text-lubie-neon-green text-extra-bold">&nbsp; Multi-Purpose &nbsp;</span>
               <br></br>
-              FDA registered Lube <br></br> in the Philippines
+              FDA Registered Lube <br></br> in the Philippines
             </motion.p>
 
             <motion.a

@@ -82,7 +82,7 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
                   <li className="w-full flex items-center hover:bg-zinc-100 px-6 py-4 gap-3" key={link.href}>
                     <RightArrowIcon />
                     <Link className="flex w-full font-bold" href="/lubie">
-                      Lubie
+                      LUBIE
                     </Link>
                   </li>
                 </div>
@@ -113,7 +113,7 @@ const Mobilenav: React.FC<MobileNavProps> = ({ variant }) => {
                 <p className="ml-1 sm:ml-3">APEXPOINT</p>
               </Link>
               <Link className="flex items-center mb-5" href="/chlorelief">
-                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3">CHLORELIEF</p>
+                <BiSolidLeftArrow /> <p className="ml-1 sm:ml-3">ChloRelief</p>
               </Link>
               
             </>

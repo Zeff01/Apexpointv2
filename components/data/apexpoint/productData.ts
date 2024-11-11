@@ -28,8 +28,8 @@ export type ProductData = {
 
 export const productData: ProductData[] = [
   {
-    name: "chlorelief",
-    title: "YOUR FIRST LINE OF DEFENSE",
+    name: "ChloRelief",
+    title: "The First Line of Defense",
     description: `Meet ChloRelief: an OTC, steroid-free anti-itch and anti-rash
               lotion. Say goodbye to skin issues without worrying about thinning
               or harmful parabens.`,
@@ -45,8 +45,8 @@ export const productData: ProductData[] = [
     url: "/chlorelief",
   },
   {
-    name: "lubie",
-    title: "THE FIRST MULTI-PURPOSE FDA REGISTERED LUBE IN THE PH",
+    name: "LUBIE",
+    title: "The First Multi-Purpose FDA Registered LUBE in the PH",
     description: `glycerin-free, paraben free, odor-free, water-based lubricant that
               reduces discomfort from dryness and friction.`,
     benefits: [
