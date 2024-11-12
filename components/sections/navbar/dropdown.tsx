@@ -39,7 +39,7 @@ const DropdownMenu = () => {
                 ChloRelief
               </Link>
               <Link className="font-semibold hover:opacity-65 duration-200" href="/lubie">
-                Lubie
+                LUBIE
               </Link>
             </div>
           </div>

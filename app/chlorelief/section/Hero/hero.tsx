@@ -49,7 +49,7 @@ export default function Hero() {
             }}>
               <div className="flex flex-col sm:justify-end sm:items-start justify-center items-center max-w-screen-xl w-full gap-2">
                 <h1 className="text-white  font-bold text-center w-[372px] sm:w-auto sm:text-start pb-6 text-3xl   md:text-4xl lg:text-5xl lg:leading-[65px]">
-                  The first line of <span className="text-red-500 text-extra-bold">defense</span> against bacteria and
+                  The First Line of <span className="text-red-500 text-extra-bold">Defense</span> against bacteria and
                   viruses
                 </h1>
                 <button className={item.ButtonStyle}>{item.ButtonText}</button>

@@ -33,7 +33,7 @@ const Products = () => {
           >
             Introducing our product section: Dive into the world of LUBIE, a glycerin-free, paraben-free, and odor-free
             water-based lubricant meticulously crafted to alleviate discomfort caused by dryness and friction. Elevate
-            your intimate experiences with Lubie's premium formula designed for ultimate pleasure and comfort.
+            your intimate experiences with LUBIE's premium formula designed for ultimate pleasure and comfort.
           </motion.p>
         </div>
 
