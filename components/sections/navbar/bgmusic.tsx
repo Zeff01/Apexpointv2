@@ -1,36 +1,47 @@
-import React, { useRef, useState, useEffect } from 'react';
-import PlayPause from '@/components/icons/playpause';
+'use client';
 
-const BackgroundMusic: React.FC = () => {
+import { useEffect, useRef } from 'react';
+
+const BackgroundMusic = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  function togglePlay(): void {
-    if (isPlaying) {
-      audioRef.current?.pause();
-      setIsPlaying(false);
-    } else {
-      audioRef.current?.play();
-      setIsPlaying(true);
-    }
-  }
 
   useEffect(() => {
-    audioRef.current?.play();
-    setIsPlaying(true);
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    // ✅ autoplay muted first (required)
+    audio.muted = true;
+    audio.volume = 1;
+
+    audio.play().catch(() => {});
+
+    // ✅ unlock on first interaction (no UI needed)
+    const unlock = () => {
+      audio.muted = false;
+      audio.play().catch(() => {});
+
+      window.removeEventListener('click', unlock);
+      window.removeEventListener('touchstart', unlock);
+    };
+
+    window.addEventListener('click', unlock);
+    window.addEventListener('touchstart', unlock);
 
     return () => {
-      audioRef.current?.pause();
+      window.removeEventListener('click', unlock);
+      window.removeEventListener('touchstart', unlock);
     };
   }, []);
 
   return (
-    <div>
-      <audio ref={audioRef} loop src={'/assets/audio/summer-vibe_long-bgmusic.mp3'} />
-      <button onClick={togglePlay}>
-        <PlayPause />
-      </button>
-    </div>
+    <audio
+      ref={audioRef}
+      src="/assets/audio/summer-vibe_long-bgmusic.mp3"
+      loop
+      autoPlay
+      playsInline
+      style={{ display: 'none' }} // no UI
+    />
   );
 };
 

@@ -61,9 +61,9 @@ const ProductList: React.FC = () => {
       Price: '₱ 99',
     },
     {
-      ImageUrl: '/assets/chlorelief-assets/calamine-100ml.png',
+      ImageUrl: '/assets/chlorelief-assets/calamine-60ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And ',
-      ProductDesc2: 'Anti Rash Lotion 100ml',
+      ProductDesc2: 'Anti Rash Lotion 60ml',
       Rating: '★★★★★★',
       Price: '₱ 210',
     },

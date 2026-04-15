@@ -7,11 +7,12 @@ import 'swiper/css/pagination';
 import lubieProduct1 from '@/public/assets/lubie-products/lubie-35ml.png';
 import lubieProduct2 from '@/public/assets/lubie-products/lubie-10ml.png';
 import lubieProduct3 from '@/public/assets/lubie-products/lubie-100ml.png';
-import chloroProduct1 from '@/public/assets/chlorelief-products/calamine-100ml.png';
+import chloroProduct1 from '@/public/assets/chlorelief-products/calamine-60ml.png';
 import chloroProduct2 from '@/public/assets/chlorelief-products/calamine-120ml.png';
 import chloroProduct3 from '@/public/assets/chlorelief-products/antiseptic-150ml.png';
 import chloroProduct4 from '@/public/assets/chlorelief-products/alcohol-150ml.png';
 import chloroProduct5 from '@/public/assets/chlorelief-products/antipruritic-10ml.png';
+import chloroProduct6 from '@/public/assets/chlorelief-products/babywash-150ml.png';
 import Image from 'next/image';
 
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
@@ -75,6 +76,11 @@ const ApexSlider = () => {
     },
     {
       image: chloroProduct5,
+
+      productlink: '/chlorelief#products',
+    },
+    {
+      image: chloroProduct6,
 
       productlink: '/chlorelief#products',
     },

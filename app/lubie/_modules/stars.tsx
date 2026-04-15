@@ -1,5 +1,5 @@
-import React from "react";
-import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import React from 'react';
+import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 
 interface RatingProps {
   userRating: number;
@@ -7,16 +7,10 @@ interface RatingProps {
   starsResult?: React.ReactNode[];
 }
 
-function Stars({ userRating, starsResult }: RatingProps) {
-  starsResult = getStars({ userRating });
+function Stars({ userRating }: RatingProps) {
+  const starsResult = getStars({ userRating });
 
-  return (
-    <div className="flex">
-      {starsResult.map((star): React.ReactNode => (
-        <>{star}</>
-      ))}
-    </div>
-  );
+  return <div className="flex">{starsResult}</div>;
 }
 
 export default Stars;

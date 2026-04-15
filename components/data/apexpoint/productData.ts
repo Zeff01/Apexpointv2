@@ -8,7 +8,7 @@ import { StaticImageData } from 'next/image';
 
 // chloreleif
 import ch_antiseptic_wash from '@/public/assets/chlorelief-products/antiseptic-wash.jpg';
-import ch_calamine_100ml from '@/public/assets/chlorelief-products/calamine-100ml.jpg';
+import ch_calamine_60ml from '@/public/assets/chlorelief-products/calamine-60ml.jpg';
 import ch_calamine_120ml from '@/public/assets/chlorelief-products/calamine-120ml.jpg';
 import ch_isopropyl_alcohol from '@/public/assets/chlorelief-products/isopropyl-alcohol.jpg';
 
@@ -38,7 +38,7 @@ export const productData: ProductData[] = [
     logo: [
       { name: 'Chlorelief Logo', src: chlorelief_logo },
       { name: 'Chlorelief Antiseptic Wash', src: ch_antiseptic_wash },
-      { name: 'Chlorelief Calamine 100ml', src: ch_calamine_100ml },
+      { name: 'Chlorelief Calamine 60ml', src: ch_calamine_60ml },
       { name: 'Chlorelief Calamine 120ml', src: ch_calamine_120ml },
       { name: 'Chlorelief Isopropyl Alcohol', src: ch_isopropyl_alcohol },
     ],

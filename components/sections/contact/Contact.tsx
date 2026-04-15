@@ -1,6 +1,6 @@
 'use client';
 import emailjs from '@emailjs/browser';
-import Link from "next/link";
+import Link from 'next/link';
 import Socials from '@/app/apexpoint/section/footer/_modules/Socials';
 import { contactDataType, contactData } from '@/components/data/apexpoint/contactData';
 import { validateInputs, validateForm, TMessageStatus } from '@/utils/formUtils';
@@ -82,9 +82,10 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
     }
   };
 
-  const data = contactData.map((contact: contactDataType) => {
+  const data = contactData.map((contact: contactDataType, index) => {
     return (
-      <motion.div 
+      <motion.div
+        key={contact.title || index}
         variants={fadeInOutRightToLeft}
         transition={{ duration: 0.5 }}
         className="flex flex-col items-start justify-start"
@@ -95,16 +96,18 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
         </div>
         <div className="pl-10">
           {contact.information.map((details, index) => (
-        <div key={index}>
-          <p>{details.info} {details.href && (<><Link href={details.href}>{details.details}</Link></>)}</p>
-
-
-
-
-        </div>
-          ))}
+            <div key={index}>
+              <p>
+                {details.info}{' '}
+                {details.href && (
+                  <>
+                    <Link href={details.href}>{details.details}</Link>
+                  </>
+                )}
+              </p>
             </div>
-      
+          ))}
+        </div>
       </motion.div>
     );
   });
@@ -129,20 +132,25 @@ const Contact: React.FC<ContactProps> = ({ variant }) => {
           >
             For Bulk Orders
           </motion.h2>
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            variants={fadeInOutLeftToRight}
-            transition={{
-              delay: 0.3,
-              duration: 0.3,
-            }}
-            className="text-black-600 text-start"
-          >
-            Get in touch with us through our contact section. <p className="gap-4" /> Connect with us for assistance or
-            feedback through our contact section. We're here to help!
-            <p className="hidden gap-4" />
-          </motion.p>
+          <div className="text-black-600 text-start space-y-2">
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              variants={fadeInOutLeftToRight}
+              transition={{ delay: 0.3, duration: 0.3 }}
+            >
+              Get in touch with us through our contact section.
+            </motion.p>
+
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              variants={fadeInOutLeftToRight}
+              transition={{ delay: 0.4, duration: 0.3 }}
+            >
+              Connect with us for assistance or feedback. We're here to help!
+            </motion.p>
+          </div>
         </div>
         <div className="">
           <motion.form
