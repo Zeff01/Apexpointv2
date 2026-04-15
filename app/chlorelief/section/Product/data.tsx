@@ -49,14 +49,14 @@ const ProductList: React.FC = () => {
     {
       ImageUrl: '/assets/chlorelief-assets/antiseptic-150ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And',
-      ProductDesc2: 'Antiseptic Wash 60ml',
+      ProductDesc2: 'Antiseptic Wash 150ml',
       Rating: '★★★★★★',
       Price: '₱ 59',
     },
     {
       ImageUrl: '/assets/chlorelief-assets/alcohol-150ml.png',
       ProductDesc1: 'ChloRelief Anti Itch And',
-      ProductDesc2: 'Santizer 60ml',
+      ProductDesc2: 'Santizer 150ml',
       Rating: '★★★★★★',
       Price: '₱ 99',
     },

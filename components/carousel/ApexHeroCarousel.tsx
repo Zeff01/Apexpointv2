@@ -12,6 +12,7 @@ import chloroProduct2 from '@/public/assets/chlorelief-products/calamine-120ml.p
 import chloroProduct3 from '@/public/assets/chlorelief-products/antiseptic-150ml.png';
 import chloroProduct4 from '@/public/assets/chlorelief-products/alcohol-150ml.png';
 import chloroProduct5 from '@/public/assets/chlorelief-products/antipruritic-10ml.png';
+import chloroProduct6 from '@/public/assets/chlorelief-products/babywash-150ml.png';
 import Image from 'next/image';
 
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
@@ -75,6 +76,11 @@ const ApexSlider = () => {
     },
     {
       image: chloroProduct5,
+
+      productlink: '/chlorelief#products',
+    },
+    {
+      image: chloroProduct6,
 
       productlink: '/chlorelief#products',
     },
