@@ -4,9 +4,6 @@ import Image from 'next/image';
 
 import Dropdown from '@/components/sections/navbar/dropdown';
 
-// image
-import apexLogo from '@/public/assets/apex-assets/apexpoint-name.png';
-
 interface DesktopNavProps {
   title: string;
 }
@@ -28,25 +25,43 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ title }) => {
     <nav className="font-share font-bold shadow-lg md:shadow-md flex w-full justify-between items-center sm:px-12 px-3 py-4">
       {/* LEFT SIDE */}
       <div className="flex items-center gap-2">
-        <div className="hidden md:flex">
-          <Link href="/">
+        <div className="hidden md:flex items-center gap-2">
+          <Link href="/" className="flex items-center">
+            {/* ICON (never changes) */}
             <Image
-              className={`h-8 w-auto filter ${
-                title === 'Apexpoint' ? '' : 'invert'
-              } hover:opacity-80 hover:scale-105 duration-200`}
-              src={apexLogo}
-              alt="apexpoint"
+              src="/assets/apex-assets/apexpoint-logo.png"
+              alt="apex icon"
+              width={32}
+              height={32}
+              className="h-8 w-auto"
+            />
+
+            {/* TEXT (can invert) */}
+            <Image
+              src="/assets/apex-assets/apexpoint-name.png"
+              alt="apex text"
+              width={100}
+              height={32}
+              className={`h-6 w-auto ${title !== 'Apexpoint' ? 'invert' : ''} transition duration-200`}
             />
           </Link>
         </div>
 
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center">
           <Image
-            className={`h-8 w-auto filter ${
-              title === 'Apexpoint' ? '' : 'invert'
-            } hover:opacity-80 hover:scale-105 duration-200`}
-            src={apexLogo}
-            alt="apexpoint"
+            src="/assets/apex-assets/apexpoint-logo.png"
+            alt="apex icon"
+            width={32}
+            height={32}
+            className="h-8 w-auto"
+          />
+
+          <Image
+            src="/assets/apex-assets/apexpoint-name.png"
+            alt="apex text"
+            width={100}
+            height={32}
+            className={`h-6 w-auto ${title !== 'Apexpoint' ? 'invert' : ''}`}
           />
         </div>
 

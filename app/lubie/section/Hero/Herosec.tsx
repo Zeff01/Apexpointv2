@@ -13,6 +13,7 @@ import {
 } from '@/components/animation/animation';
 import Lubiehero from '@/public/assets/lubie-products/lubiehero3.webp';
 import Lubie from '@/public/assets/lubie-products/aboutlubie.png';
+import Link from 'next/link';
 
 function Herosec() {
   return (
@@ -49,16 +50,11 @@ function Herosec() {
               FDA Registered Lube <br></br> in the Philippines
             </motion.p>
 
-            <motion.a
-              variants={fadeInOutLeftToRight}
-              transition={{
-                duration: 0.5,
-              }}
-              href="#about"
-            >
-              {' '}
-              <Button title="Read More" variant="hero" />
-            </motion.a>
+            <motion.div variants={fadeInOutLeftToRight} transition={{ duration: 0.5 }}>
+              <Link href="#hero-about">
+                <Button title="Read More" variant="hero" />
+              </Link>
+            </motion.div>
           </motion.div>
           <div className="opacity-20 md:opacity-100 md:flex w-full sm:w-auto   justify-start w-100 absolute top-6  md:relative sm:p-0">
             <div className=" sticky ">
@@ -88,7 +84,7 @@ function Herosec() {
             initial="hidden"
             whileInView="visible"
           >
-            <div className="flex flex-col items-center  space-y-2 mb-4  "> 
+            <div className="flex flex-col items-center  space-y-2 mb-4  ">
               <Icons imageUrl={icon1} />
               <p className=" w-3/4 text-center ">Anti-Frizz for Hair & Body</p>
             </div>
@@ -109,7 +105,7 @@ function Herosec() {
             <div className=" flex flex-col items-center space-y-2 mb-4 ">
               <Icons imageUrl={icon5} />
               <p className="w-3/4 text-center">Shaving Gel for Face & Body</p>
-            </div >
+            </div>
             <div className=" flex flex-col items-center space-y-2 mb-4 ">
               <Icons imageUrl={icon6} />
               <p className="w-3/4 text-center">Intimate Moments </p>
@@ -118,7 +114,10 @@ function Herosec() {
         </div>
       </div>
 
-      <div className=" flex md:flex-row flex-col  justify-center items-center   mt-8 relative container ">
+      <div
+        id="hero-about"
+        className="scroll-mt-20 flex md:flex-row flex-col  justify-center items-center mt-8 relative container "
+      >
         <motion.div
           variants={fadeInOutLeftToRight}
           initial="hidden"
@@ -150,6 +149,7 @@ function Herosec() {
           >
             Nature & Health
           </motion.p>
+
           <motion.h2
             transition={{
               duration: 0.5,
@@ -168,10 +168,13 @@ function Herosec() {
               }}
               className="md:text-left md:text-xl text-center px-5 lg:w-[600px]"
             >
-               LUBIE is glycerin-free, paraben free, odor-free, water-based lubricant that reduces discomfort from dryness and friction.
+              LUBIE is glycerin-free, paraben free, odor-free, water-based lubricant that reduces discomfort from
+              dryness and friction.
             </motion.p>
           </div>
-          <Button title="Read More" variant="about" />
+          {/* <Link href="#about">
+            <Button title="Read More" variant="about" />
+          </Link> */}
         </motion.div>
       </div>
     </div>

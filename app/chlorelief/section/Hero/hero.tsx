@@ -1,12 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import {
- fadeInOutLeftToRight,
- fadeInOutRightToLeft,
-
-} from '@/components/animation/animation';
-
+import { fadeInOutLeftToRight, fadeInOutRightToLeft } from '@/components/animation/animation';
+import Link from 'next/link';
 
 interface HeroSectionProps {
   SectionClass: string;
@@ -34,39 +30,41 @@ const Data: HeroSectionProps[] = [
 ];
 
 export default function Hero() {
-
   return (
     <>
       {Data.map((item, index) => (
         <div key={index} className={item.SectionClass}>
-          <div
-            className="flex justify-center flex-col-reverse sm:flex-row sm:items-center sm:px-11 px-7  xl:px-[200px] relative"
- 
-          >
-            <motion.div variants={fadeInOutLeftToRight} initial="hidden" whileInView="visible"
-            transition={{
-              duration:0.5
-            }}>
+          <div className="flex justify-center flex-col-reverse sm:flex-row sm:items-center sm:px-11 px-7  xl:px-[200px] relative">
+            <motion.div
+              variants={fadeInOutLeftToRight}
+              initial="hidden"
+              whileInView="visible"
+              transition={{
+                duration: 0.5,
+              }}
+            >
               <div className="flex flex-col sm:justify-end sm:items-start justify-center items-center max-w-screen-xl w-full gap-2">
                 <h1 className="text-white  font-bold text-center w-[372px] sm:w-auto sm:text-start pb-6 text-3xl   md:text-4xl lg:text-5xl lg:leading-[65px]">
                   The First Line of <span className="text-red-500 text-extra-bold">Defense</span> against bacteria and
                   viruses
                 </h1>
-                <button className={item.ButtonStyle}>{item.ButtonText}</button>
+                <Link href="#about">
+                  <button className={item.ButtonStyle}>{item.ButtonText}</button>
+                </Link>
               </div>
             </motion.div>
             <div className="min-w-screen w-full h-full flex justify-center items-center ">
               <motion.div
-                variants={ fadeInOutRightToLeft}
+                variants={fadeInOutRightToLeft}
                 initial="hidden"
                 whileInView="visible"
                 transition={{
-                  duration:0.5
+                  duration: 0.5,
                 }}
-            // Use inView to determine animation visibility
+                // Use inView to determine animation visibility
               >
                 <Image
-                  src="/assets/chlorelief-products/chloreliefhero5.webp"
+                  src="/assets/chlorelief-products/chloreliefhero5.png"
                   width={400} // Increased width for a bigger image
                   height={400} // Adjust height accordingly to maintain aspect ratio
                   className="min-h-full w-full object-contain " // Adjusted class for bigger image

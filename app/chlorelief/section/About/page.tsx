@@ -7,10 +7,8 @@ import serv from '@/public/assets/chlorelief-assets/services.png';
 import ship from '@/public/assets/lubie-assets/shipping.png';
 import ret from '@/public/assets/chlorelief-assets/return-icon.png';
 import payment from '@/public/assets/chlorelief-assets/payment.png';
-import Shipping from "@/components/sections/about/about"
-import {
- fadeInOutDownToUp,fadeInOutRightToLeft,fadeInOutLeftToRight
-} from '@/components/animation/animation';
+import Shipping from '@/components/sections/about/about';
+import { fadeInOutDownToUp, fadeInOutRightToLeft, fadeInOutLeftToRight } from '@/components/animation/animation';
 import { motion } from 'framer-motion';
 interface About {
   title: string;
@@ -25,7 +23,6 @@ const aboutData: About[] = [
 ];
 
 const About = () => {
-
   const aboutText = [
     'Paraben-free paraben is not a ',
     'natural product and is not',
@@ -39,60 +36,54 @@ const About = () => {
   ];
 
   return (
-    <div id="about" className="font-inter h-auto   sm:h-full">
-   
-
-        <motion.h2
-          variants={fadeInOutDownToUp}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration:0.5}}
-        className="text-chlorelief-chateaugreen font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop">
-          ABOUT THE BRAND
-        </motion.h2>
-  
-     <div className='w-full flex justify-center items-end'>
-     <div className="flex flex-row-reverse items-end justify-center md:justify-between my-10 md:min-w-[760px]">
- 
- <div className="text-gray-400 text-lg max-w-full-lg text-center md:text-left flex flex-col h-full pb-7">
-  
-     <motion.h2
-        variants={fadeInOutRightToLeft}
+    <div id="about" className="font-inter h-auto scroll-mt-20 sm:h-full">
+      <motion.h2
+        variants={fadeInOutDownToUp}
         initial="hidden"
         whileInView="visible"
-        transition={{ duration:0.5}}
-     className="my-2">ChloRelief</motion.h2>
-  
+        transition={{ duration: 0.5 }}
+        className="text-chlorelief-chateaugreen font-bold text-center text-Header-Mobile lg:text-header-Default xl:text-Header-Desktop"
+      >
+        ABOUT THE BRAND
+      </motion.h2>
 
-   <motion.div
-      variants={fadeInOutRightToLeft}
-      initial="hidden"
-      whileInView="visible"
-      transition={{ duration:0.5}}
-  
+      <div className="w-full flex justify-center items-end">
+        <div className="flex flex-row-reverse items-end justify-center md:justify-between my-10 md:min-w-[760px]">
+          <div className="text-gray-400 text-lg max-w-full-lg text-center md:text-left flex flex-col h-full pb-7">
+            <motion.h2
+              variants={fadeInOutRightToLeft}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5 }}
+              className="my-2"
+            >
+              ChloRelief
+            </motion.h2>
 
+            <motion.div
+              variants={fadeInOutRightToLeft}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5 }}
+            >
+              {aboutText.map((text, index) => (
+                <p key={index}>{text}</p>
+              ))}
+            </motion.div>
+          </div>
 
-   >  
-     {aboutText.map((text, index) => (
-       <p key={index}>{text}</p>
-     ))}
-   </motion.div>
- </div>
+          <motion.div
+            variants={fadeInOutLeftToRight}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5 }}
+          >
+            <Image src={mainImg} width={400} alt="About Image" className="hidden md:block object-contain" />
+          </motion.div>
+        </div>
+      </div>
 
-
-<motion.div
-   variants={fadeInOutLeftToRight}
-   initial="hidden"
-   whileInView="visible"
-   transition={{ duration:0.5}}
-
->
- <Image src={mainImg} width={400} alt="About Image" className="hidden md:block object-contain" />
-</motion.div>
-</div>
-     </div>
-
-     <Shipping variant='chlorelief' />
+      <Shipping variant="chlorelief" />
     </div>
   );
 };
